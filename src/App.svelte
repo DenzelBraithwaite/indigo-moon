@@ -4,6 +4,7 @@
   import ProductGrid from './lib/UI/cards/CardGrid.svelte';
   import Navbar from './lib/UI/navbar.svelte'
   import HeroBanner from './lib/UI/HeroBanner.svelte'
+  import Testimonials from './lib/UI/cards/Testimonials.svelte'
 
   let src1 = "../../../../public/card1.webp";
   let src2 = "../../../../public/card2.webp";
@@ -39,6 +40,52 @@
     max-width: 90vw;
     margin: 0 auto;
   }
+
+  .sub-banner {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+  }
+
+  .sub-banner img {
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .sub-banner-text-group {
+    background-color: #727557;
+    color: #fff;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .sub-banner-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1;
+  }
+
+  .sub-banner-subtitle {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1;
+  }
+
+  .sub-banner-text {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
 </style>
 
 <!-- HTML Below -->
@@ -47,6 +94,23 @@
     <Navbar />
     <HeroBanner />
   </header>
+  <section class="sub-banner">
+    <img src="../public/sub_hero_banner.webp" alt="necklace swaying over cards">
+    <div class="sub-banner-text-group">
+      <div class="content">
+        <h1 class="sub-banner-title">My Background</h1>
+        <h2 class="sub-banner-subtitle">A Spiritual Guide</h2>
+        <p class="sub-banner-text">Welcome, I’m thrilled the stars have brought you here. 
+          I’m a successful Tarot Card Reader and magical crafter based 
+          in Montreal Quebec - here to guide you through life’s most complex and difficult matters. 
+          Whatever you’re going through, I‘m here to help you find your way forward. 
+          From a young age I realized I was blessed with a gift that enabled me to see and sense things others could not. 
+          Let me do the same for you as I have for so many others since 2015. 
+          Contact me to schedule an appointment or phone call reading.</p>
+      </div>
+    </div>
+  </section>
+  <Testimonials />
   <div class="container">
       <ProductGrid />
   </div>

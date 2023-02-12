@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color: #444;
-  background-color: #e6e6e6;
+  background-color: #fff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,5 +16,4 @@
 body {
   padding: 0;
   margin: 0 auto;
-  background-color: rgba(255, 0, 0, 0.212);
 }
