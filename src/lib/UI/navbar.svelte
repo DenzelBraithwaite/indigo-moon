@@ -7,6 +7,8 @@
         background-color: #fff;
         height: 0;
         padding: 2rem;
+        margin-bottom: 100px;
+        line-height: 1;
 
         display: flex;
         justify-content: space-between;
@@ -17,13 +19,16 @@
         font-weight: normal;
     }
 
+    .nav-options {
+        display: flex;
+        gap: 2rem;
+    }
+
     .nav-options a{
         text-decoration: none;
-        color: #444;
+        font-size: 1.125rem;
+        color: #444444dc;
         display: inline-block;
-
-        display: flex;
-        /* gap: 1rem; */
     }
 </style>
 
@@ -33,6 +38,6 @@
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Book Online</a>
-        <a href="#">Insta</a>
+        <a href="#" class="insta-icon"><i class="fa-brands fa-instagram"></i></a>
     </div>
 </nav>

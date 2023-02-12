@@ -2,6 +2,7 @@
   // JavaScript Below
   // import Button from './lib/UI/buttons/Button.svelte'
   import ProductGrid from './lib/UI/cards/CardGrid.svelte';
+  import Navbar from './lib/UI/navbar.svelte'
 
   let src1 = "../../../../public/card1.webp";
   let src2 = "../../../../public/card2.webp";
@@ -25,6 +26,11 @@
     position: relative;
   }
 
+  header {
+    position: relative;
+    width: 100%;
+  }
+
   .container {
     position: relative;
     max-width: 1200px;
@@ -34,6 +40,9 @@
 
 <!-- HTML Below -->
 <body>
+  <header>
+    <Navbar />
+  </header>
   <div class="container">
       <ProductGrid />
   </div>
