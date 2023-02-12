@@ -1,7 +1,7 @@
 <script>
   // JavaScript Below
   // import Button from './lib/UI/buttons/Button.svelte'
-  import Card from './lib/UI/cards/Card.svelte';
+  import ProductGrid from './lib/UI/cards/CardGrid.svelte';
 
   let src1 = "../../../../public/card1.webp";
   let src2 = "../../../../public/card2.webp";
@@ -27,39 +27,14 @@
 
   .container {
     position: relative;
-    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
-  }
-
-  .card-container {
-    display: flex;
-    gap: 1rem;
   }
 </style>
 
 <!-- HTML Below -->
 <body>
   <div class="container">
-    <div class="card-container">
-      <Card
-        src={src1}
-        alt={alt}
-        title={title1}
-        duration={duration1}
-        cost={cost1}/>
-      <Card
-        src={src2}
-        alt={alt}
-        title={title2}
-        duration={duration2}
-        cost={cost2}/>
-      <Card
-        src={src3}
-        alt={alt}
-        title={title3}
-        duration={duration3}
-        cost={cost3}/>
-    </div>
-
+      <ProductGrid />
   </div>
 </body>
