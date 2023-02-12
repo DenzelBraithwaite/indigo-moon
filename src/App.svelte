@@ -3,6 +3,7 @@
   // import Button from './lib/UI/buttons/Button.svelte'
   import ProductGrid from './lib/UI/cards/CardGrid.svelte';
   import Navbar from './lib/UI/navbar.svelte'
+  import HeroBanner from './lib/UI/HeroBanner.svelte'
 
   let src1 = "../../../../public/card1.webp";
   let src2 = "../../../../public/card2.webp";
@@ -28,12 +29,14 @@
 
   header {
     position: relative;
-    width: 100%;
+    width: 100vw;
   }
 
   .container {
     position: relative;
-    max-width: 1200px;
+    width: 1200px;
+    width: 90vw;
+    max-width: 90vw;
     margin: 0 auto;
   }
 </style>
@@ -42,6 +45,7 @@
 <body>
   <header>
     <Navbar />
+    <HeroBanner />
   </header>
   <div class="container">
       <ProductGrid />

@@ -7,7 +7,6 @@
         background-color: #fff;
         height: 0;
         padding: 2rem;
-        margin-bottom: 100px;
         line-height: 1;
 
         display: flex;
@@ -38,6 +37,8 @@
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Book Online</a>
-        <a href="#" class="insta-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/indigomoontarotwithtiffany/" class="insta-icon" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
     </div>
 </nav>
