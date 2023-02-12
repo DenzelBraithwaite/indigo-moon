@@ -6,9 +6,9 @@
   import HeroBanner from './lib/UI/HeroBanner.svelte'
   import Testimonials from './lib/UI/cards/Testimonials.svelte'
 
-  let src1 = "../../../../public/card1.webp";
-  let src2 = "../../../../public/card2.webp";
-  let src3 = "../../../../public/card3.webp";
+  let src1 = "../../../../card1.webp";
+  let src2 = "../../../../card2.webp";
+  let src3 = "../../../../card3.webp";
   let alt = "Woman's hands with rings";
   let title1 = "10 min Give it to me straight";
   let title2 = "20 min clarity";
@@ -95,7 +95,7 @@
     <HeroBanner />
   </header>
   <section class="sub-banner">
-    <img src="../public/sub_hero_banner.webp" alt="necklace swaying over cards">
+    <img src="../sub_hero_banner.webp" alt="necklace swaying over cards">
     <div class="sub-banner-text-group">
       <div class="content">
         <h1 class="sub-banner-title">My Background</h1>

@@ -5,7 +5,7 @@
 <style>
     .banner {
         position: relative;
-        background-image: linear-gradient(to bottom, #ffffff17, #0000006b),url(../../../public/hero_banner.webp);
+        background-image: linear-gradient(to bottom, #ffffff17, #0000006b),url(../../../hero_banner.webp);
         width: 100vw;
         height: 70vh;
         background-repeat: no-repeat;

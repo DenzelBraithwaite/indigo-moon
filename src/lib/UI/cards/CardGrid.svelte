@@ -2,9 +2,9 @@
     // JavaScript Below
     import Card from './Card.svelte';
   
-    let src1 = "../../../../public/card1.webp";
-    let src2 = "../../../../public/card2.webp";
-    let src3 = "../../../../public/card3.webp";
+    let src1 = "../../../../card1.webp";
+    let src2 = "../../../../card2.webp";
+    let src3 = "../../../../card3.webp";
     let alt = "Woman's hands with rings";
     let title1 = "10 min Give it to me straight";
     let title2 = "20 min clarity";
