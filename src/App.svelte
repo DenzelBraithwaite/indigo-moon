@@ -2,10 +2,11 @@
   // JavaScript Below
   // import Button from './lib/UI/buttons/Button.svelte'
   import ProductGrid from './lib/UI/cards/CardGrid.svelte';
-  import Navbar from './lib/UI/navbar.svelte'
-  import HeroBanner from './lib/UI/HeroBanner.svelte'
-  import Testimonials from './lib/UI/cards/Testimonials.svelte'
-  import Quote from './lib/UI/Quote.svelte'
+  import Navbar from './lib/UI/navbar.svelte';
+  import HeroBanner from './lib/UI/HeroBanner.svelte';
+  import Testimonials from './lib/UI/cards/Testimonials.svelte';
+  import Quote from './lib/UI/Quote.svelte';
+  import Video from './lib/UI/Video.svelte';
 
   let src1 = "../../../../card1.webp";
   let src2 = "../../../../card2.webp";
@@ -20,6 +21,10 @@
   let cost1 = "$20";
   let cost2 = "$30";
   let cost3 = "$40";
+
+  // Videos
+  let videoPoster = "../public/video-poster.png";
+  let videoSrc = "../public/vids/unboxing-egyptian.mp4";
   
 </script>
 
@@ -47,6 +52,7 @@
     font-weight: 400;
     margin: 3rem auto;
   }
+
 </style>
 
 <!-- HTML Below -->
@@ -66,5 +72,11 @@
   </div>
   <section class="quote-section">
     <Quote />
+  </section>
+  <section class="video-section container">
+    <Video
+      poster={videoPoster}
+      src={videoSrc}>
+	</Video>
   </section>
 </body>
