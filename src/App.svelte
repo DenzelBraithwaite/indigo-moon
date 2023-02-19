@@ -7,6 +7,7 @@
   import Testimonials from './lib/UI/cards/Testimonials.svelte';
   import Quote from './lib/UI/Quote.svelte';
   import Video from './lib/UI/Video.svelte';
+  import Map from './lib/UI/Map.svelte';
 
   let src1 = "../../../../card1.webp";
   let src2 = "../../../../card2.webp";
@@ -52,7 +53,6 @@
     font-weight: 400;
     margin: 3rem auto;
   }
-
 </style>
 
 <!-- HTML Below -->
@@ -80,4 +80,14 @@
       src={videoSrc}>
 	  </Video>
   </section>
+  <Map />
+
+  <footer>
+    <h1>Indigo Moon's Magical Shop and Tarot</h1>
+    <p>Indigomoontarotwithtiffany@gmail.com</p>
+    <a href="https://www.instagram.com/indigomoontarotwithtiffany/" class="insta-icon" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+  </a>
+    <p>&copy;2023 by Indigo Moon Tarot</p>
+  </footer>
 </body>
