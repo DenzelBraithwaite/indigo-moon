@@ -5,6 +5,7 @@
   import Navbar from './lib/UI/navbar.svelte'
   import HeroBanner from './lib/UI/HeroBanner.svelte'
   import Testimonials from './lib/UI/cards/Testimonials.svelte'
+  import Quote from './lib/UI/Quote.svelte'
 
   let src1 = "../../../../card1.webp";
   let src2 = "../../../../card2.webp";
@@ -40,6 +41,12 @@
     max-width: 90vw;
     margin: 0 auto;
   }
+
+  .services-title {
+    text-align: center;
+    font-weight: 400;
+    margin: 3rem auto;
+  }
 </style>
 
 <!-- HTML Below -->
@@ -48,8 +55,16 @@
     <Navbar />
     <HeroBanner />
   </header>
-  <Testimonials />
+  <section>
+    <div class="container">  
+      <Testimonials />
+    </div>
+  </section>
   <div class="container">
+    <h1 class="services-title">Our Services</h1>
       <ProductGrid />
   </div>
+  <section class="quote-section">
+    <Quote />
+  </section>
 </body>

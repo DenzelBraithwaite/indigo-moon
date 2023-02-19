@@ -1,6 +1,6 @@
 <script>
     // JavaScript Below
-    import Card from './Card.svelte';
+    import ProductCard from './ProductCard.svelte';
   
     let src1 = "../../../../card1.webp";
     let src2 = "../../../../card2.webp";
@@ -21,9 +21,10 @@
   <style>
     /* CSS Below */
     .grid {
+      position: relative;
+      width: 100%;
       display: grid;
       margin: 0 auto;
-      width: 1100px;
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
       justify-content: center;
@@ -32,19 +33,19 @@
   
   <!-- HTML Below -->
 <div class="grid">
-  <Card
+  <ProductCard
     src={src1}
     alt={alt}
     title={title1}
     duration={duration1}
     cost={cost1}/>
-  <Card
+  <ProductCard
     src={src2}
     alt={alt}
     title={title2}
     duration={duration2}
     cost={cost2}/>
-  <Card
+  <ProductCard
     src={src3}
     alt={alt}
     title={title3}

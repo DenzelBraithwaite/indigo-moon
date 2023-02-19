@@ -13,34 +13,37 @@ let author3 = 'JennaHS';
     .container {
         margin: 5rem auto;
     }
-
+    
     .container h1,
     .container h2{
         text-align: center;
         color: #727557;
         font-weight: normal;
     }
-
-    .card{
+    
+    .container h2 {
+        font-size: 1.125rem;
+        font-weight: 100;
+    }
+    
+    .quote-group{
         position: relative;
-        height: 350px;
         padding: 10px;
         text-align: center;
     }
 
     .grid {
+        padding: 1rem;
         margin: 5rem auto;
-        width: 50%;
-
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 30%);
         gap: 1rem;
         justify-content: center;
     }
 
     .quote-icon {
         fill: #727557;
-        transform: scale(0.5);
+        scale: 0.5;
     }
 
     .text{
@@ -51,9 +54,9 @@ let author3 = 'JennaHS';
 <!-- HTML Below -->
 <div class="container">
     <h1>Client Testimonials</h1>
-    <h2>Hear What They're Saying</h2>
+    <h2>What They're Saying</h2>
     <div class="grid">
-        <div class="card">
+        <div class="quote-group">
             <svg class="quote-icon">
                 <g>
                     <path d="M89.9 51H51.6c-1.5 0-2.8 1.2-2.8 2.8v38.3c0 1.5 1.2 2.8 2.8 2.8h18.1c-.2 4.3-.9 9.1-3.2 15.2-2.3 5.9-11.1 13.1-16.3 16.2-.9.5-1.4 1.4-1.4 2.4v17.6c0 .9.5 1.8 1.3 2.3.5.3 1 .5 1.5.5.4 0 .8-.1 1.1-.2 9.1-4 16.7-9.4 22.6-15.9 5.8-6.5 10.2-13.8 13.1-21.6 2.9-7.8 4.3-19.1 4.3-33.7V53.8c0-1.5-1.2-2.8-2.8-2.8zm-2.8 26.6c0 13.9-1.3 24.6-4 31.8-2.6 7.1-6.7 13.8-12 19.8-4.5 5-10.1 9.3-16.7 12.7v-11.6c4.7-3 14.3-10.5 17.3-18.1 3.2-8.3 3.6-14.7 3.6-20 0-1.5-1.2-2.8-2.8-2.8H54.4V56.6h32.7v21z"></path>
@@ -64,7 +67,7 @@ let author3 = 'JennaHS';
             <p class="author">{author1}</p>
         </div>
 
-        <div class="card">
+        <div class="quote-group">
             <svg class="quote-icon">
                 <g>
                     <path d="M89.9 51H51.6c-1.5 0-2.8 1.2-2.8 2.8v38.3c0 1.5 1.2 2.8 2.8 2.8h18.1c-.2 4.3-.9 9.1-3.2 15.2-2.3 5.9-11.1 13.1-16.3 16.2-.9.5-1.4 1.4-1.4 2.4v17.6c0 .9.5 1.8 1.3 2.3.5.3 1 .5 1.5.5.4 0 .8-.1 1.1-.2 9.1-4 16.7-9.4 22.6-15.9 5.8-6.5 10.2-13.8 13.1-21.6 2.9-7.8 4.3-19.1 4.3-33.7V53.8c0-1.5-1.2-2.8-2.8-2.8zm-2.8 26.6c0 13.9-1.3 24.6-4 31.8-2.6 7.1-6.7 13.8-12 19.8-4.5 5-10.1 9.3-16.7 12.7v-11.6c4.7-3 14.3-10.5 17.3-18.1 3.2-8.3 3.6-14.7 3.6-20 0-1.5-1.2-2.8-2.8-2.8H54.4V56.6h32.7v21z"></path>
@@ -75,7 +78,7 @@ let author3 = 'JennaHS';
             <p class="author">{author2}</p>
         </div>
 
-        <div class="card">
+        <div class="quote-group">
             <svg class="quote-icon">
                 <g>
                     <path d="M89.9 51H51.6c-1.5 0-2.8 1.2-2.8 2.8v38.3c0 1.5 1.2 2.8 2.8 2.8h18.1c-.2 4.3-.9 9.1-3.2 15.2-2.3 5.9-11.1 13.1-16.3 16.2-.9.5-1.4 1.4-1.4 2.4v17.6c0 .9.5 1.8 1.3 2.3.5.3 1 .5 1.5.5.4 0 .8-.1 1.1-.2 9.1-4 16.7-9.4 22.6-15.9 5.8-6.5 10.2-13.8 13.1-21.6 2.9-7.8 4.3-19.1 4.3-33.7V53.8c0-1.5-1.2-2.8-2.8-2.8zm-2.8 26.6c0 13.9-1.3 24.6-4 31.8-2.6 7.1-6.7 13.8-12 19.8-4.5 5-10.1 9.3-16.7 12.7v-11.6c4.7-3 14.3-10.5 17.3-18.1 3.2-8.3 3.6-14.7 3.6-20 0-1.5-1.2-2.8-2.8-2.8H54.4V56.6h32.7v21z"></path>

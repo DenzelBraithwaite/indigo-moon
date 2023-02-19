@@ -11,14 +11,13 @@
 
 <style>
     /* CSS Below */
-    .card {
+    .product-card {
         position: relative;
         border: 1px solid #727557a1;
         background-color: #fff;
-        width: 350px;
     }
 
-    .card img {
+    .product-card img {
         width: 100%;
         height: 50%;
         padding-bottom: 1rem;
@@ -30,7 +29,7 @@
         display: flex;
         flex-direction: column;
         width: 80%;
-        height: 40%;
+        height: 50%;
         margin: 0 auto;
         padding-bottom: 1rem;
         justify-content: space-between;
@@ -41,13 +40,14 @@
         font-size: 1.5rem;
         padding-bottom: 1rem;
         border-bottom: 1px solid #72755767;
+        height: 5rem;
     }
 
 
 </style>
 
 <!-- HTML Below -->
-<div class="card">
+<div class="product-card">
     <img {src} {alt}>
     <div class="text-section">
         <div class="content">
