@@ -75,8 +75,9 @@
   </section>
   <section class="video-section container">
     <Video
+      title="Unboxing Egyptian Tarot Grand Trumps Deck"
       poster={videoPoster}
       src={videoSrc}>
-	</Video>
+	  </Video>
   </section>
 </body>

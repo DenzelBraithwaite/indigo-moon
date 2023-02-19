@@ -15,6 +15,7 @@
         position: relative;
         border: 1px solid #727557a1;
         background-color: #fff;
+        max-width:400px;
     }
 
     .product-card img {
