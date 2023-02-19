@@ -16,7 +16,7 @@
 <style>
     footer{
         text-align: center;
-        background-color: #444;
+        background-color: #654664;
         margin: 0 auto;
         padding: 2rem 0;
         color: #fff;
@@ -46,7 +46,7 @@
     .email:active {
         cursor: pointer;
         text-decoration: underline;
-        color: #6741d9;
+        color: #654664;
     }
 
     .insta-icon {
@@ -55,7 +55,7 @@
 
     .insta-icon:hover,
     .insta-icon:active {
-        color: #6741d9;
+        color: #654664;
     }
 
     p {

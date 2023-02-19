@@ -17,7 +17,7 @@ let author3 = 'JennaHS';
     .container h1,
     .container h2{
         text-align: center;
-        color: #727557;
+        color: #4c368f;
         font-weight: normal;
     }
     
@@ -42,7 +42,7 @@ let author3 = 'JennaHS';
     }
 
     .quote-icon {
-        fill: #727557;
+        fill: #4c368f;
         scale: 0.5;
     }
 

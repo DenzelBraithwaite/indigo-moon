@@ -7,7 +7,7 @@ export let author = "Buddha";
 <style>
     /* CSS Below */
     section {
-        background-color: #727557;
+        background-color: #654664;
         height: 40vh;
         margin: 3rem 0;
         padding: 1rem;

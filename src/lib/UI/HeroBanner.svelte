@@ -5,7 +5,7 @@
 <style>
     .banner {
         position: relative;
-        background-image: linear-gradient(to bottom, #ffffff17, #0000006b),url(../../../hero_banner.webp);
+        background-image: linear-gradient(to bottom, #ffffff17, #0000006b),url(../../../public/bg.webp);
         width: 100vw;
         height: 70vh;
         background-repeat: no-repeat;
@@ -29,7 +29,7 @@
         font-size: 3.75rem;
         line-height: 1.25;
         font-weight: 400;
-        text-shadow: 0 2px 10px #0000004b;
+        text-shadow: 0 2px 10px #0000005e;
     }
 
     .subtitle {
@@ -71,7 +71,8 @@
   }
 
   .sub-banner-text-group {
-    background-color: #727557;
+    /* background-color: #563c55; */
+    background: linear-gradient(to bottom, #634462, #8a5f89,  #a878a7);
     color: #fff;
     width: 50%;
 

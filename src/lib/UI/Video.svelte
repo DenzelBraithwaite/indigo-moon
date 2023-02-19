@@ -13,6 +13,7 @@
         margin-left: auto;
         margin-right: auto;
         border-radius: 0.5rem;
+        box-shadow: 0 2px 10px #65466497;
     }
 
     .title {

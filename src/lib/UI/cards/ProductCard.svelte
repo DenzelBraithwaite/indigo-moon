@@ -13,9 +13,11 @@
     /* CSS Below */
     .product-card {
         position: relative;
-        border: 1px solid #727557a1;
+        /* border: 1px solid #4c368f45; */
         background-color: #fff;
         max-width:400px;
+        box-shadow: 2px 0 10px #00000034;
+        border-radius: 8px;
     }
 
     .product-card img {
@@ -23,6 +25,8 @@
         height: 50%;
         padding-bottom: 1rem;
         object-fit: cover;
+        border-radius: 8px 8px 0 0;
+        
     }
 
     .text-section {
@@ -40,7 +44,7 @@
         font-weight: 500;
         font-size: 1.5rem;
         padding-bottom: 1rem;
-        border-bottom: 1px solid #72755767;
+        border-bottom: 1px solid #4c368f64;
         height: 5rem;
     }
 

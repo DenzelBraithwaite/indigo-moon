@@ -2,9 +2,9 @@
     // JavaScript Below
     import ProductCard from './ProductCard.svelte';
   
-    let src1 = "../../../../card1.webp";
-    let src2 = "../../../../card2.webp";
-    let src3 = "../../../../card3.webp";
+    let src1 = "bg.webp";
+    let src2 = "bg.webp";
+    let src3 = "bg.webp";
     let alt = "Woman's hands with rings";
     let title1 = "10 min Give it to me straight";
     let title2 = "20 min clarity";
@@ -45,7 +45,7 @@
     title={title2}
     duration={duration2}
     cost={cost2}/>
-  <ProductCard
+    <ProductCard
     src={src3}
     alt={alt}
     title={title3}

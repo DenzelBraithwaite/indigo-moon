@@ -10,9 +10,6 @@
   import Map from './lib/UI/Map.svelte';
   import Footer from './lib/UI/Footer.svelte';
 
-  let src1 = "../../../../card1.webp";
-  let src2 = "../../../../card2.webp";
-  let src3 = "../../../../card3.webp";
   let alt = "Woman's hands with rings";
   let title1 = "10 min Give it to me straight";
   let title2 = "20 min clarity";
@@ -26,7 +23,6 @@
 
   // Videos
   let videoPoster = "../public/video-poster.png";
-  let videoSrc = "../public/vids/unboxing-egyptian.mp4";
   
 </script>
 
@@ -52,7 +48,7 @@
     <Video
       title="Unboxing Egyptian Tarot Grand Trumps Deck"
       poster={videoPoster}
-      src={videoSrc}>
+      src="../public/unboxing-egyptian.mp4">
 	  </Video>
   </section>
   <Map />
