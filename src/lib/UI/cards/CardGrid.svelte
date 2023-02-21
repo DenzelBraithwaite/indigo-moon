@@ -22,14 +22,13 @@
     /* CSS Below */
     .grid {
       position: relative;
-      background-color: red;
       width: 100%;
       display: grid;
       margin: 0 auto;
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
-      justify-content: center;
-      align-items: center;
+      justify-items: center;
+      /* align-items: center; */ /* Not sure if I need?*/
     }
   </style>
   

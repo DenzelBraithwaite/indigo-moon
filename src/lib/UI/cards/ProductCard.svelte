@@ -14,7 +14,7 @@
     .product-card {
         position: relative;
         background-color: #fff;
-        /* max-width: 400px; causing horizontal align issues*/
+        max-width: 400px;
         box-shadow: 2px 0 10px #00000034;
         border-radius: 8px;
     }

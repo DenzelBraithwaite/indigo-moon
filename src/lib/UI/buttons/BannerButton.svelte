@@ -9,12 +9,13 @@
     .btn:link,
     .btn:visited {
     background-color: #654664;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
     display: inline-block;
     text-decoration: none;
     border: none;
     color: #fff;
-    padding: 0.75rem 1rem;
+    padding: 1rem 2rem;
     border-radius: 4px;
     box-shadow: 0 2px 20px #ffffff50;
 

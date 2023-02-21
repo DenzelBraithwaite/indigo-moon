@@ -33,7 +33,7 @@
     <HeroBanner />
   </header>
   <div class="container">
-    <h1 class="services-title">Our Services</h1>
+    <h1 class="services-title">Readings</h1>
     <ProductGrid />
   </div>
   <section>
