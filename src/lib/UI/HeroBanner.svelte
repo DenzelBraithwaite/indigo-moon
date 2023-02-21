@@ -1,11 +1,11 @@
 <script>
-
+    import BtnBanner from './buttons/BannerButton.svelte';
 </script>
 
 <style>
     .banner {
         position: relative;
-        background-image: linear-gradient(to bottom, #ffffff17, #0000006b),url(../../../public/bg.webp);
+        background-image: linear-gradient(to bottom, #ffffff17, #00000093),url(../../../public/bg.webp);
         width: 100vw;
         height: 70vh;
         background-repeat: no-repeat;
@@ -33,8 +33,10 @@
     }
 
     .subtitle {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         font-weight: lighter;
+        margin-bottom: 4rem;
+        text-shadow: 0 2px 10px #ffffff;
     }
 
     
@@ -92,6 +94,7 @@
     <div class="content">
         <h1 class="title">Experience Indigo Moon's Magical Shop and Tarot</h1>
         <p class="subtitle">A Spiritual Feeling</p>
+        <BtnBanner color='purple' text='Get Started'/>
     </div>
 </div>
 <section class="sub-banner">

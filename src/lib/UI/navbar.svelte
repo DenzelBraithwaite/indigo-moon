@@ -4,18 +4,24 @@
 
 <style>
     nav {
-        background-color: #fff;
-        height: 0;
-        padding: 2rem;
+        background-color: #000000a6;
+        color: #fff;
+        padding: 0.25rem 2rem;
         line-height: 1;
+        width: 100vw;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        position: absolute;
+        top: 0;
+        z-index: 1;
     }
 
     .title {
         font-weight: normal;
+        cursor: default;
     }
 
     .nav-options {
@@ -23,11 +29,18 @@
         gap: 2rem;
     }
 
-    .nav-options a{
+    .nav-options a:link,
+    .nav-options a:visited{
+        color: #fff;
         text-decoration: none;
         font-size: 1.125rem;
-        color: #444444dc;
         display: inline-block;
+    }
+
+    .nav-options a:hover,
+    .nav-options a:active{
+        color: #654664;
+        cursor: pointer;
     }
 </style>
 

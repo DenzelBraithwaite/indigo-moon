@@ -60,6 +60,6 @@
             <p class="duration">{duration}</p>
             <p class="cost">{cost}</p>    
         </div>
-        <Button text="Book Now"/>
+        <Button color='purple' text="Book Now"/>
     </div>
 </div>
