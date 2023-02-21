@@ -4,6 +4,7 @@
 
 <style>
     nav {
+        font-family: 'Shantell Sans', 'Mynerve', cursive;
         background-color: #000000a6;
         color: #fff;
         padding: 0.25rem 2rem;

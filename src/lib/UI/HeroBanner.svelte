@@ -7,7 +7,7 @@
         position: relative;
         background-image: linear-gradient(to bottom, #ffffff17, #00000093),url(../../../public/bg.webp);
         width: 100vw;
-        height: 70vh;
+        height: 90vh;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -20,7 +20,7 @@
     .content {
         color: #fff;
         min-width: 350px;
-        width: 40%;
+        width: 50%;
         margin: 0 auto;
         text-align: center;
     }
@@ -29,13 +29,12 @@
         font-size: 3.75rem;
         line-height: 1.25;
         font-weight: 400;
-        text-shadow: 0 2px 10px #0000005e;
+        text-shadow: 0 2px 20px #000000c4;
     }
 
     .subtitle {
         font-size: 1.5rem;
         font-weight: lighter;
-        margin-bottom: 4rem;
         text-shadow: 0 2px 10px #ffffff;
     }
 
@@ -94,8 +93,8 @@
     <div class="content">
         <h1 class="title">Experience Indigo Moon's Magical Shop and Tarot</h1>
         <p class="subtitle">A Spiritual Feeling</p>
-        <BtnBanner color='purple' text='Get Started'/>
-    </div>
+      </div>
+      <BtnBanner color='purple' text='Get Started'/>
 </div>
 <section class="sub-banner">
     <img src="../sub_hero_banner.webp" alt="necklace swaying over cards">
