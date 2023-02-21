@@ -16,7 +16,8 @@
 <style>
     footer{
         text-align: center;
-        background-color: #654664;
+        /* background-color: #654664; */
+        background-color: #2b1e2b;
         margin: 0 auto;
         padding: 2rem 0;
         color: #fff;
