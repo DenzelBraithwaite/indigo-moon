@@ -32,15 +32,15 @@
     <Navbar />
     <HeroBanner />
   </header>
+  <div class="container">
+    <h1 class="services-title">Our Services</h1>
+    <ProductGrid />
+  </div>
   <section>
     <div class="container">  
       <Testimonials />
     </div>
   </section>
-  <div class="container">
-    <h1 class="services-title">Our Services</h1>
-      <ProductGrid />
-  </div>
   <section class="quote-section">
     <Quote />
   </section>

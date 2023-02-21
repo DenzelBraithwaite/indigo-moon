@@ -19,7 +19,7 @@
     box-shadow: 0 2px 20px #ffffff50;
 
     position: absolute;
-    bottom: 1rem;
+    bottom: 4rem;
     right: 50%;
     transform: translate(50%);
   }

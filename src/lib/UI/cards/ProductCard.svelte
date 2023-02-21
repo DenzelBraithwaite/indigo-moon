@@ -13,9 +13,8 @@
     /* CSS Below */
     .product-card {
         position: relative;
-        /* border: 1px solid #4c368f45; */
         background-color: #fff;
-        max-width:400px;
+        /* max-width: 400px; causing horizontal align issues*/
         box-shadow: 2px 0 10px #00000034;
         border-radius: 8px;
     }
