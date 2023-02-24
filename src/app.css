@@ -1,10 +1,14 @@
 :root {
+  --primary-grey: #444;
+  --secondary-purple: #654664;
+  --secondary-purple-hover: #724f71;
+
+
   font-family: 'Andika', Inter, system-ui, Avenir, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color: #444;
-  background-color: #ededed;
+  background-color: #fffafe;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
