@@ -7,7 +7,7 @@
         position: relative;
         background-image: linear-gradient(to bottom, #ffffff17, #00000093),url(../../../public/bg.webp);
         width: 100vw;
-        height: 90vh;
+        height: 80vh;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -15,7 +15,7 @@
         display: flex;
         align-items: center;
         justify-items: center;
-        margin-bottom: 10rem;
+        margin-bottom: 15rem;
     }
 
     .content {

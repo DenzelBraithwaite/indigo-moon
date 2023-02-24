@@ -14,16 +14,10 @@ let author3 = 'JennaHS';
         margin: 5rem auto;
     }
     
-    .container h1,
-    .container h2{
+    .container h1 {
         text-align: center;
-        color: #4c368f;
+        color: var(--secondary-purple);
         font-weight: normal;
-    }
-    
-    .container h2 {
-        font-size: 1.125rem;
-        font-weight: 100;
     }
     
     .quote-group{
@@ -34,7 +28,7 @@ let author3 = 'JennaHS';
 
     .grid {
         padding: 1rem;
-        margin: 5rem auto;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 30%);
         gap: 1rem;
@@ -42,8 +36,12 @@ let author3 = 'JennaHS';
     }
 
     .quote-icon {
-        fill: #4c368f;
+        fill: #654664;
         scale: 0.5;
+    }
+
+    .title {
+        font-size: 2rem;
     }
 
     .text{
@@ -53,8 +51,7 @@ let author3 = 'JennaHS';
 
 <!-- HTML Below -->
 <div class="container">
-    <h1>Client Testimonials</h1>
-    <h2>What They're Saying</h2>
+    <h1 class="title">What my clients say</h1>
     <div class="grid">
         <div class="quote-group">
             <svg class="quote-icon">

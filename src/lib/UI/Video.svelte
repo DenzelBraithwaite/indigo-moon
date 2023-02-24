@@ -13,13 +13,15 @@
         margin-left: auto;
         margin-right: auto;
         border-radius: 0.5rem;
-        box-shadow: 0 2px 10px #65466497;
+        box-shadow: 0 2px 10px #65466497; /* --secondary-purple, transparent */
     }
 
     .title {
+        font-size: 2rem;
         margin: 0 auto;
         text-align: center;
         margin-top: 5rem;
+        color: var(--secondary-purple);
     }
 </style>
 <div class="container">

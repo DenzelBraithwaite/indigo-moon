@@ -25,6 +25,7 @@
       width: 100%;
       display: grid;
       margin: 0 auto;
+      margin-bottom: 15rem;
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
       justify-items: center;

@@ -60,6 +60,7 @@
   /* CSS Below */
   body {
     position: relative;
+    overflow-x: hidden;
   }
 
   header {
@@ -76,8 +77,10 @@
   }
 
   .services-title {
+    color: var(--secondary-purple);
     text-align: center;
     font-weight: 400;
     margin: 3rem auto;
+    font-size: 2rem;
   }
 </style>

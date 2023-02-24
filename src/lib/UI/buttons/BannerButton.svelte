@@ -8,7 +8,7 @@
     /* CSS Below */
     .btn:link,
     .btn:visited {
-    background-color: #654664;
+    background-color: var(--secondary-purple);
     font-size: 1.5rem;
     text-transform: uppercase;
     display: inline-block;

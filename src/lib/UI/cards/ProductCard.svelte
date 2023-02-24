@@ -16,7 +16,7 @@
         background-color: #fff;
         max-width: 400px;
         box-shadow: 2px 0 10px #00000034;
-        border-radius: 8px;
+        border-radius: 0.5rem;
     }
 
     .product-card img {
@@ -24,7 +24,7 @@
         height: 50%;
         padding-bottom: 1rem;
         object-fit: cover;
-        border-radius: 8px 8px 0 0;
+        border-radius: 0.5rem 0.5rem 0 0;
         
     }
 
@@ -43,7 +43,7 @@
         font-weight: 500;
         font-size: 1.5rem;
         padding-bottom: 1rem;
-        border-bottom: 1px solid #4c368f64;
+        border-bottom: 1px solid #65466483; /* var(--secondary-purple), transparent*/
         height: 5rem;
     }
 
