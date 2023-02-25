@@ -16,47 +16,52 @@
 <style>
     footer{
         text-align: center;
-        background-color: #271f27;
+        /* background-color: #271f27; */
         margin: 0 auto;
         padding: 2rem 0;
-        color: #fff;
+        color: var(--primary-grey);        
     }
-
+    
     .container {
         width: 70%;
         margin: 0 auto;
     }
-
+    
     .title {
         font-size: 1.5rem;
         font-weight: 400;
         padding: 0;
         margin: 0;
+        margin-bottom: 1rem;
     }
-
+    
     .email:visited,
     .email:link {
+        display: inline-block;
         font-size: 1rem;
         font-weight: 300;
         text-decoration: none;
-        color: #fff;
+        color: var(--primary-grey);
+        margin-bottom: 1rem;
     }
 
     .email:hover,
     .email:active {
         cursor: pointer;
         text-decoration: underline;
-        /* color: #724F71; */
+        color: var(--secondary-purple);
     }
 
     .insta-icon {
-        color: #fff;
-        transition: scale 0.25s ease-out;
+        color: var(--primary-grey);
+        transition: scale 0.25 ease-in;
     }
-
+    
     .insta-icon:hover,
     .insta-icon:active {
-        scale: 1.5;
+        transition: scale 0.125s ease-out;
+        color: var(--secondary-purple);
+        scale: 1.25;
     }
 
     p {
