@@ -10,17 +10,18 @@
     width: 100vw;
     height: 500px;
     background-image: url(map-placeholder.png);
-    margin: 1rem auto 15rem;
+    margin: 1rem auto 5rem;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   h1 {
     font-size: 2rem;
+    font-weight: normal;
     color: var(--secondary-purple);
     text-align: center;
     margin: 0;
-    margin-top: 14rem;
+    margin-top: 15rem;
     padding: 0;
   }
 </style>
