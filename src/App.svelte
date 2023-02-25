@@ -9,6 +9,7 @@
   import Video from './lib/UI/Video.svelte';
   import Map from './lib/UI/Map.svelte';
   import Footer from './lib/UI/Footer.svelte';
+  import About from './lib/About.svelte';
 
   let alt = "Woman's hands with rings";
   let title1 = "10 min Give it to me straight";
@@ -44,13 +45,12 @@
   <section class="quote-section">
     <Quote />
   </section>
-  <section class="video-section container">
-    <Video
+  <About />
+    <!-- <Video
       title="Unboxing Egyptian Tarot Grand Trumps Deck"
       poster={videoPoster}
-      src="../public/unboxing-egyptian.mp4">
-	  </Video>
-  </section>
+      src="vids/unboxing-egyptian.mp4">
+	  </Video> -->
   <Map />
   <Footer />
 </body>
