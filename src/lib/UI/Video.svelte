@@ -7,13 +7,17 @@
 <style>
     video {
         display: block;
-        width: 90%;
+        width: 80%;
         margin-top: 1rem;
         margin-bottom: 5rem;
         margin-left: auto;
         margin-right: auto;
         border-radius: 0.5rem;
         box-shadow: 0 2px 10px #65466497; /* --secondary-purple, transparent */
+    }
+
+    .video-section {
+        margin-bottom: 15rem;
     }
 
     .title {
@@ -24,9 +28,11 @@
         color: var(--secondary-purple);
     }
 </style>
-<div class="container">
-    <h1 class="title">{title}</h1>
-    <video controls {poster} {src} {title}>
-        <track kind="captions">
-    </video>
-</div>
+<section class="video-section container">
+    <div class="container">
+        <h1 class="title">{title}</h1>
+        <video controls {poster} {src} {title}>
+            <track kind="captions">
+        </video>
+    </div>
+</section>
