@@ -1,5 +1,4 @@
 <script>
-  // JavaScript Below
   // import Button from './lib/UI/buttons/Button.svelte'
   import ProductGrid from './lib/UI/cards/CardGrid.svelte';
   import Navbar from './lib/UI/navbar.svelte';
@@ -73,47 +72,88 @@
   
 </script>
 
-<!-- HTML Below -->
 <body>
-  <header>
-    <Navbar />
-    <HeroBanner />
-  </header>
+  <!-- DESKTOP -->
+  <div class="desktop">
+    <nav>
+      <Navbar />
+    </nav>
+      <header>
+        <HeroBanner />
+      </header>
+      <main>
+        <div class="main-container">
+          <ProductGrid btnText="Book Now" title="Readings" cards={readingsCards} />
+        </div>
+        <div class="main-container">  
+          <Testimonials />
+        </div>
+        <div class="main-container">
+          <ProductGrid btnText="Buy Now" title="Candles" cards= {candleCards}/>
+        </div>
+        <Quote />
+        <div class="main-container">
+          <About />
+        </div>
+        <div class="main-container">
+          <Map />
+        </div>
+        <!-- <Video
+        title="Unboxing Egyptian Tarot Grand Trumps Deck"
+        poster={videoPoster}
+        src="vids/unboxing-egyptian.mp4">
+      </Video> -->
+      <footer>
+        <Footer />
+      </footer>
+    </main>
+</div>
+
+<!-- MOBILE -->
+<div class="mobile">
   <main>
-    <div class="main-container">
-      <ProductGrid btnText="Book Now" title="Readings" cards={readingsCards} />
-    </div>
-    <div class="main-container">  
-      <Testimonials />
-    </div>
-    <div class="main-container">
-      <ProductGrid btnText="Buy Now" title="Candles" cards= {candleCards}/>
-    </div>
-      <Quote />
-    <div class="main-container">
-      <About />
-    </div>
-    <div class="main-container">
-      <Map />
-    </div>
-    <!-- <Video
-      title="Unboxing Egyptian Tarot Grand Trumps Deck"
-      poster={videoPoster}
-      src="vids/unboxing-egyptian.mp4">
-	  </Video> -->
-    <footer>
-      <Footer />
-    </footer>
-  </main>
+      <header>
+        <HeroBanner />
+      </header>
+      <main>
+        <div class="m__main-container">
+          <ProductGrid btnText="Book Now" title="Readings" cards={readingsCards} />
+        </div>
+        <div class="m__main-container">  
+          <Testimonials />
+        </div>
+        <div class="m__main-container">
+          <ProductGrid btnText="Buy Now" title="Candles" cards= {candleCards}/>
+        </div>
+        <Quote />
+        <div class="m__main-container">
+          <About />
+        </div>
+        <div class="m__main-container">
+          <Map />
+        </div>
+      <footer>
+        <Footer />
+      </footer>
+    </main>
+    <nav>
+      <Navbar />
+    </nav>
+</div>
 </body>
 
 
 <style>
-  /* CSS Below */
+  .mobile {
+    display: none;
+  }
+
   body {
     position: relative;
     overflow-x: hidden;
     background: linear-gradient(to bottom, #351733, #4793f76c);
+    height: 100vh;
+    width: 100vw;
   }
 
   main {
@@ -127,5 +167,47 @@
 
   header {
     position: relative;
+  }
+
+  @media (max-width: 1000px) {
+    .desktop {
+      display: none;
+    }
+
+    .mobile {
+      display: flex;
+    }
+
+    body {
+      position: relative;
+      overflow-x: hidden;
+      background: linear-gradient(to bottom, #351733, #4793f76c);
+      height: 100vh;
+      width: 100vw;
+    }
+
+    main {
+      position: relative;
+      background-color: #fffafef3;
+      width: 100%;
+      height: 100vh;
+      overflow-y: scroll;
+      margin: 0 auto;
+      border-radius: 0;
+      box-shadow: 0 2px 10px #00000025;
+      transform: translate(0, 0);
+
+    }
+
+    header {
+      z-index: 1;
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      position: sticky;
+      bottom: 0; 
+    }
   }
 </style>

@@ -1,9 +1,7 @@
 <script>
-    // JavaScript Below
     
 </script>
   
-<!-- HTML Below -->
 <section>
   <div class="container">
     <h1 class="sub-banner-title">My Background</h1>
@@ -19,13 +17,11 @@
           From a young age I realized I was blessed with a gift that enabled me to see and sense things others could not. 
           Let me do for you what I've done for so many, for over 8 years.
         </p>
-      </div>
     </div>  
   </div>
 </section>
 
 <style>
-  /* CSS Below */
   h1 {
     font-size: 2rem;
     font-weight: normal;
@@ -36,8 +32,6 @@
 
   section {
     position: relative;
-    /* background-color: var(--secondary-purple); */
-    height: 60vh;
     padding: 1rem;
     margin-bottom: 10rem;
   }
@@ -78,5 +72,19 @@
 
   p {
     line-height: 1.75rem;
+  }
+
+  @media (max-width: 1000px) {
+    section {
+      margin-bottom: 8rem;
+    }
+
+    .wrapper {
+      flex-direction: column;
+    }
+
+    .content {
+      transform: translate(0, -10%);
+    }
   }
 </style>

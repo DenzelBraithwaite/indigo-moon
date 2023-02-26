@@ -7,24 +7,26 @@
     // export let gridType = '';
   </script>
   
-<!-- HTML Below -->
-<h1 class="services-title">{title}</h1>
-<div class="grid">
-  <!-- {#if gridType === "readings"} -->
+  <h1 class="services-title">{title}</h1>
+  <div class="grid">
     {#each cards as card}
-      <ProductCard
-        src={card.src}
-        alt={card.alt}
-        title={card.title}
-        description={card.description}
-        cost={card.cost}
-        {btnText}/>
+    <ProductCard
+    src={card.src}
+    alt={card.alt}
+    title={card.title}
+    description={card.description}
+    cost={card.cost}
+    {btnText}/>
     {/each}
+    <a href="#" class="m__more">See more</a>
   </div>
   <a href="#" class="more">See more</a>
     
-<!-- CSS Below -->
 <style>
+  .m__more {
+    display: none;
+  }
+
   .grid {
     position: relative;
     margin: 0 auto;
@@ -58,5 +60,40 @@
   .more:hover,
   .more:active {
     text-decoration: underline;
+  }
+
+  @media (max-width: 1000px) {
+    .more:link,
+    .more:visited {
+      display: none;
+    }
+
+    .grid {
+      grid-template-columns: 250px;
+      row-gap: 5rem;
+      justify-content: center;
+    }
+
+    .services-title {
+      padding-top: 0;
+    }
+
+    .m__more:link,
+    .m__more:visited {
+      display: inline-block;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      margin: 0 auto 10rem;
+      border: 2px solid #724f71a1;
+      border-radius: 1rem;
+      color: #724f71;
+      font-size: 1.125rem;
+      transform: translate(0, -100%);
+    }
+
+    .m__more:active {
+      background-color: #724f71;
+      color: #fff;
+    }
   }
 </style>

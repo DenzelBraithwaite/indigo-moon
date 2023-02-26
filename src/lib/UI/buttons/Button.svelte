@@ -1,11 +1,13 @@
 <script>
-    // JavaScript Below
     export let text;
     export let color;
 </script>
 
+{#if color === 'purple'}
+<a class="btn btn-purple"  href="#">{text}</a>
+{/if }
+
 <style>
-    /* CSS Below */
     .btn:link,
     .btn:visited {
       text-align: center;
@@ -35,8 +37,3 @@
     background: linear-gradient(to right, #724f71, #65466492);
   }
 </style>
-
-<!-- HTML Below -->
-{#if color === 'purple'}
-  <a class="btn btn-purple"  href="#">{text}</a>
-{/if }

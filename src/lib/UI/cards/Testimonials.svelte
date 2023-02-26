@@ -1,5 +1,4 @@
 <script>
-    // JavaScript Below
 let testimonial1 = "Indigo is highly receptive and articulate. She read me and my poi's energy really well. I'd definitely recommend her to anyone who asked and would definitely consider going back to her for anything I need help with in the future.";
 let testimonial2 = "She's ABSOLUTELY fantastic! Could read perfectly into my situation! Thank you SO much! Really needed to hear this!";
 let testimonial3 = "Great reading! Accurate and delivered in quickly 💜";
@@ -8,7 +7,6 @@ let author2 = 'Sarah89';
 let author3 = 'JennaHS';
 </script>
 
-<!-- HTML Below -->
 <section class="container">
     <h1 class="title">What my clients say</h1>
     <div class="flex-box">
@@ -48,11 +46,6 @@ let author3 = 'JennaHS';
 </section>
 
 <style>
-    /* CSS Below */
-    .container {
-        margin: 5rem auto;
-    }
-    
     .container h1 {
         text-align: center;
         color: var(--secondary-purple);
@@ -83,5 +76,29 @@ let author3 = 'JennaHS';
 
     .text{
         font-weight: lighter;
+    }
+
+    @media (max-width: 1000px) {
+        .container {
+            margin-bottom: 10rem;
+        }
+        
+        .flex-box {
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .quote-group {
+            background-color: #fffafe;
+            border-radius: 1rem;
+            box-shadow: 0 2px 10px #00000028;
+            padding: 1rem;
+        }
+
+        .author {
+            padding-top: 1rem;
+            font-size: 1.1rem;
+        }
     }
 </style>

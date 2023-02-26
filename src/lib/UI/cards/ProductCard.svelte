@@ -1,5 +1,4 @@
 <script>
-    // JavaScript Below
     import Button from '../buttons/Button.svelte'
 
     export let src;
@@ -10,7 +9,6 @@
     export let btnText = '';
 </script>
 
-<!-- HTML Below -->
 <div class="product-card">
     <img {src} {alt}>
     <div class="text-section">
@@ -24,7 +22,6 @@
 </div>
 
 <style>
-    /* CSS Below */
     .product-card {
         position: relative;
         background-color: #ffffff;
@@ -84,5 +81,21 @@
         position: absolute;
         top: 1rem;
         left: -2rem;
+    }
+
+    @media (max-width: 1000px) {
+        .product-card {
+        }
+
+        .product-card img {
+            width: 250px;
+        }
+
+        .text-section {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            padding-bottom: 0;
+        }
     }
 </style>
