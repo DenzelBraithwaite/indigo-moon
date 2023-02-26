@@ -56,4 +56,16 @@
   .more:active {
     text-decoration: underline;
   }
+
+  @media (max-width: 1000px) {
+    .grid {
+      grid-template-columns: 250px;
+      row-gap: 5rem;
+      justify-content: center;
+    }
+
+    .services-title {
+      padding-top: 0;
+    }
+  }
 </style>

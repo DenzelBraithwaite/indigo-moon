@@ -46,10 +46,6 @@ let author3 = 'JennaHS';
 </section>
 
 <style>
-    .container {
-        margin: 5rem auto;
-    }
-    
     .container h1 {
         text-align: center;
         color: var(--secondary-purple);
@@ -80,5 +76,29 @@ let author3 = 'JennaHS';
 
     .text{
         font-weight: lighter;
+    }
+
+    @media (max-width: 1000px) {
+        .container {
+            margin-bottom: 10rem;
+        }
+        
+        .flex-box {
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .quote-group {
+            background-color: #fffafe;
+            border-radius: 1rem;
+            box-shadow: 0 2px 10px #00000028;
+            padding: 1rem;
+        }
+
+        .author {
+            padding-top: 1rem;
+            font-size: 1.1rem;
+        }
     }
 </style>
