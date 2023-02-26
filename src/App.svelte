@@ -11,16 +11,62 @@
   import Footer from './lib/UI/Footer.svelte';
   import About from './lib/About.svelte';
 
-  let alt = "Woman's hands with rings";
-  let title1 = "10 min Give it to me straight";
-  let title2 = "20 min clarity";
-  let title3 = "30 min Psychic Reading";
-  let duration1 = "10 min";
-  let duration2 = "20 min";
-  let duration3 = "30 min";
-  let cost1 = "$20";
-  let cost2 = "$30";
-  let cost3 = "$40";
+  // Readings Grid
+  let readingsCards = [
+      {
+        'src': "bg.webp", // Try after with symbol, no string?
+        'alt': "complete me....",
+        'title': "Give it to me straight",
+        'description': "10 min",
+        'cost': "$20"
+      },
+      {
+        'src': "bg.webp",
+        'alt': "complete me....",
+        'title': "Clarity Reading",
+        'description': "20 min",
+        'cost': "$30"
+      },
+      {
+        'src': "bg.webp",
+        'alt': "complete me....",
+        'title': "Psychic Reading",
+        'description': "30 min",
+        'cost': "$40"
+      }
+    ];
+
+      // Candles Grid
+  let candleCards = [
+      {
+        'src': "candle-blue.webp", // Try after with symbol, no string?
+        'alt': "Blue candle.",
+        'title': "Mystical Blue Candle",
+        'description': "Experience magical aromas...",
+        'cost': "$10"
+      },
+      {
+        'src': "candle-orange.webp",
+        'alt': "orange candle.",
+        'title': "Relaxing Orange Candle",
+        'description': "Experience magical aromas...",
+        'cost': "$10"
+      },
+      {
+        'src': "candle-red.webp",
+        'alt': "red candle.",
+        'title': "Passionate Red Candle",
+        'description': "Experience magical aromas...",
+        'cost': "$10"
+      },
+      {
+        'src': "candle-yellow.webp",
+        'alt': "yellow candle.",
+        'title': "Vibrant Yellow Candle",
+        'description': "Experience magical aromas...",
+        'cost': "$10"
+      }
+    ];
 
   // Videos
   let videoPoster = "../public/video-poster.png";
@@ -34,8 +80,10 @@
     <HeroBanner />
   </header>
   <div class="container">
-    <h1 class="services-title">Readings</h1>
-    <ProductGrid />
+    <ProductGrid btnText="Book Now" title="Readings" cards={readingsCards} />
+  </div>
+  <div class="container">
+    <ProductGrid btnText="Buy Now" title="Candles" cards= {candleCards}/>
   </div>
   <section>
     <div class="container">  
@@ -74,13 +122,5 @@
     width: 90vw;
     max-width: 90vw;
     margin: 0 auto;
-  }
-
-  .services-title {
-    color: var(--secondary-purple);
-    text-align: center;
-    font-weight: 400;
-    margin: 3rem auto;
-    font-size: 2rem;
   }
 </style>

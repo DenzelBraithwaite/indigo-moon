@@ -1,56 +1,61 @@
 <script>
-    // JavaScript Below
     import ProductCard from './ProductCard.svelte';
   
-    let src1 = "bg.webp";
-    let src2 = "bg.webp";
-    let src3 = "bg.webp";
-    let alt = "Woman's hands with rings";
-    let title1 = "10 min Give it to me straight";
-    let title2 = "20 min clarity";
-    let title3 = "30 min Psychic Reading";
-    let duration1 = "10 min";
-    let duration2 = "20 min";
-    let duration3 = "30 min";
-    let cost1 = "$20";
-    let cost2 = "$30";
-    let cost3 = "$40";
-    
+    export let cards = [];
+    export let title = '';
+    export let btnText = '';
+    // export let gridType = '';
   </script>
   
-  <style>
-    /* CSS Below */
-    .grid {
-      position: relative;
-      width: 100%;
-      display: grid;
-      margin: 0 auto;
-      margin-bottom: 15rem;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-      justify-items: center;
-      /* align-items: center; */ /* Not sure if I need?*/
-    }
-  </style>
-  
-  <!-- HTML Below -->
+<!-- HTML Below -->
+<h1 class="services-title">{title}</h1>
 <div class="grid">
-  <ProductCard
-    src={src1}
-    alt={alt}
-    title={title1}
-    duration={duration1}
-    cost={cost1}/>
-  <ProductCard
-    src={src2}
-    alt={alt}
-    title={title2}
-    duration={duration2}
-    cost={cost2}/>
-    <ProductCard
-    src={src3}
-    alt={alt}
-    title={title3}
-    duration={duration3}
-    cost={cost3}/>
-</div>
+  <!-- {#if gridType === "readings"} -->
+    {#each cards as card}
+      <ProductCard
+        src={card.src}
+        alt={card.alt}
+        title={card.title}
+        description={card.description}
+        cost={card.cost}
+        {btnText}/>
+    {/each}
+  </div>
+  <a href="#" class="more">See more</a>
+    
+<!-- CSS Below -->
+<style>
+  .grid {
+    position: relative;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 4rem;
+    row-gap: 5rem;
+    justify-content: center;
+  }
+  
+  .services-title {
+    color: var(--secondary-purple);
+    text-align: center;
+    font-weight: 400;
+    margin: 3rem auto;
+    font-size: 2rem;
+  }
+  
+  .more:link,
+  .more:visited {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: var(--secondary-purple);
+    font-size: 1.8rem;
+    margin: 5rem auto 15rem;
+  }
+  
+  .more:hover,
+  .more:active {
+    text-decoration: underline;
+  }
+</style>

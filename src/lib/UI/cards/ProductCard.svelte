@@ -5,24 +5,36 @@
     export let src;
     export let alt;
     export let title = '';
-    export let duration = '';
+    export let description = '';
     export let cost = '';
+    export let btnText = '';
 </script>
+
+<!-- HTML Below -->
+<div class="product-card">
+    <img {src} {alt}>
+    <div class="text-section">
+        <div class="content">
+            <h1 class="title">{title}</h1>
+            <p class="description">{description}</p>
+            <p class="cost">{cost}</p>    
+        </div>
+        <Button color='purple' text={btnText}/>
+    </div>
+</div>
 
 <style>
     /* CSS Below */
     .product-card {
         position: relative;
         background-color: #fff;
-        max-width: 400px;
         box-shadow: 2px 0 10px #00000034;
         border-radius: 0.5rem;
     }
 
     .product-card img {
-        width: 100%;
-        height: 50%;
-        padding-bottom: 1rem;
+        width: 300px;
+        height: 250px;
         object-fit: cover;
         border-radius: 0.5rem 0.5rem 0 0;
         
@@ -33,7 +45,6 @@
         display: flex;
         flex-direction: column;
         width: 80%;
-        height: 50%;
         margin: 0 auto;
         padding-bottom: 1rem;
         justify-content: space-between;
@@ -41,24 +52,8 @@
 
     .title {
         font-weight: 500;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         padding-bottom: 1rem;
         border-bottom: 1px solid #65466483; /* var(--secondary-purple), transparent*/
-        height: 5rem;
     }
-
-
 </style>
-
-<!-- HTML Below -->
-<div class="product-card">
-    <img {src} {alt}>
-    <div class="text-section">
-        <div class="content">
-            <h1 class="title">{title}</h1>
-            <p class="duration">{duration}</p>
-            <p class="cost">{cost}</p>    
-        </div>
-        <Button color='purple' text="Book Now"/>
-    </div>
-</div>
