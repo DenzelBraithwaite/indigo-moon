@@ -66,12 +66,17 @@
     }
 
     .insta-icon:link,
-    .insta-icon:visited {
-        transition: scale 0.25s ease-out
+    .insta-icon:visited,
+    .yt-icon:link,
+    .yt-icon:visited {
+        transition: scale 0.1s ease-out
     }
 
     .insta-icon:hover,
-    .insta-icon:active {
+    .insta-icon:active,
+    .yt-icon:hover,
+    .yt-icon:active {
+        transition: scale 0.2s ease-in;
         scale: 1.5;
     }
 </style>

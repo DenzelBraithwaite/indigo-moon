@@ -9,6 +9,9 @@
         <a href="https://www.instagram.com/indigomoontarotwithtiffany/" class="insta-icon" target="_blank" rel="noreferrer">
             <i class="insta-icon fa-brands fa-instagram"></i>
         </a>
+        <a href="https://www.youtube.com/@indigomoontarotwithtiffany5535" target="_blank" rel="noreferrer">
+            <i class="yt-icon fa-brands fa-youtube"></i>
+        </a>
         <p>&copy;2023 by Indigo Moon Tarot</p>
     </div>
     </footer>
@@ -52,13 +55,16 @@
         color: var(--secondary-purple);
     }
 
-    .insta-icon {
+    .insta-icon,
+    .yt-icon {
         color: var(--primary-grey);
         transition: scale 0.25 ease-in;
     }
     
     .insta-icon:hover,
-    .insta-icon:active {
+    .insta-icon:active,
+    .yt-icon:hover,
+    .yt-icon:active {
         transition: scale 0.125s ease-out;
         color: var(--secondary-purple);
         scale: 1.25;
