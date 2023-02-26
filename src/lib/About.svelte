@@ -7,7 +7,7 @@
 <section>
   <div class="container">
     <h1 class="sub-banner-title">My Background</h1>
-    <div class="section-wrapper">
+    <div class="wrapper">
       <img src="tiff.webp" alt="Indigo Moon Tarot Tiffany">
       <div class="content">
         <h2 class="title">A Spiritual Guide</h2>
@@ -39,6 +39,7 @@
     /* background-color: var(--secondary-purple); */
     height: 60vh;
     padding: 1rem;
+    margin-bottom: 10rem;
   }
   
   .container {
@@ -46,7 +47,7 @@
     position: relative;
   }
 
-  .section-wrapper {
+  .wrapper {
     color: #fff;
     width: 85%;
     margin: 0 auto;
@@ -57,8 +58,8 @@
   }
 
   .content {
-    width: 60%;
     padding: 1rem;
+    max-width: 600px;
     border-radius: 1rem;
     background-color: #654664dc; /* Secondary-purple, kept for transparency */
     transform: translate(-10%);
@@ -70,9 +71,9 @@
   }
 
   img {
-    width: 500px;
+    width: 450px;
     border-radius: 1rem;
-    box-shadow: 0 2px 10px #6546649a;
+    box-shadow: 0 2px 10px #65466475;
   }
 
   p {

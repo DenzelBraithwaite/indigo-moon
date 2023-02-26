@@ -30,7 +30,7 @@
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 275px);
     gap: 4rem;
     row-gap: 5rem;
     justify-content: center;
@@ -41,6 +41,7 @@
     text-align: center;
     font-weight: 400;
     margin: 3rem auto;
+    padding-top: 10rem;
     font-size: 2rem;
   }
   
