@@ -5,7 +5,7 @@
 <style>
     .banner {
         position: relative;
-        background-image: linear-gradient(to bottom, #ffffff17, #00000093),url(../../../public/bg.webp);
+        background-image: linear-gradient(to bottom, #ffffff17, #00000093),url(/bg.webp);
         width: 100vw;
         height: 70vh;
         background-repeat: no-repeat;
@@ -19,6 +19,7 @@
     }
 
     .content {
+        font-family: cursive;
         color: #fff;
         width: 400px;
         height: 400px;

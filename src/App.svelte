@@ -69,7 +69,7 @@
     ];
 
   // Videos
-  let videoPoster = "../public/video-poster.png";
+  let videoPoster = "./video-poster.png";
   
 </script>
 
@@ -83,11 +83,11 @@
     <div class="main-container">
       <ProductGrid btnText="Book Now" title="Readings" cards={readingsCards} />
     </div>
-    <div class="main-container">
-      <ProductGrid btnText="Buy Now" title="Candles" cards= {candleCards}/>
-    </div>
     <div class="main-container">  
       <Testimonials />
+    </div>
+    <div class="main-container">
+      <ProductGrid btnText="Buy Now" title="Candles" cards= {candleCards}/>
     </div>
       <Quote />
     <div class="main-container">

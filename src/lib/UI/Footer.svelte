@@ -6,7 +6,7 @@
     <div class="container">
         <h1 class="title">Indigo Moon's Magical Shop and Tarot</h1>
         <a href="mailto:Indigomoontarotwithtiffany@gmail.com" class="email">Indigomoontarotwithtiffany@gmail.com</a>
-        <a href="https://www.instagram.com/indigomoontarotwithtiffany/" class="insta-icon" target="_blank">
+        <a href="https://www.instagram.com/indigomoontarotwithtiffany/" class="insta-icon" target="_blank" rel="noreferrer">
             <i class="insta-icon fa-brands fa-instagram"></i>
         </a>
         <p>&copy;2023 by Indigo Moon Tarot</p>

@@ -27,7 +27,7 @@
     /* CSS Below */
     .product-card {
         position: relative;
-        background-color: #fff;
+        background-color: #ffffff;
         box-shadow: 2px 0 10px #00000034;
         border-radius: 0.5rem;
         transition: scale 0.1s ease-in;

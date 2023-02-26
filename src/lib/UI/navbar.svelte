@@ -11,6 +11,9 @@
         <a class="insta-icon" href="https://www.instagram.com/indigomoontarotwithtiffany/" target="_blank" rel="noreferrer">
             <i class="fa-brands fa-instagram"></i>
         </a>
+        <a class="yt-icon" href="https://www.youtube.com/@indigomoontarotwithtiffany5535" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
     </div>
 </nav>
 
@@ -58,7 +61,7 @@
 
     .nav-options a:hover,
     .nav-options a:active{
-        color: #724F71;
+        color: #a782a5;
         cursor: pointer;
     }
 

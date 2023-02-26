@@ -1,7 +1,6 @@
 <script>
     // JavaScript Below
     export let text;
-    export let color;
 </script>
 
 <style>
