@@ -2,10 +2,22 @@
 
 Indigo Moon Tarot is a custom built website for fortune telling readings. It was built for Indigo Moon to promote her business and social media. The website is still in development, but we're looking to have a production version published soon. I'm using Svelte to build this quickly, read below to learn more about it.
 
--Thanks for passing by, stay magical 🔮
+<br>
+<br>
+
+![website preview1](/public/website_screenshot1.webp)
 
 <br>
+
+![website preview1](/public/website_screenshot2.webp)
+
 <br>
+
+![website preview1](/public/website_screenshot3.webp)
+
+<br>
+
+-Thanks for passing by, stay magical 🔮
 
 # Svelte + Vite
 

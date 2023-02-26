@@ -36,7 +36,7 @@
     .product-card:hover {
         cursor: pointer;
         scale: 1.1;
-        box-shadow: 0 2px 20px #47a8f736;
+        box-shadow: 0 2px 20px #47a8f721;
         transition: scale 0.25s ease-out;
     }
 
