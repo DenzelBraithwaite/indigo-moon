@@ -4,6 +4,9 @@ Indigo Moon Tarot is a custom built website for fortune telling readings. It was
 
 -Thanks for passing by, stay magical 🔮
 
+<br>
+<br>
+
 # Svelte + Vite
 
 This template should help get you started developing with Svelte in Vite.
