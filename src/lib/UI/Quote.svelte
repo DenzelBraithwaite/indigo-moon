@@ -91,7 +91,7 @@
     }
 
     .custom-shape-divider-top-1677233788 .shape-fill {
-        fill: #fffafe;
+        fill: #fffafef3;
     }
 
     /* Bottom curve */
@@ -113,6 +113,6 @@
 }
 
 .custom-shape-divider-bottom-1677234039 .shape-fill {
-    fill: #fffafe;
+    fill: #fffafef3;
 }
 </style>

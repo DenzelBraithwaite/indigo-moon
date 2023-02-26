@@ -33,7 +33,7 @@
     }
 
     .product-card img {
-        width: 300px;
+        width: 275px;
         height: 250px;
         object-fit: cover;
         border-radius: 0.5rem 0.5rem 0 0;

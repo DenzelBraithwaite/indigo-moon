@@ -79,28 +79,32 @@
     <Navbar />
     <HeroBanner />
   </header>
-  <div class="container">
-    <ProductGrid btnText="Book Now" title="Readings" cards={readingsCards} />
-  </div>
-  <div class="container">
-    <ProductGrid btnText="Buy Now" title="Candles" cards= {candleCards}/>
-  </div>
-  <section>
-    <div class="container">  
+  <main>
+    <div class="main-container">
+      <ProductGrid btnText="Book Now" title="Readings" cards={readingsCards} />
+    </div>
+    <div class="main-container">
+      <ProductGrid btnText="Buy Now" title="Candles" cards= {candleCards}/>
+    </div>
+    <div class="main-container">  
       <Testimonials />
     </div>
-  </section>
-  <section class="quote-section">
-    <Quote />
-  </section>
-  <About />
+      <Quote />
+    <div class="main-container">
+      <About />
+    </div>
+    <div class="main-container">
+      <Map />
+    </div>
     <!-- <Video
       title="Unboxing Egyptian Tarot Grand Trumps Deck"
       poster={videoPoster}
       src="vids/unboxing-egyptian.mp4">
 	  </Video> -->
-  <Map />
-  <Footer />
+    <footer>
+      <Footer />
+    </footer>
+  </main>
 </body>
 
 
@@ -109,18 +113,19 @@
   body {
     position: relative;
     overflow-x: hidden;
+    background: linear-gradient(to bottom, #351733, #4793f76c);
+  }
+
+  main {
+    background-color: #fffafef3;
+    width: 1100px;
+    margin: 0 auto;
+    transform: translate(0, -100px);
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px #00000025;
   }
 
   header {
     position: relative;
-    width: 100vw;
-  }
-
-  .container {
-    position: relative;
-    width: 1200px;
-    width: 90vw;
-    max-width: 90vw;
-    margin: 0 auto;
   }
 </style>
