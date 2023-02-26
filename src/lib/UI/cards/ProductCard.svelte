@@ -66,10 +66,8 @@
         height: 1.5rem;
         width: 4rem;
         color: #fff;
-        background-color: #47a8f7;
+        background-color: #47a8f7e5;
         border-radius: 50px;
-        opacity: 95%;
-        text-shadow: 0px 2px 4px#444444a8;
 
         display: flex;
         justify-content: center;
