@@ -40,8 +40,11 @@
         
     }
 
+    .content {
+        height: 150px;
+    }
+
     .text-section {
-        position: relative;
         display: flex;
         flex-direction: column;
         width: 80%;
@@ -55,5 +58,23 @@
         font-size: 1.25rem;
         padding-bottom: 1rem;
         border-bottom: 1px solid #65466483; /* var(--secondary-purple), transparent*/
+    }
+
+    .cost {
+        font-size: 0.85rem;
+        margin: 0;
+        height: 1.5rem;
+        width: 4rem;
+        color: #fff;
+        background-color: #47a8f7e5;
+        border-radius: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 1rem;
+        left: -2rem;
     }
 </style>

@@ -62,6 +62,7 @@
     border-radius: 1rem;
     background-color: #654664dc; /* Secondary-purple, kept for transparency */
     transform: translate(-10%);
+    box-shadow: 0 2px 10px #6546646c;
   }
 
   .title {
@@ -71,6 +72,7 @@
   img {
     width: 500px;
     border-radius: 1rem;
+    box-shadow: 0 2px 10px #6546649a;
   }
 
   p {
