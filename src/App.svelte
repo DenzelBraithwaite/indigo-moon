@@ -73,33 +73,33 @@
   
 </script>
 
-<!-- HTML Below -->
 <body>
-  <nav>
-    <Navbar />
-  </nav>
-  <div class="mobile-wrapper">
-    <header>
-      <HeroBanner />
-    </header>
-    <main>
-      <div class="main-container">
-        <ProductGrid btnText="Book Now" title="Readings" cards={readingsCards} />
-      </div>
-      <div class="main-container">  
-        <Testimonials />
-      </div>
-      <div class="main-container">
-        <ProductGrid btnText="Buy Now" title="Candles" cards= {candleCards}/>
-      </div>
-      <Quote />
-      <div class="main-container">
-        <About />
-      </div>
-      <div class="main-container">
-        <Map />
-      </div>
-      <!-- <Video
+  <!-- DESKTOP Below -->
+  <div class="desktop">
+    <nav>
+      <Navbar />
+    </nav>
+      <header>
+        <HeroBanner />
+      </header>
+      <main>
+        <div class="main-container">
+          <ProductGrid btnText="Book Now" title="Readings" cards={readingsCards} />
+        </div>
+        <div class="main-container">  
+          <Testimonials />
+        </div>
+        <div class="main-container">
+          <ProductGrid btnText="Buy Now" title="Candles" cards= {candleCards}/>
+        </div>
+        <Quote />
+        <div class="main-container">
+          <About />
+        </div>
+        <div class="main-container">
+          <Map />
+        </div>
+        <!-- <Video
         title="Unboxing Egyptian Tarot Grand Trumps Deck"
         poster={videoPoster}
         src="vids/unboxing-egyptian.mp4">
@@ -108,7 +108,12 @@
         <Footer />
       </footer>
     </main>
-  </div>
+</div>
+
+<!-- MOBILE Below -->
+<div class="mobile">
+
+</div>
 </body>
 
 
@@ -137,31 +142,24 @@
 
   @media (max-width: 1000px) {
     body {
-      position: fixed;
+      position: relative;
       overflow-x: hidden;
+      background: linear-gradient(to bottom, #351733, #4793f76c);
       height: 100vh;
       width: 100vw;
-
-      display: flex;
-      flex-direction: column;
-      background-color: red;
     }
 
     main {
-      position: fixed;
-      overflow-y: scroll;
       background-color: #fffafef3;
-      width: 95vw;
+      width: 1100px;
       margin: 0 auto;
       transform: translate(0, -100px);
       border-radius: 1rem;
       box-shadow: 0 2px 10px #00000025;
     }
 
-    nav {
-      z-index: 1;
+    header {
       position: relative;
-      display: block;
     }
   }
 </style>

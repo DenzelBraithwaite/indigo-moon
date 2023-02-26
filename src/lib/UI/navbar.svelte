@@ -81,35 +81,5 @@
     }
 
     @media (max-width: 1000px) {
-        nav {
-        position: relative;
-        font-family: 'Shantell Sans', 'Mynerve', cursive;
-        background-color: #000000e1;
-        color: #fff;
-        line-height: 1;
-        padding: 1rem 1rem;
-        margin: 0;
-        height: 10vh;
-
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .nav-options {
-        display: none;
-    }
-
-    .indigo::after {
-        content: "A Spiritual Feeling";
-        font-size: 0.9rem;
-        margin: 0 auto;
-        color: #fff;
-        
-        position: absolute;
-        bottom: 0;
-        translate: -25%;
-    }
     }
 </style>
