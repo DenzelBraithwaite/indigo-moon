@@ -8,51 +8,10 @@ let author2 = 'Sarah89';
 let author3 = 'JennaHS';
 </script>
 
-<style>
-    /* CSS Below */
-    .container {
-        margin: 5rem auto;
-    }
-    
-    .container h1 {
-        text-align: center;
-        color: var(--secondary-purple);
-        font-weight: normal;
-    }
-    
-    .quote-group{
-        position: relative;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .grid {
-        padding: 1rem;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(3, 30%);
-        gap: 1rem;
-        justify-content: center;
-    }
-
-    .quote-icon {
-        fill: #654664;
-        scale: 0.5;
-    }
-
-    .title {
-        font-size: 2rem;
-    }
-
-    .text{
-        font-weight: lighter;
-    }
-</style>
-
 <!-- HTML Below -->
-<div class="container">
+<section class="container">
     <h1 class="title">What my clients say</h1>
-    <div class="grid">
+    <div class="flex-box">
         <div class="quote-group">
             <svg class="quote-icon">
                 <g>
@@ -86,4 +45,43 @@ let author3 = 'JennaHS';
             <p class="author">{author3}</p>
         </div>
     </div>
-</div>
+</section>
+
+<style>
+    /* CSS Below */
+    .container {
+        margin: 5rem auto;
+    }
+    
+    .container h1 {
+        text-align: center;
+        color: var(--secondary-purple);
+        font-weight: normal;
+    }
+    
+    .quote-group{
+        position: relative;
+        padding: 10px;
+        text-align: center;
+        width: 300px;
+    }
+
+    .flex-box {
+        
+        display: flex;
+        justify-content: center;
+    }
+
+    .quote-icon {
+        fill: #654664;
+        scale: 0.5;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .text{
+        font-weight: lighter;
+    }
+</style>
