@@ -1,10 +1,10 @@
 <script>
-    // JavaScript Below
     export let text;
 </script>
 
+<a class="btn"  href="#">{text}</a>
+
 <style>
-    /* CSS Below */
     .btn:link,
     .btn:visited {
     background-color: #47a8f7e5;
@@ -26,6 +26,3 @@
     scale: 101%;
   }
 </style>
-
-<!-- HTML Below -->
-<a class="btn"  href="#">{text}</a>

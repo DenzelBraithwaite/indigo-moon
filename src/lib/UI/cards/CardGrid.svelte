@@ -7,10 +7,8 @@
     // export let gridType = '';
   </script>
   
-<!-- HTML Below -->
 <h1 class="services-title">{title}</h1>
 <div class="grid">
-  <!-- {#if gridType === "readings"} -->
     {#each cards as card}
       <ProductCard
         src={card.src}
@@ -23,7 +21,6 @@
   </div>
   <a href="#" class="more">See more</a>
     
-<!-- CSS Below -->
 <style>
   .grid {
     position: relative;

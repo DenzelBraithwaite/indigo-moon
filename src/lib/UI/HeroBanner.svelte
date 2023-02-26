@@ -2,15 +2,28 @@
     import BtnBanner from './buttons/BannerButton.svelte';
 </script>
 
-<div class="banner">
-    <div class="content">
-        <h1 class="title">Experience Indigo Moon's Magical Shop and Tarot</h1>
-        <p class="subtitle">A Spiritual Feeling</p>
+<!-- DESKTOP -->
+<div class="desktop">
+    <div class="banner">
+        <div class="content">
+            <h1 class="title">Experience Indigo Moon's Magical Shop and Tarot</h1>
+            <p class="subtitle">A Spiritual Feeling</p>
+        </div>
+        <!-- <BtnBanner color='purple' text='Get Started'/> -->
     </div>
-    <!-- <BtnBanner color='purple' text='Get Started'/> -->
+</div>
+
+<!-- Mobile -->
+<div class="mobile">
+    <h1 class="m__title"><span class="m__indigo">Indigo</span> Moon Tarot</h1>
+    <h2 class="m__subtitle">A Spiritual Feeling</h2>
 </div>
 
 <style>
+    .mobile {
+        display: none;
+    }
+
     .banner {
         position: relative;
         background-image: linear-gradient(to bottom, #ffffff17, #00000093),url(/bg.webp);
@@ -52,7 +65,39 @@
         margin-bottom: 1rem;
     }
 
+    /* Mobile */
     @media (max-width: 1000px) {
- 
+        .desktop {
+            display: none;
+        }
+
+        .mobile {
+            z-index: 1;
+            display: block;
+            position: relative;
+            color: #fff;
+            background-color: #000000e1;
+            margin: 0;
+            padding: 0.5rem 0;
+            text-align:center;
+        }
+
+        .m__indigo {
+            color: #a782a5;
+        }
+    
+        .m__title {
+            margin: 0;
+            padding: 0;
+            font-size: 2rem;
+        }
+    
+        .m__subtitle {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+            font-size: 1rem;
+        }
     }
+
 </style>

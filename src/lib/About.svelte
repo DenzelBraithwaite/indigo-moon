@@ -1,9 +1,7 @@
 <script>
-    // JavaScript Below
     
 </script>
   
-<!-- HTML Below -->
 <section>
   <div class="container">
     <h1 class="sub-banner-title">My Background</h1>
@@ -25,7 +23,6 @@
 </section>
 
 <style>
-  /* CSS Below */
   h1 {
     font-size: 2rem;
     font-weight: normal;
