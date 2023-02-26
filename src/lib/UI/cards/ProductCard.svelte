@@ -84,11 +84,14 @@
     }
 
     @media (max-width: 1000px) {
-    .product-card img {
-        width: 250px;
-    }
+        .product-card {
+        }
 
-    .text-section {
+        .product-card img {
+            width: 250px;
+        }
+
+        .text-section {
             display: flex;
             flex-direction: column;
             width: 90%;
