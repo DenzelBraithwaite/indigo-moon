@@ -79,4 +79,26 @@
         transition: scale 0.2s ease-in;
         scale: 1.5;
     }
+
+    @media (max-width: 1000px) {
+        nav {
+        position: relative;
+        font-family: 'Shantell Sans', 'Mynerve', cursive;
+        background-color: #000000d0;
+        color: #fff;
+        line-height: 1;
+        padding: 1rem 1rem;
+        margin: 0;
+        height: 10vh;
+
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-options {
+        display: none;
+    }
+    }
 </style>

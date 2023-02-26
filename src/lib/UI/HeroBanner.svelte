@@ -43,6 +43,38 @@
         text-shadow: 0 2px 10px #000000c4;
         margin-bottom: 1rem;
     }
+
+    @media (max-width: 1000px) {
+        .banner {
+            display: none;
+    }
+
+    .content {
+        font-family: cursive;
+        color: #fff;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #fffafe86;
+        box-shadow: 0 2px 20px #47a8f76c;
+        border-radius: 50%;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        line-height: 1.25;
+        font-weight: 400;
+        text-shadow: 0 2px 10px #000000c4;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+        font-weight: lighter;
+        text-shadow: 0 2px 10px #000000c4;
+        margin-bottom: 1rem;
+    }  
+    }
 </style>
 
 <div class="banner">
