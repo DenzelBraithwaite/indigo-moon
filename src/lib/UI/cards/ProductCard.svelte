@@ -30,6 +30,14 @@
         background-color: #fff;
         box-shadow: 2px 0 10px #00000034;
         border-radius: 0.5rem;
+        transition: scale 0.1s ease-in;
+    }
+
+    .product-card:hover {
+        cursor: pointer;
+        scale: 1.1;
+        box-shadow: 0 2px 20px #47a8f736;
+        transition: scale 0.25s ease-out;
     }
 
     .product-card img {

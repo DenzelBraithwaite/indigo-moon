@@ -24,7 +24,7 @@
   .btn:hover,
   .btn:active {
     cursor: pointer;
-    box-shadow: 0 4px 16px #65466464; /* var(--secondary-purple), transparent*/
+    box-shadow: 0 2px 10px #65466438; /* var(--secondary-purple), transparent*/
     scale: 101%;
   }
   
@@ -32,11 +32,7 @@
   .btn-purple:visited {
     color: #fff;
     background-color: var(--secondary-purple);
-  }
-  
-  .btn-purple:hover,
-  .btn-purple:active {
-    background-color: #724f71;
+    background: linear-gradient(to right, #724f71, #65466492);
   }
 </style>
 

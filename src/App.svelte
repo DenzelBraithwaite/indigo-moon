@@ -14,21 +14,21 @@
   // Readings Grid
   let readingsCards = [
       {
-        'src': "bg.webp", // Try after with symbol, no string?
+        'src': "reading1.webp", // Try after with symbol, no string?
         'alt': "complete me....",
         'title': "Give it to me straight",
         'description': "10 min",
         'cost': "$20"
       },
       {
-        'src': "bg.webp",
+        'src': "reading2.webp",
         'alt': "complete me....",
         'title': "Clarity Reading",
         'description': "20 min",
         'cost': "$30"
       },
       {
-        'src': "bg.webp",
+        'src': "reading3.webp",
         'alt': "complete me....",
         'title': "Psychic Reading",
         'description': "30 min",
