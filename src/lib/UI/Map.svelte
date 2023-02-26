@@ -10,7 +10,7 @@
     height: 450px;
     margin: 1rem auto 5rem;
     background-size: contain;
-    background-image: url(map-placeholder.png);
+    background-image: url(/map-placeholder.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

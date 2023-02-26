@@ -8,7 +8,7 @@
   <div class="container">
     <h1 class="sub-banner-title">My Background</h1>
     <div class="wrapper">
-      <img src="tiff2.webp" alt="Indigo Moon Tarot Tiffany">
+      <img src="/tiff2.webp" alt="Indigo Moon Tarot Tiffany">
       <div class="content">
         <h2 class="title">A Spiritual Guide</h2>
         <p>Welcome my beautiful peoples, I am a professional Tarot reader and I love, love, love what I do. 

@@ -14,21 +14,21 @@
   // Readings Grid
   let readingsCards = [
       {
-        'src': "reading1.webp", // Try after with symbol, no string?
+        'src': "/reading1.webp",
         'alt': "complete me....",
         'title': "Give it to me straight",
         'description': "10 min",
         'cost': "$20"
       },
       {
-        'src': "reading2.webp",
+        'src': "/reading2.webp",
         'alt': "complete me....",
         'title': "Clarity Reading",
         'description': "20 min",
         'cost': "$30"
       },
       {
-        'src': "reading3.webp",
+        'src': "/reading3.webp",
         'alt': "complete me....",
         'title': "Psychic Reading",
         'description': "30 min",
@@ -39,28 +39,28 @@
       // Candles Grid
   let candleCards = [
       {
-        'src': "candle-blue.webp", // Try after with symbol, no string?
+        'src': "/candle-blue.webp", // Try after with symbol, no string?
         'alt': "Blue candle.",
         'title': "Mystical Blue Candle",
         'description': "Experience magical aromas...",
         'cost': "$10"
       },
       {
-        'src': "candle-orange.webp",
+        'src': "/candle-orange.webp",
         'alt': "orange candle.",
         'title': "Relaxing Orange Candle",
         'description': "Experience magical aromas...",
         'cost': "$10"
       },
       {
-        'src': "candle-red.webp",
+        'src': "/candle-red.webp",
         'alt': "red candle.",
         'title': "Passionate Red Candle",
         'description': "Experience magical aromas...",
         'cost': "$10"
       },
       {
-        'src': "candle-yellow.webp",
+        'src': "/candle-yellow.webp",
         'alt': "yellow candle.",
         'title': "Vibrant Yellow Candle",
         'description': "Experience magical aromas...",
@@ -69,7 +69,7 @@
     ];
 
   // Videos
-  let videoPoster = "./video-poster.png";
+  let videoPoster = "/video-poster.png";
   
 </script>
 
