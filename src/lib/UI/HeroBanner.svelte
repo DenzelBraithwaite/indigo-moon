@@ -25,31 +25,35 @@
 <div class="mobile">
     <div class="m__container">
         <div class="m__wrapper-left">
-        <h1 class="m__title"><span class="m__indigo">Indigo</span> Moon Tarot</h1>
-        <h2 class="m__subtitle">A Spiritual Feeling</h2>
-    </div>
-    <button class="m__wrapper-right" on:click={mobileMenuHandler}>
-        <svg class="m__menu-icon">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-    </button>
-    <div class="m__menu-modal {visibility}">
-        <svg class="m__menu-icon">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-        <svg class="icon-test">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-        <svg class="icon-test">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-        <svg class="icon-test">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
+            <h1 class="m__title"><span class="m__indigo">Indigo</span> Moon Tarot</h1>
+            <h2 class="m__subtitle">A Spiritual Feeling</h2>
+        </div>
+        <button class="m__wrapper-right" on:click={mobileMenuHandler}>
+            <svg class="m__menu-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+        <div class="m__menu-modal {visibility}">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cart-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+            </svg>      
+            <svg class="icon-test">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="home-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+            <a class="insta-icon" href="https://www.instagram.com/indigomoontarotwithtiffany/" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="yt-icon" href="https://www.youtube.com/@indigomoontarotwithtiffany5535" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#">About</a>
+        </div>
     </div>
 </div>
 
-</div>
 <style>
     .mobile {
         display: none;
@@ -170,9 +174,19 @@
             border-left: 1px solid #fff;
             padding-left: 0.2rem;
         }
+        
+        .home-icon {
+            stroke: #fff;
+            height: 1.5rem;
+            width: 1.5rem;
+            background-color: green;
+        }
 
-        .icon-test {
-            background-color: blue;
+        .cart-icon {
+            stroke: #fff;
+            height: 1.5rem;
+            width: 1.5rem;
+            background-color: yellow;
         }
 
         /* Add / Remove classes */
