@@ -1,5 +1,13 @@
 <script>
     import BtnBanner from './buttons/BannerButton.svelte';
+
+    export let modal = document.getElementsByClassName('m__menu-modal');
+
+
+    function mobileMenuHandler(event) {
+        console.log(modal);
+        // modal.classList.add('visible');
+    };
 </script>
 
 <!-- DESKTOP -->
@@ -15,10 +23,22 @@
 
 <!-- Mobile -->
 <div class="mobile">
-    <h1 class="m__title"><span class="m__indigo">Indigo</span> Moon Tarot</h1>
-    <h2 class="m__subtitle">A Spiritual Feeling</h2>
+    <div class="m__container">
+        <div class="m__wrapper-left">
+        <h1 class="m__title"><span class="m__indigo">Indigo</span> Moon Tarot</h1>
+        <h2 class="m__subtitle">A Spiritual Feeling</h2>
+    </div>
+    <div class="m__wrapper-right" on:click={mobileMenuHandler}>
+        <svg class="m__menu-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </div>
+    <div class="m__menu-modal hidden">
+        <h1>{modal}</h1>
+    </div>
 </div>
 
+</div>
 <style>
     .mobile {
         display: none;
@@ -72,14 +92,27 @@
         }
 
         .mobile {
-            z-index: 1;
             display: block;
+        }
+
+        .m__menu-modal {
+            background-color: red;
+            text-transform: uppercase;
+        }
+
+        .m__container {
             position: relative;
+            z-index: 1;
             color: #fff;
             background-color: #000000e1;
             margin: 0;
             padding: 0.5rem 0;
-            text-align:center;
+            gap: 0.5rem;
+            
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+            align-items: center;
         }
 
         .m__indigo {
@@ -97,6 +130,25 @@
             padding: 0;
             font-weight: normal;
             font-size: 1rem;
+        }
+
+        .m__menu-icon {
+            stroke: #fff;
+            stroke-width: 2;
+            width: 2rem;
+            height: 2rem;
+            scale: 1.25;
+            border-left: 1px solid #fff;
+            padding-left: 0.2rem;
+        }
+
+        /* Add / Remove classes */
+        .visible {
+            display: block;
+        }
+
+        .hidden {
+            display: none;
         }
     }
 
