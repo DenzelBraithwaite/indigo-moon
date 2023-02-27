@@ -1,12 +1,12 @@
 <script>
     import BtnBanner from './buttons/BannerButton.svelte';
 
-    export let modal = document.getElementsByClassName('m__menu-modal');
-
-
+    $: visibility = 'visible';
+    
     function mobileMenuHandler(event) {
-        console.log(modal);
-        // modal.classList.add('visible');
+        let menuButton = document.querySelector('.m__menu-modal');
+        console.log(menuButton);
+        visibility === 'hidden' ? visibility = 'visible' : visibility = 'hidden'
     };
 </script>
 
@@ -28,13 +28,24 @@
         <h1 class="m__title"><span class="m__indigo">Indigo</span> Moon Tarot</h1>
         <h2 class="m__subtitle">A Spiritual Feeling</h2>
     </div>
-    <div class="m__wrapper-right" on:click={mobileMenuHandler}>
+    <button class="m__wrapper-right" on:click={mobileMenuHandler}>
         <svg class="m__menu-icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
-    </div>
-    <div class="m__menu-modal hidden">
-        <h1>{modal}</h1>
+    </button>
+    <div class="m__menu-modal {visibility}">
+        <svg class="m__menu-icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <svg class="icon-test">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <svg class="icon-test">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <svg class="icon-test">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
     </div>
 </div>
 
@@ -95,18 +106,13 @@
             display: block;
         }
 
-        .m__menu-modal {
-            background-color: red;
-            text-transform: uppercase;
-        }
-
         .m__container {
             position: relative;
             z-index: 1;
             color: #fff;
             background-color: #000000e1;
             margin: 0;
-            padding: 0.5rem 0;
+            height: 90px;
             gap: 0.5rem;
             
             display: flex;
@@ -132,14 +138,41 @@
             font-size: 1rem;
         }
 
+        button {
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .m__menu-modal {
+            background-color: #000000e1;
+            text-transform: uppercase;
+            position: absolute;
+            top: 90px;
+            margin: 0 auto;
+            height: 80vh;
+            width: 85vw;
+            border-radius: 0 0 1rem 1rem;
+
+            display: grid;
+            grid-template-columns: 50% auto;
+            background-color: red;
+            gap: 50px;
+        }
+
         .m__menu-icon {
-            stroke: #fff;
+            stroke: #a782a5;
             stroke-width: 2;
             width: 2rem;
             height: 2rem;
             scale: 1.25;
             border-left: 1px solid #fff;
             padding-left: 0.2rem;
+        }
+
+        .icon-test {
+            background-color: blue;
         }
 
         /* Add / Remove classes */
