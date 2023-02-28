@@ -47,7 +47,7 @@
       margin: 0 auto 5rem;
       border-radius: 1rem;
       box-shadow: 0 2px 10px #00000028;
-      background-size: contain;
+      object-fit: cover;
     }
 
     h1 {
