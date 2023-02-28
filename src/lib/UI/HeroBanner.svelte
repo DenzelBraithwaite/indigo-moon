@@ -1,21 +1,12 @@
 <script>
     import BtnBanner from './buttons/BannerButton.svelte';
 
-<<<<<<< HEAD
-    export let modal = document.getElementsByClassName('m__menu-modal');
-
-
-    function mobileMenuHandler(event) {
-        console.log(modal);
-        // modal.classList.add('visible');
-=======
     $: visibility = 'visible';
     
     function mobileMenuHandler(event) {
         let menuButton = document.querySelector('.m__menu-modal');
         console.log(menuButton);
         visibility === 'hidden' ? visibility = 'visible' : visibility = 'hidden'
->>>>>>> main
     };
 </script>
 
@@ -34,18 +25,6 @@
 <div class="mobile">
     <div class="m__container">
         <div class="m__wrapper-left">
-<<<<<<< HEAD
-        <h1 class="m__title"><span class="m__indigo">Indigo</span> Moon Tarot</h1>
-        <h2 class="m__subtitle">A Spiritual Feeling</h2>
-    </div>
-    <div class="m__wrapper-right" on:click={mobileMenuHandler}>
-        <svg class="m__menu-icon">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-    </div>
-    <div class="m__menu-modal hidden">
-        <h1>{modal}</h1>
-=======
             <h1 class="m__title"><span class="m__indigo">Indigo</span> Moon Tarot</h1>
             <h2 class="m__subtitle">A Spiritual Feeling</h2>
         </div>
@@ -72,10 +51,7 @@
             </a>
             <a href="#">About</a>
         </div>
->>>>>>> main
     </div>
-</div>
-
 </div>
 <style>
     .mobile {

@@ -84,7 +84,9 @@
     }
 
     @media (max-width: 1000px) {
-        .product-card {
+        .product-card:hover,
+        .product-card:active {
+            scale: 1;
         }
 
         .product-card img {
