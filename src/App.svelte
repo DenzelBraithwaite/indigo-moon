@@ -1,11 +1,10 @@
 <script>
-  // import Button from './lib/UI/buttons/Button.svelte'
   import ProductGrid from './lib/UI/cards/CardGrid.svelte';
   import Navbar from './lib/UI/navbar.svelte';
   import HeroBanner from './lib/UI/HeroBanner.svelte';
   import Testimonials from './lib/UI/cards/Testimonials.svelte';
   import Quote from './lib/UI/Quote.svelte';
-  import Video from './lib/UI/Video.svelte';
+  // import Video from './lib/UI/Video.svelte';
   import Map from './lib/UI/Map.svelte';
   import Footer from './lib/UI/Footer.svelte';
   import About from './lib/About.svelte';
@@ -68,7 +67,7 @@
     ];
 
   // Videos
-  let videoPoster = "/video-poster.png";
+  let videoPoster = "/video-poster.webp";
   
 </script>
 
@@ -99,9 +98,9 @@
           <Map />
         </div>
         <!-- <Video
-        title="Unboxing Egyptian Tarot Grand Trumps Deck"
+        title="Who am I ?"
         poster={videoPoster}
-        src="vids/unboxing-egyptian.mp4">
+        src="/vids/intro.mp4">
       </Video> -->
       <footer>
         <Footer />
