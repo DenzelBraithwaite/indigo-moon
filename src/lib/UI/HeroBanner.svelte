@@ -1,7 +1,7 @@
 <script>
     import BtnBanner from './buttons/BannerButton.svelte';
 
-    $: visibility = 'visible';
+    $: visibility = 'hidden';
     
     function mobileMenuHandler(event) {
         let menuButton = document.querySelector('.m__menu-modal');
