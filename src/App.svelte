@@ -151,8 +151,6 @@
     position: relative;
     overflow-x: hidden;
     background: linear-gradient(to bottom, #351733, #4793f76c);
-    height: 100vh;
-    width: 100vw;
   }
 
   main {
@@ -181,8 +179,6 @@
       position: relative;
       overflow-x: hidden;
       background: linear-gradient(to bottom, #351733, #4793f76c);
-      height: 100vh;
-      width: 100vw;
     }
 
     main {

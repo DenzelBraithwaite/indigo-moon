@@ -3,11 +3,13 @@
 
     $: visibility = 'hidden';
     
-    function mobileMenuHandler(event) {
-        let menuButton = document.querySelector('.m__menu-modal');
-        console.log(menuButton);
-        visibility === 'hidden' ? visibility = 'visible' : visibility = 'hidden'
+    function mobileMenuBtnHandler() {
+        visibility === 'hidden' ? visibility = 'visible' : visibility = 'hidden';
     };
+
+    function mobileModalHandler() {
+        visibility = 'hidden';
+    }
 </script>
 
 <!-- DESKTOP -->
@@ -23,17 +25,21 @@
 
 <!-- Mobile -->
 <div class="mobile">
-    <div class="m__container">
+    <div class="m__header">
         <div class="m__wrapper-left">
             <h1 class="m__title"><span class="m__indigo">Indigo</span> Moon Tarot</h1>
             <h2 class="m__subtitle">A Spiritual Feeling</h2>
         </div>
-        <button class="m__wrapper-right" on:click={mobileMenuHandler}>
+        <button class="m__wrapper-right" on:click={mobileMenuBtnHandler}>
             <svg class="m__menu-icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
         </button>
-        <div class="m__menu-modal {visibility}">
+    </div>
+    <div on:click={mobileModalHandler} class="m__modal-overlay {visibility}"></div>
+        <div class="{visibility}">
+            <div class="m__menu-modal">
+                <h1>In Progress...</h1>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cart-icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
             </svg>      
@@ -107,11 +113,13 @@
 
         .mobile {
             display: block;
+            position: relative;
         }
 
-        .m__container {
+        .m__header {
             position: relative;
-            z-index: 1;
+            z-index: 2;
+            padding: 0 1rem;
             color: #fff;
             background-color: #000000e1;
             margin: 0;
@@ -120,25 +128,30 @@
             
             display: flex;
             text-align: center;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: center;
+        }
+
+        .m__wrapper-left {
+            text-align: center;
+            flex-basis: 100%;
         }
 
         .m__indigo {
             color: #a782a5;
         }
-    
+
         .m__title {
             margin: 0;
             padding: 0;
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
-    
+
         .m__subtitle {
             margin: 0;
             padding: 0;
             font-weight: normal;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
 
         button {
@@ -148,20 +161,34 @@
             margin: 0;
         }
 
-        .m__menu-modal {
+        .m__modal-overlay {
+            z-index: 1;
             background-color: #000000e1;
-            text-transform: uppercase;
+            background: linear-gradient(to bottom, #351733, #121212ea);
             position: absolute;
-            top: 90px;
-            margin: 0 auto;
-            height: 80vh;
-            width: 85vw;
-            border-radius: 0 0 1rem 1rem;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .m__menu-modal {
+            z-index: 3;
+            position: relative;
+            background-color: #0000009f;
+            color: #fff;
+            height: 50vh;
+            width: 75vw;
+            margin: 5rem auto 0;
+            box-shadow: 0 2px 10px #00000056;
+            border-radius: 2rem;
 
             display: grid;
-            grid-template-columns: 50% auto;
-            background-color: red;
-            gap: 50px;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
         }
 
         .m__menu-icon {
@@ -196,6 +223,9 @@
         .hidden {
             display: none;
         }
-    }
 
+        .grid {
+            display: grid;
+        }
+    }
 </style>
