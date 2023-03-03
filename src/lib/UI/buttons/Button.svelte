@@ -21,6 +21,9 @@
   {#if hover === 'purple'}
   <a class="btn btn-purple purple-hover"  href={link}>{text}</a>
   {/if}
+  {#if hover === 'light-purple'}
+  <a class="btn btn-purple light-purple-hover"  href={link}>{text}</a>
+  {/if}
   {#if hover === 'yellow'}
   <a class="btn btn-purple yellow-hover"  href={link}>{text}</a>
   {/if}
@@ -58,6 +61,11 @@
       
   .purple-hover:hover,
   .purple-hover:active {
+    background: linear-gradient(to right, #95719b, #65466492);
+  }
+     
+  .light-purple-hover:hover,
+  .light-purple-hover:active {
     background: linear-gradient(to right, #E4B8EB, #65466492);
   }
 

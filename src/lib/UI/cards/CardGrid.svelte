@@ -2,16 +2,19 @@
     import ProductCard from './ProductCard.svelte';
   
     export let gridType;
-    let shopPageUrl = 'src/lib/pages/shop.Svelte';
+    let shopPageUrl = 'src/routes/shop.Svelte';
     export let cards = [];
     export let title = '';
     export let btnText = '';
 
     // Readings
     let readingsLinks = [
-      'src/lib/pages/show.Svelte',
-      'src/lib/pages/show.Svelte',
-      'src/lib/pages/show.Svelte'
+      'src/routes/show.Svelte',
+      'src/routes/show.Svelte',
+      'src/routes/show.Svelte',
+      'src/routes/show.Svelte',
+      'src/routes/show.Svelte',
+      'src/routes/show.Svelte'
 
     ];
     let readingsHovers = [
@@ -19,18 +22,18 @@
       'orange',
       'red',
       'green',
-      'purple',
+      'light-purple',
       'yellow',
     ]
 
     // Candles
     let candlesLinks = [
-      'src/lib/pages/show.Svelte',
-      'src/lib/pages/show.Svelte',
-      'src/lib/pages/show.Svelte',
-      'src/lib/pages/show.Svelte',
-      'src/lib/pages/show.Svelte',
-      'src/lib/pages/show.Svelte'
+      'src/routes/show.Svelte',
+      'src/routes/show.Svelte',
+      'src/routes/show.Svelte',
+      'src/routes/show.Svelte',
+      'src/routes/show.Svelte',
+      'src/routes/show.Svelte'
 
     ];
   </script>
@@ -45,7 +48,7 @@
     description={card.description}
     cost={card.cost}
     {btnText}
-    hover={readingsHovers[index]}
+    hover={gridType === 'candles' ? readingsHovers[index] : 'purple'}
     link={gridType === 'readings' ? readingsLinks[index] : candlesLinks[index]}/>
     {/each}
     <a href={shopPageUrl} class="m__more">See more</a>

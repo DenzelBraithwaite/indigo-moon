@@ -129,13 +129,13 @@
     </header>
       <main>
         <section class="m__main-container">
-          <ProductGrid btnText="Book Now" title="Readings" cards={readingsCards} />
+          <ProductGrid gridType="readings" btnText="Book Now" title="Readings" cards={readingsCards} />
         </section>
         <section class="m__main-container">  
           <Testimonials />
         </section>
         <section class="m__main-container">
-          <ProductGrid btnText="Buy Now" title="Candles" cards= {candleCards}/>
+          <ProductGrid gridType="candles" btnText="Buy Now" title="Candles" cards= {candleCards}/>
         </section>
         <Quote />
         <section class="m__main-container">
