@@ -13,7 +13,7 @@
         </a>
         <p>&copy;2023 by Indigo Moon Tarot</p>
     </div>
-    </footer>
+</footer>
 
 <style>
     footer{
@@ -27,14 +27,6 @@
     .container {
         width: 70%;
         margin: 0 auto;
-    }
-    
-    .title {
-        font-size: 1.5rem;
-        font-weight: 400;
-        padding: 0;
-        margin: 0;
-        margin-bottom: 1rem;
     }
     
     .email:visited,
