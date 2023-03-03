@@ -18,14 +18,11 @@
   </nav>
         <main>
           <div class="product-wrapper">
-            <div class="product-wrapper-left">
-              <img class="product-img" src="/public/candle-yellow.webp" alt="">
-              <p class="description">Product description</p>
-            </div>
+            <img class="product-img" src="/public/candle-yellow.webp" alt="">
             <div class="product-wrapper-right">
               <h1>Title of Product</h1>
               <p>Other info like cost</p>
-              <button>A button</button>
+              <a class="btn btn-purple yellow-hover"  href="mailto:tiffany@indigomoontarot.com">Request</a>
             </div>
           </div>
           <footer>
@@ -52,17 +49,9 @@
     body {
       padding: 0;
       margin: 0;
-
-      --primary-grey: #444;
-      --secondary-purple: #654664;
-      --secondary-purple-hover: #724f71;
-
-
       font-family: 'Andika', Inter, system-ui, Avenir, sans-serif;
       line-height: 1.5;
       font-weight: 400;
-
-      background-color: #fffafe;
 
       font-synthesis: none;
       text-rendering: optimizeLegibility;
@@ -73,37 +62,39 @@
 
     .product-wrapper {
       position: relative;
-      background-color: red;
-      margin: 0 auto;
-      padding: 1rem;
-      height: 700px;
+      color: #444;
+      margin: 2rem auto 0;
+      height: 600px;
       width: 1000px;
       text-align: center;
 
       display: flex;
       justify-content: center;
+      align-items: center;
       gap: 0;
-    }
-    
-    .product-wrapper-left {
-      position: relative;
-      width: 450px;
-      background-color: green;
     }
 
     .product-img {
+      position: relative;
+      width: 500px;
+      height: 500px;
       border-radius: 1rem 0 0 1rem;
-      width: 100%;
-    }
-
-    .description {
-      background-color: orange;
+      box-shadow: 0 2px 20px #00000036;
     }
 
     .product-wrapper-right {
-      background-color: pink;
+      box-shadow: 0 2px 20px #00000036;
+      background-color: #654664dc;
+      background-color: #fffafee7;
       width: 400px;
+      height: 500px;
       border-radius: 0 1rem 1rem 0;
+      transform: translate(-1rem, 0);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
     }
 
     nav {
@@ -119,13 +110,12 @@
     }
   
     main {
-      background-color: #fffafef3;
       width: 1100px;
+      background-color: #fffafec0;
       margin: 0 auto;
       transform: translate(0, 100px);
       border-radius: 1rem;
-      box-shadow: 0 2px 10px #00000025;
-      padding-top: 5rem;
+      box-shadow: 0 2px 10px #00000049;
     }
 
     nav {
@@ -247,6 +237,71 @@
         padding: 0;
         margin: 0;
     }
+
+    /* Buttons */
+    .btn:link,
+    .btn:visited {
+      display: inline-block;
+      text-decoration: none;
+      border: none;
+      color: #fff;
+      width: 50%;
+      background: linear-gradient(to right, #724f71, #65466492);
+      text-align: center;
+      font-size: 1.125rem;
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 2px 8px #65466492; /* var(--secondary-purple), transparent*/
+  }
+  
+  .btn:hover,
+  .btn:active {
+    cursor: pointer;
+    box-shadow: 0 2px 10px #65466438; /* var(--secondary-purple), transparent*/
+    scale: 101%;
+  }
+  
+  .btn-purple:link,
+  .btn-purple:visited {
+    color: #fff;
+
+  }
+      
+  .purple-hover:hover,
+  .purple-hover:active {
+    background: linear-gradient(to right, #95719b, #65466492);
+  }
+     
+  .light-purple-hover:hover,
+  .light-purple-hover:active {
+    background: linear-gradient(to right, #E4B8EB, #65466492);
+  }
+
+  .blue-hover:hover,
+  .blue-hover:active {
+    background: linear-gradient(to right, #47a8f7e5, #65466492);
+  }
+  
+  .orange-hover:hover,
+  .orange-hover:active {
+    background: linear-gradient(to right, #D8690D, #65466492);
+  }
+    
+  .red-hover:hover,
+  .red-hover:active {
+    background: linear-gradient(to right, #B92509, #65466492);
+  }
+    
+  .green-hover:hover,
+  .green-hover:active {
+    background: linear-gradient(to right, #C3E850, #65466492);
+  }
+
+  .yellow-hover:hover,
+  .yellow-hover:active {
+    background: linear-gradient(to right, #DCBA13, #65466492);
+  }
 
     @media (max-width: 1000px) {
         nav {

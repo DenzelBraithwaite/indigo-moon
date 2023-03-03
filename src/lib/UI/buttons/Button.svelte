@@ -55,7 +55,6 @@
   .btn-purple:link,
   .btn-purple:visited {
     color: #fff;
-    background-color: var(--secondary-purple);
     background: linear-gradient(to right, #724f71, #65466492);
   }
       
