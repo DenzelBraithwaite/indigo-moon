@@ -35,9 +35,9 @@
     section {
         position: relative;
         background-color: var(--secondary-purple);
-        height: 50vh;
-        margin: 10rem 0;
+        height: 500px;
         padding: 1rem;
+        margin-bottom: 15rem;
     }
     
     .container {

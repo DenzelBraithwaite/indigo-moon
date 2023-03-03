@@ -111,16 +111,12 @@
         .m__header {
             position: relative;
             z-index: 2;
-            padding: 0 1rem;
+            padding: 1.5rem;
             color: #fff;
             background-color: #000000f5;
-            margin: 0;
             height: 90px;
-            gap: 0.5rem;
             
             display: flex;
-            text-align: center;
-            justify-content: space-between;
             align-items: center;
         }
         

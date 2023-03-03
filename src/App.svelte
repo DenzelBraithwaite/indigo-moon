@@ -81,22 +81,22 @@
         <HeroBanner />
       </header>
       <main>
-        <div class="main-container">
+        <section class="main-container">
           <ProductGrid btnText="Book Now" title="Readings" cards={readingsCards} />
-        </div>
-        <div class="main-container">  
+        </section>
+        <section class="main-container">  
           <Testimonials />
-        </div>
-        <div class="main-container">
+        </section>
+        <section class="main-container">
           <ProductGrid btnText="Buy Now" title="Candles" cards= {candleCards}/>
-        </div>
+        </section>
         <Quote />
-        <div class="main-container">
+        <section class="main-container">
           <About />
-        </div>
-        <div class="main-container">
+        </section>
+        <section class="main-container">
           <Map />
-        </div>
+        </section>
         <!-- <Video
         title="Who am I ?"
         poster={videoPoster}
@@ -114,22 +114,22 @@
       <HeroBanner />
     </header>
       <main>
-        <div class="m__main-container">
+        <section class="m__main-container">
           <ProductGrid btnText="Book Now" title="Readings" cards={readingsCards} />
-        </div>
-        <div class="m__main-container">  
+        </section>
+        <section class="m__main-container">  
           <Testimonials />
-        </div>
-        <div class="m__main-container">
+        </section>
+        <section class="m__main-container">
           <ProductGrid btnText="Buy Now" title="Candles" cards= {candleCards}/>
-        </div>
+        </section>
         <Quote />
-        <div class="m__main-container">
+        <section class="m__main-container">
           <About />
-        </div>
-        <div class="m__main-container">
+        </section>
+        <section class="map_section m__main-container">
           <Map />
-        </div>
+        </section>
       <footer>
         <Footer />
       </footer>
@@ -159,10 +159,15 @@
     transform: translate(0, -100px);
     border-radius: 1rem;
     box-shadow: 0 2px 10px #00000025;
+    padding-top: 10rem;
   }
 
   header {
     position: relative;
+  }
+
+  section {
+    margin-bottom: 15rem;
   }
 
   @media (max-width: 1000px) {
@@ -198,6 +203,7 @@
     header {
       z-index: 1;
       position:fixed;
+      top: 0;
       width: 100%;
     }
 

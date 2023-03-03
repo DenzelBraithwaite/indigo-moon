@@ -42,8 +42,6 @@
     color: var(--secondary-purple);
     text-align: center;
     font-weight: 400;
-    margin: 3rem auto;
-    padding-top: 10rem;
     font-size: 2rem;
   }
   
@@ -54,7 +52,7 @@
     display: block;
     color: var(--secondary-purple);
     font-size: 1.8rem;
-    margin: 5rem auto 15rem;
+    margin-top: 2rem;
   }
   
   .more:hover,
@@ -76,7 +74,6 @@
 
     .services-title {
       padding-top: 10rem;
-      margin-top: 0;
     }
 
     .m__more:link,
@@ -84,7 +81,7 @@
       display: inline-block;
       text-decoration: none;
       padding: 0.5rem 1rem;
-      margin: 0 auto 10rem;
+      margin: 0 auto;
       border: 2px solid #724f71a1;
       border-radius: 1rem;
       color: #724f71;
