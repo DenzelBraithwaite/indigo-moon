@@ -27,7 +27,7 @@
 <div class="mobile">
     <div class="m__header">
         <div class="m__wrapper-left">
-            <img class="m__moon" src="/public/bg.webp" alt="display of tarot cards, candles and sage. Displayed as a circle, resembling a moon.">
+            <img class="m__moon" src="/bg.webp" alt="display of tarot cards, candles and sage. Displayed as a circle, resembling a moon.">
             <h1 class="m__title"><span class="m__indigo">Indigo</span> Moon Tarot</h1>
             <h2 class="m__subtitle">A Spiritual Feeling</h2>
         </div>

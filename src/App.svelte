@@ -39,28 +39,28 @@
       {
         'src': "/candle-blue.webp", // Try after with symbol, no string?
         'alt': "Blue candle.",
-        'title': "Mystical Blue Candle",
+        'title': "Celestial Blue",
         'description': "Experience magical aromas...",
         'cost': "$10"
       },
       {
         'src': "/candle-orange.webp",
         'alt': "orange candle.",
-        'title': "Relaxing Orange Candle",
+        'title': "Harvest Spice",
         'description': "Experience magical aromas...",
         'cost': "$10"
       },
       {
         'src': "/candle-red.webp",
         'alt': "red candle.",
-        'title': "Passionate Red Candle",
+        'title': "Red Rose",
         'description': "Experience magical aromas...",
         'cost': "$10"
       },
       {
         'src': "/candle-yellow.webp",
         'alt': "yellow candle.",
-        'title': "Vibrant Yellow Candle",
+        'title': "Chamomile",
         'description': "Experience magical aromas...",
         'cost': "$10"
       }
