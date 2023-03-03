@@ -179,7 +179,6 @@
             z-index: 3;
             position: relative;
             background-color: #000000ad;
-            color: #fff;
             width: 350px;
             height: 350px;
             margin: 5rem auto 0;

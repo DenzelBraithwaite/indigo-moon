@@ -31,7 +31,7 @@
         'title': "Psychic Reading",
         'description': "30 min",
         'cost': "$40"
-      }
+      },
     ];
 
       // Candles Grid
@@ -41,35 +41,42 @@
         'alt': "Blue candle.",
         'title': "Celestial Blue",
         'description': "Experience magical aromas...",
-        'cost': "$10"
+        'cost': "$8"
       },
       {
         'src': "/candle-orange.webp",
         'alt': "Orange candle.",
         'title': "Harvest Spice",
         'description': "Experience magical aromas...",
-        'cost': "$10"
+        'cost': "$8"
       },
       {
         'src': "/candle-red.webp",
         'alt': "Red candle.",
         'title': "Red Rose",
         'description': "Experience magical aromas...",
-        'cost': "$10"
+        'cost': "$8"
       },
       {
         'src': "/candle-green.webp",
         'alt': "Green candle.",
-        'title': "Spring",
+        'title': "Peppermint & Eucalyptus",
         'description': "Experience magical aromas...",
-        'cost': "$10"
+        'cost': "$8"
       },
       {
         'src': "/candle-purple.webp",
         'alt': "Purple candle.",
         'title': "Lavender",
         'description': "Experience magical aromas...",
-        'cost': "$10"
+        'cost': "$8"
+      },
+      {
+        'src': "/candle-yellow.webp",
+        'alt': "yellow candle.",
+        'title': "Chamomile",
+        'description': "Experience magical aromas...",
+        'cost': "$8"
       }
     ];
 
@@ -89,13 +96,13 @@
       </header>
       <main>
         <section class="main-container">
-          <ProductGrid btnText="Book Now" title="Readings" cards={readingsCards} />
+          <ProductGrid gridType='readings' btnText="Book Now" title="Readings" cards={readingsCards} />
         </section>
         <section class="main-container">  
           <Testimonials />
         </section>
         <section class="main-container">
-          <ProductGrid btnText="Buy Now" title="Candles" cards= {candleCards}/>
+          <ProductGrid gridType='candles' btnText="Buy Now" title="Candles" cards= {candleCards}/>
         </section>
         <Quote />
         <section class="main-container">

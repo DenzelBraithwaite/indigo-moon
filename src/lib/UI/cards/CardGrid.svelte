@@ -1,26 +1,56 @@
 <script>
     import ProductCard from './ProductCard.svelte';
   
+    export let gridType;
+    let shopPageUrl = 'src/lib/pages/shop.Svelte';
     export let cards = [];
     export let title = '';
     export let btnText = '';
-    // export let gridType = '';
+
+    // Readings
+    let readingsLinks = [
+      'src/lib/pages/show.Svelte',
+      'src/lib/pages/show.Svelte',
+      'src/lib/pages/show.Svelte'
+
+    ];
+    let readingsHovers = [
+      'blue',
+      'orange',
+      'red',
+      'green',
+      'purple',
+      'yellow',
+    ]
+
+    // Candles
+    let candlesLinks = [
+      'src/lib/pages/show.Svelte',
+      'src/lib/pages/show.Svelte',
+      'src/lib/pages/show.Svelte',
+      'src/lib/pages/show.Svelte',
+      'src/lib/pages/show.Svelte',
+      'src/lib/pages/show.Svelte'
+
+    ];
   </script>
   
   <h1 class="services-title">{title}</h1>
   <div class="grid">
-    {#each cards as card}
+    {#each cards as card, index}
     <ProductCard
     src={card.src}
     alt={card.alt}
     title={card.title}
     description={card.description}
     cost={card.cost}
-    {btnText}/>
+    {btnText}
+    hover={readingsHovers[index]}
+    link={gridType === 'readings' ? readingsLinks[index] : candlesLinks[index]}/>
     {/each}
-    <a href="#" class="m__more">See more</a>
+    <a href={shopPageUrl} class="m__more">See more</a>
   </div>
-  <a href="#" class="more">See more</a>
+  <a href={shopPageUrl} class="more">See more</a>
     
 <style>
   .m__more {

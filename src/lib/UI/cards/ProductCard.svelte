@@ -7,9 +7,11 @@
     export let description = '';
     export let cost = '';
     export let btnText = '';
+    export let link;
+    export let hover;
 </script>
 
-<div class="product-card">
+<a class="product-card" href={link}>
     <img {src} {alt}>
     <div class="text-section">
         <div class="content">
@@ -17,12 +19,15 @@
             <p class="description">{description}</p>
             <p class="cost">{cost}</p>    
         </div>
-        <Button color='purple' text={btnText}/>
+        <Button {hover} {link} color='purple' text={btnText}/>
     </div>
-</div>
+</a>
 
 <style>
-    .product-card {
+    .product-card:link,
+    .product-card:visited {
+        color: var(--primary-grey);
+        text-decoration: none;
         position: relative;
         background-color: #ffffff;
         box-shadow: 2px 0 10px #00000034;
@@ -30,7 +35,9 @@
         transition: scale 0.1s ease-in;
     }
 
-    .product-card:hover {
+    .product-card:hover,
+    .product-card:active {
+        color: var(--primary-grey);
         cursor: pointer;
         scale: 1.1;
         box-shadow: 0 2px 20px #47a8f721;
@@ -60,7 +67,7 @@
 
     .title {
         font-weight: 500;
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         padding-bottom: 1rem;
         border-bottom: 1px solid #65466483; /* var(--secondary-purple), transparent*/
     }
