@@ -2,12 +2,10 @@
 
 </script>
 
-<section class="map-section">
-  <h1>Location</h1>
-  <a target="_blank" rel="noreferrer" href="https://www.google.com/maps/dir//Montreal,+QC/@45.500415,-73.5713993,15.75z/data=!4m9!4m8!1m0!1m5!1m1!1s0x4cc91a541c64b70d:0x654e3138211fefef!2m2!1d-73.5673919!2d45.5018869!3e0">
-    <img class="map-placeholder" src="/map-placeholder.webp" alt="map of montreal area"/>
-  </a>
-</section>
+<h1>Location</h1>
+<a target="_blank" rel="noreferrer" href="https://www.google.com/maps/dir//Montreal,+QC/@45.500415,-73.5713993,15.75z/data=!4m9!4m8!1m0!1m5!1m1!1s0x4cc91a541c64b70d:0x654e3138211fefef!2m2!1d-73.5673919!2d45.5018869!3e0">
+  <img class="map-placeholder" src="/map-placeholder.webp" alt="map of montreal area"/>
+</a>
 
 <style>
   .map-placeholder {
@@ -35,10 +33,6 @@
   }
   
   @media (max-width: 1000px) {
-    .map-section {
-      margin: 0 auto;
-      text-align: center;
-    }
     .map-placeholder {
       font-size: 2rem;
       color: var(--primary-grey);

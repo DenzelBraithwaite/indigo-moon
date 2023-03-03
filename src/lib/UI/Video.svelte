@@ -4,6 +4,13 @@
     export let title;
 </script>
 
+<div class="container">
+    <h1 class="title">{title}</h1>
+    <video controls {poster} {src} {title}>
+        <track kind="captions">
+    </video>
+</div>
+
 <style>
     video {
         display: block;
@@ -16,10 +23,6 @@
         box-shadow: 0 2px 10px #65466497; /* --secondary-purple, transparent */
     }
 
-    .video-section {
-        margin-bottom: 15rem;
-    }
-
     .title {
         font-size: 2rem;
         margin: 0 auto;
@@ -28,11 +31,3 @@
         color: var(--secondary-purple);
     }
 </style>
-<section class="video-section container">
-    <div class="container">
-        <h1 class="title">{title}</h1>
-        <video controls {poster} {src} {title}>
-            <track kind="captions">
-        </video>
-    </div>
-</section>

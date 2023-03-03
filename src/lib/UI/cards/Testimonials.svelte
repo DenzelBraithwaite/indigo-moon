@@ -7,7 +7,7 @@ let author2 = 'Sarah89';
 let author3 = 'JennaHS';
 </script>
 
-<section class="container">
+<div class="container">
     <h1 class="title">What my clients say</h1>
     <div class="flex-box">
         <div class="quote-group">
@@ -43,7 +43,7 @@ let author3 = 'JennaHS';
             <p class="author">{author3}</p>
         </div>
     </div>
-</section>
+</div>
 
 <style>
     .container h1 {
