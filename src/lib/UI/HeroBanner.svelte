@@ -40,8 +40,8 @@
     <div on:click={mobileModalHandler} class="m__modal-overlay {visibility}"></div>
         <div class="{visibility}">
             <div class="m__menu-modal">
-                <i class="cart-icon fa-solid fa-cart-shopping"></i>
                 <i class="home-icon fa-solid fa-house"></i>
+                <i class="cart-icon fa-solid fa-cart-shopping"></i>
                 <a class="insta-icon" href="https://www.instagram.com/indigomoontarotwithtiffany/" target="_blank" rel="noreferrer">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
@@ -178,7 +178,7 @@
         .m__menu-modal {
             z-index: 3;
             position: relative;
-            background-color: #000000b0;
+            background-color: #000000ad;
             color: #fff;
             width: 350px;
             height: 350px;
@@ -191,7 +191,6 @@
             grid-template-rows: 1fr 1fr;
             justify-content: center;
             align-items: center;
-            align-content: center;
             justify-items: center;
         }
 
@@ -205,25 +204,63 @@
             padding-left: 0.2rem;
         }
 
-        /* .m__wrapper-right:active {
-            background-color: #a782a5;
-            stroke: #000;
-        } */
-        
         .home-icon {
-            stroke: #fff;
-            height: 1.5rem;
-            width: 1.5rem;
-            background-color: green;
+            height: 2.25rem;
+            width: 2.25rem;
+            color: #000000b0;
+            scale: 4;
+            background-color: #654664b9;
+            border-radius: 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .cart-icon {
-            color: red;
+            height: 2.25rem;
+            width: 2.25rem;
+            color: #000000b0;
             scale: 4;
-            background-color: yellow;
+            background-color: #654664b9;
+            border-radius: 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        /* Add / Remove classes */
+        .insta-icon {
+            text-decoration: none;
+            height: 2.25rem;
+            width: 2.25rem;
+            color: #000000b0;
+            scale: 4;
+            background-color: #654664b9;
+            border-radius: 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .yt-icon {
+            text-decoration: none;
+            height: 2.25rem;
+            width: 2.25rem;
+            color: #000000b0;
+            scale: 4;
+            background-color: #654664b9;
+            border-radius: 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        /* Dynamic classes */
         .visible {
             display: block;
         }

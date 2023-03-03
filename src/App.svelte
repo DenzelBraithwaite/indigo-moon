@@ -127,7 +127,7 @@
         <section class="m__main-container">
           <About />
         </section>
-        <section class="map_section m__main-container">
+        <section class="map-section m__main-container">
           <Map />
         </section>
       <footer>
@@ -170,6 +170,10 @@
     margin-bottom: 15rem;
   }
 
+  section:last-of-type {
+    margin-bottom: 5rem;
+  }
+
   @media (max-width: 1000px) {
     .desktop {
       display: none;
@@ -197,7 +201,7 @@
       box-shadow: 0 2px 10px #00000025;
       transform: translate(0, 8rem);
       border-radius: 1rem;
-
+      padding-top: 0;
     }
 
     header {
@@ -210,6 +214,10 @@
     nav {
       position: sticky;
       bottom: 0; 
+    }
+
+    section {
+      margin-bottom: 10rem;
     }
   }
 </style>
