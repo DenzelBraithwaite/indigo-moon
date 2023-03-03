@@ -200,6 +200,11 @@
             border-left: 1px solid #fff;
             padding-left: 0.2rem;
         }
+
+        /* .m__wrapper-right:active {
+            background-color: #a782a5;
+            stroke: #000;
+        } */
         
         .home-icon {
             stroke: #fff;

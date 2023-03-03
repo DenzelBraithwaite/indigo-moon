@@ -109,11 +109,10 @@
 </div>
 
 <!-- MOBILE -->
-<div class="mobile">
-  <main>
-      <header>
-        <HeroBanner />
-      </header>
+  <div class="mobile">
+    <header>
+      <HeroBanner />
+    </header>
       <main>
         <div class="m__main-container">
           <ProductGrid btnText="Book Now" title="Readings" cards={readingsCards} />
@@ -138,7 +137,7 @@
     <nav>
       <Navbar />
     </nav>
-</div>
+  </div>
 </body>
 
 
@@ -150,7 +149,7 @@
   body {
     position: relative;
     overflow-x: hidden;
-    background: linear-gradient(to bottom, #351733, #4793f76c);
+    background: linear-gradient(to bottom, #3b263a 15%, #9f9bbde5, #3b263a);
   }
 
   main {
@@ -172,21 +171,21 @@
     }
 
     .mobile {
-      display: flex;
+      display: block;
+      margin: 0;
+      padding: 0;
     }
 
     body {
       position: relative;
       overflow-x: hidden;
-      background: linear-gradient(to bottom, #351733, #4793f76c);
+      background: linear-gradient(to bottom, #3b263a 15%, #9f9bbde5, #3b263a);
     }
 
     main {
       position: relative;
       background-color: #fffafef3;
-      width: 100%;
-      height: 100vh;
-      overflow-y: scroll;
+      width: 95%;
       margin: 0 auto;
       border-radius: 0;
       box-shadow: 0 2px 10px #00000025;
