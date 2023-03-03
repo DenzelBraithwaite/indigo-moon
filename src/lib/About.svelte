@@ -83,8 +83,12 @@
       flex-direction: column;
     }
 
+    img {
+      width: 320px;
+    }
+
     .content {
-      transform: translate(0, -10%);
+      transform: translate(0, -2rem);
     }
   }
 </style>

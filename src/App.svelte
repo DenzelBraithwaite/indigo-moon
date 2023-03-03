@@ -180,6 +180,7 @@
       position: relative;
       overflow-x: hidden;
       background: linear-gradient(to bottom, #3b263a 15%, #9f9bbde5, #3b263a);
+      padding-bottom: 10rem; /* Because of main translate 10rem */
     }
 
     main {
@@ -189,14 +190,15 @@
       margin: 0 auto;
       border-radius: 0;
       box-shadow: 0 2px 10px #00000025;
-      transform: translate(0, 0);
+      transform: translate(0, 8rem);
+      border-radius: 1rem;
 
     }
 
     header {
       z-index: 1;
-      position: sticky;
-      top: 0;
+      position:fixed;
+      width: 100%;
     }
 
     nav {
