@@ -5,15 +5,23 @@ Indigo Moon Tarot is a custom built website for fortune telling readings. It was
 <br>
 <br>
 
-![website preview1](/public/website_screenshot1.webp)
+![website preview1](/public/previews/preview1.webp)
 
 <br>
 
-![website preview1](/public/website_screenshot2.webp)
+![website preview1](/public/previews/preview2.webp)
 
 <br>
 
-![website preview1](/public/website_screenshot3.webp)
+![website preview1](/public/previews/preview3.webp)
+
+<br>
+
+![website preview1](/public/previews/mobile_preview1.webp)
+
+<br>
+
+![website preview1](/public/previews/mobile_preview2.webp)
 
 <br>
 
