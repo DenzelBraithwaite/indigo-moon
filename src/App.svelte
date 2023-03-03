@@ -45,22 +45,29 @@
       },
       {
         'src': "/candle-orange.webp",
-        'alt': "orange candle.",
+        'alt': "Orange candle.",
         'title': "Harvest Spice",
         'description': "Experience magical aromas...",
         'cost': "$10"
       },
       {
         'src': "/candle-red.webp",
-        'alt': "red candle.",
+        'alt': "Red candle.",
         'title': "Red Rose",
         'description': "Experience magical aromas...",
         'cost': "$10"
       },
       {
-        'src': "/candle-yellow.webp",
-        'alt': "yellow candle.",
-        'title': "Chamomile",
+        'src': "/candle-green.webp",
+        'alt': "Green candle.",
+        'title': "Spring",
+        'description': "Experience magical aromas...",
+        'cost': "$10"
+      },
+      {
+        'src': "/candle-purple.webp",
+        'alt': "Purple candle.",
+        'title': "Lavender",
         'description': "Experience magical aromas...",
         'cost': "$10"
       }
