@@ -40,42 +40,42 @@
         'src': "/candle-blue.webp", // Try after with symbol, no string?
         'alt': "Blue candle.",
         'title': "Celestial Blue",
-        'description': "Experience magical aromas...",
+        'description': "Bergamot - For moon magic or financial manifestation.",
         'cost': "$8"
       },
       {
         'src': "/candle-orange.webp",
         'alt': "Orange candle.",
         'title': "Harvest Spice",
-        'description': "Experience magical aromas...",
+        'description': "Fall time lovers, allow this scent to fill your room, with the sweet fragrances of warm spices and cinnamon. ",
         'cost': "$8"
       },
       {
         'src': "/candle-red.webp",
         'alt': "Red candle.",
         'title': "Red Rose",
-        'description': "Experience magical aromas...",
+        'description': "Bring love and abundance into your life, set an intention and allow your mind to manifest what you desire. ",
         'cost': "$8"
       },
       {
         'src': "/candle-green.webp",
         'alt': "Green candle.",
         'title': "Peppermint & Eucalyptus",
-        'description': "Experience magical aromas...",
+        'description': "Wake up your senses with this fragrant aroma. Perfect for  a bath or morning alertness.",
         'cost': "$8"
       },
       {
         'src': "/candle-purple.webp",
         'alt': "Purple candle.",
         'title': "Lavender",
-        'description': "Experience magical aromas...",
+        'description': "Indulge in a little “ you time “. Have the perfect relaxing evening, preparing for a goodnight rest and sweet dreams.",
         'cost': "$8"
       },
       {
         'src': "/candle-yellow.webp",
         'alt': "yellow candle.",
         'title': "Chamomile",
-        'description': "Experience magical aromas...",
+        'description': "Create a relaxing space and indulge your senses in sweet chamomile.",
         'cost': "$8"
       }
     ];
