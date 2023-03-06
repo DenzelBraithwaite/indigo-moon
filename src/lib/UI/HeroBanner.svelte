@@ -24,20 +24,20 @@
 </div>
 
 <!-- Mobile -->
-<div class="mobile">
-    <div class="m__header">
-        <div class="m__wrapper-left">
-            <img class="m__moon" src="/bg.webp" alt="display of tarot cards, candles and sage. Displayed as a circle, resembling a moon.">
-            <h1 class="m__title"><span class="m__indigo">Indigo</span> Moon Tarot</h1>
-            <h2 class="m__subtitle">A Spiritual Feeling</h2>
+    <div class="mobile">
+        <div class="m__header">
+            <div class="m__wrapper-left">
+                <img class="m__moon" src="/bg.webp" alt="display of tarot cards, candles and sage. Displayed as a circle, resembling a moon.">
+                <h1 class="m__title"><span class="m__indigo">Indigo</span> Moon Tarot</h1>
+                <h2 class="m__subtitle">A Spiritual Feeling</h2>
+            </div>
+            <button class="m__wrapper-right" on:click={mobileMenuBtnHandler}>
+                <svg class="m__menu-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
         </div>
-        <button class="m__wrapper-right" on:click={mobileMenuBtnHandler}>
-            <svg class="m__menu-icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-        </button>
-    </div>
-    <div on:click={mobileModalHandler} class="m__modal-overlay {visibility}"></div>
+        <div on:click={mobileModalHandler} class="m__modal-overlay {visibility}"></div>
         <div class="{visibility}">
             <div class="m__menu-modal">
                 <i class="home-icon fa-solid fa-house"></i>

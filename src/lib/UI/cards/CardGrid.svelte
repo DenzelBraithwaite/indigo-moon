@@ -33,7 +33,7 @@
       'src/routes/show.Svelte',
       'src/routes/show.Svelte',
       'src/routes/show.Svelte',
-      'src/routes/show.Svelte'
+      'src/routes/showYellowCandle.Svelte'
 
     ];
   </script>
