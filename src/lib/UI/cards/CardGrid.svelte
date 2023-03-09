@@ -1,42 +1,42 @@
 <script>
-    import ProductCard from './ProductCard.svelte';
+  import ProductCard from './ProductCard.svelte';
+
+  export let gridType;
+  export let cards = [];
+  export let title = '';
+  export let btnText = '';
+
   
-    export let gridType;
-    let shopPageUrl = 'src/routes/shop.Svelte';
-    export let cards = [];
-    export let title = '';
-    export let btnText = '';
+  let readingsHovers = [
+    'blue',
+    'orange',
+    'red',
+    'green',
+    'light-purple',
+    'yellow',
+  ]
 
-    // Readings
-    let readingsLinks = [
-      'src/routes/show.Svelte',
-      'src/routes/show.Svelte',
-      'src/routes/show.Svelte',
-      'src/routes/show.Svelte',
-      'src/routes/show.Svelte',
-      'src/routes/show.Svelte'
+  // Readings Routes
+  let readingsLinks = [
+    'src/routes/show.Svelte',
+    'src/routes/show.Svelte',
+    'src/routes/show.Svelte',
+    'src/routes/show.Svelte',
+    'src/routes/show.Svelte',
+    'src/routes/show.Svelte'
+  ];
 
-    ];
-    let readingsHovers = [
-      'blue',
-      'orange',
-      'red',
-      'green',
-      'light-purple',
-      'yellow',
-    ]
+  // Candles
+  let candlesLinks = [
+    'src/routes/show.Svelte',
+    'src/routes/show.Svelte',
+    'src/routes/show.Svelte',
+    'src/routes/show.Svelte',
+    'src/routes/show.Svelte',
+    '/show-yellow-candle'
 
-    // Candles
-    let candlesLinks = [
-      'src/routes/show.Svelte',
-      'src/routes/show.Svelte',
-      'src/routes/show.Svelte',
-      'src/routes/show.Svelte',
-      'src/routes/show.Svelte',
-      'src/routes/showYellowCandle.Svelte'
-
-    ];
-  </script>
+  ];
+</script>
   
   <h1 class="services-title">{title}</h1>
   <div class="grid">
@@ -49,11 +49,11 @@
     cost={card.cost}
     {btnText}
     hover={gridType === 'candles' ? readingsHovers[index] : 'purple'}
-    link={gridType === 'readings' ? readingsLinks[index] : candlesLinks[index]}/>
+    path={gridType === 'readings' ? readingsLinks[index] : candlesLinks[index]}/>
     {/each}
-    <a href={shopPageUrl} class="m__more">See more</a>
+    <a href=# class="m__more">See more</a>
   </div>
-  <a href={shopPageUrl} class="more">See more</a>
+  <a href=# class="more">See more</a>
     
 <style>
   .m__more {

@@ -29,7 +29,7 @@
       </div>
     </nav>
       <div class="product-wrapper">
-        <img class="product-img" src="/public/candle-yellow.webp" alt="">
+        <img class="product-img" src="/candle-yellow.webp" alt="">
         <div class="product-wrapper-right">
           <h1>Chamomile</h1>
           <p class="description">Create a relaxing space and indulge your senses in sweet chamomile.</p>

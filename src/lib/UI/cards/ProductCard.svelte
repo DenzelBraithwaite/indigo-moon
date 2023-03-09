@@ -7,11 +7,11 @@
     export let description = '';
     export let cost = '';
     export let btnText = '';
-    export let link;
+    export let path;
     export let hover;
 </script>
 
-<a class="product-card" href={link}>
+<a class="product-card" href={path}>
     <img {src} {alt}>
     <div class="text-section">
         <div class="content">
@@ -19,7 +19,7 @@
             <p class="description">{description}</p>
             <p class="cost">{cost}</p>    
         </div>
-        <Button {hover} {link} color='purple' text={btnText}/>
+        <Button {hover} {path} color='purple' text={btnText}/>
     </div>
 </a>
 

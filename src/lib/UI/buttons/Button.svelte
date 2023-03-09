@@ -1,31 +1,36 @@
 <script>
+  import { Link } from "svelte-routing";
+
+
     export let text;
     export let color;
-    export let link;
+    export let path;
     export let hover;
 </script>
 
 {#if color === 'purple'}
   {#if hover === 'blue'}
-    <a class="btn btn-purple blue-hover"  href={link}>{text}</a>
+    <!-- <a class="btn btn-purple blue-hover"  href={path}>{text}</a> -->
+    <Link to={path}>{text}</Link>
   {/if}
   {#if hover === 'orange'}
-  <a class="btn btn-purple orange-hover"  href={link}>{text}</a>
+  <a class="btn btn-purple orange-hover"  href={path}>{text}</a>
   {/if}
   {#if hover === 'red'}
-  <a class="btn btn-purple red-hover"  href={link}>{text}</a>
+  <a class="btn btn-purple red-hover"  href={path}>{text}</a>
   {/if}
   {#if hover === 'green'}
-  <a class="btn btn-purple green-hover"  href={link}>{text}</a>
+  <a class="btn btn-purple green-hover"  href={path}>{text}</a>
   {/if}
   {#if hover === 'purple'}
-  <a class="btn btn-purple purple-hover"  href={link}>{text}</a>
+  <a class="btn btn-purple purple-hover"  href={path}>{text}</a>
   {/if}
   {#if hover === 'light-purple'}
-  <a class="btn btn-purple light-purple-hover"  href={link}>{text}</a>
+  <a class="btn btn-purple light-purple-hover"  href={path}>{text}</a>
   {/if}
   {#if hover === 'yellow'}
-  <a class="btn btn-purple yellow-hover"  href={link}>{text}</a>
+  <!-- <a class="btn btn-purple yellow-hover"  href={path}>{text}</a> -->
+  <Link to={path}>{text}</Link>
   {/if}
 {/if }
 
