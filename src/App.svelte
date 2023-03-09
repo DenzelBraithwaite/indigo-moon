@@ -13,7 +13,7 @@
   </Route>
 
   <!-- Yellow Candle -->
-  <Route path='/show-yellow-candle'>
+  <Route path='/candles/yellow'>
     <ShowYellowCandle />
   </Route>
 

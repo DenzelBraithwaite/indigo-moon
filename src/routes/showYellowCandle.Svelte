@@ -36,6 +36,7 @@
           <a class="btn btn-purple yellow-hover"  href="mailto:tiffany@indigomoontarot.com">Request</a>
         </div>
       </div>
+
       <footer>
         <p class="copyright">&copy;2023 by Indigo Moon Tarot</p>
       </footer>

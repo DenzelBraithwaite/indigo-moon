@@ -1,7 +1,6 @@
 <script>
   import { Link } from "svelte-routing";
 
-
     export let text;
     export let color;
     export let path;
@@ -10,91 +9,96 @@
 
 {#if color === 'purple'}
   {#if hover === 'blue'}
-    <!-- <a class="btn btn-purple blue-hover"  href={path}>{text}</a> -->
-    <Link to={path}>{text}</Link>
+    <Link class="link btn btn-purple blue-hover" to={path}>{text}</Link>
   {/if}
+
   {#if hover === 'orange'}
-  <a class="btn btn-purple orange-hover"  href={path}>{text}</a>
+    <Link class="link btn btn-purple orange-hover" to={path}>{text}</Link>
   {/if}
+
   {#if hover === 'red'}
-  <a class="btn btn-purple red-hover"  href={path}>{text}</a>
+    <Link class="link btn btn-purple red-hover" to={path}>{text}</Link>
   {/if}
+
   {#if hover === 'green'}
-  <a class="btn btn-purple green-hover"  href={path}>{text}</a>
+    <Link class="link btn btn-purple green-hover" to={path}>{text}</Link>
   {/if}
+
   {#if hover === 'purple'}
-  <a class="btn btn-purple purple-hover"  href={path}>{text}</a>
+    <Link class="link btn btn-purple purple-hover" to={path}>{text}</Link>
   {/if}
+
   {#if hover === 'light-purple'}
-  <a class="btn btn-purple light-purple-hover"  href={path}>{text}</a>
+    <Link class="link btn btn-purple light-purple-hover" to={path}>{text}</Link>
   {/if}
+
   {#if hover === 'yellow'}
-  <!-- <a class="btn btn-purple yellow-hover"  href={path}>{text}</a> -->
-  <Link to={path}>{text}</Link>
+    <Link class="link btn btn-purple yellow-hover" to={path}>{text}</Link>
   {/if}
 {/if }
 
 <style>
-    .btn:link,
-    .btn:visited {
-      text-align: center;
-      font-size: 1.125rem;
-      display: inline-block;
-      text-decoration: none;
-      border: none;
-      color: #fff;
-      padding: 0.75rem 1rem;
-      border-radius: 0.5rem;
-      margin-bottom: 1.25rem;
-      box-shadow: 0 2px 8px #65466492; /* var(--secondary-purple), transparent*/
-      box-shadow: 0 2px 8px #fff;
+  :global(.btn),
+  :global(.btn:link),
+  :global(.btn:visited) {
+    text-align: center;
+    font-size: 1.125rem;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    /* margin-bottom: 1.25rem; */
+    box-shadow: 0 2px 8px #65466492; /* var(--secondary-purple), transparent*/
+    box-shadow: 0 2px 8px #fff;
   }
   
-  .btn:hover,
-  .btn:active {
+  :global(.btn:hover),
+  :global(.btn:active) {
     cursor: pointer;
     box-shadow: 0 2px 10px #65466438; /* var(--secondary-purple), transparent*/
     scale: 101%;
   }
   
-  .btn-purple:link,
-  .btn-purple:visited {
+  :global(.btn-purple:link),
+  :global(.btn-purple:visited) {
     color: #fff;
     background: linear-gradient(to right, #724f71, #65466492);
   }
       
-  .purple-hover:hover,
-  .purple-hover:active {
+  :global(.purple-hover:hover),
+  :global(.purple-hover:active) {
     background: linear-gradient(to right, #95719b, #65466492);
   }
      
-  .light-purple-hover:hover,
-  .light-purple-hover:active {
+  :global(.light-purple-hover:hover),
+  :global(.light-purple-hover:active) {
     background: linear-gradient(to right, #E4B8EB, #65466492);
   }
 
-  .blue-hover:hover,
-  .blue-hover:active {
+  :global(.blue-hover:hover),
+  :global(.blue-hover:active) {
     background: linear-gradient(to right, #47a8f7e5, #65466492);
   }
   
-  .orange-hover:hover,
-  .orange-hover:active {
+  :global(.orange-hover:hover),
+  :global(.orange-hover:active) {
     background: linear-gradient(to right, #D8690D, #65466492);
   }
     
-  .red-hover:hover,
-  .red-hover:active {
+  :global(.red-hover:hover),
+  :global(.red-hover:active) {
     background: linear-gradient(to right, #B92509, #65466492);
   }
     
-  .green-hover:hover,
-  .green-hover:active {
+  :global(.green-hover:hover),
+  :global(.green-hover:active) {
     background: linear-gradient(to right, #C3E850, #65466492);
   }
 
-  .yellow-hover:hover,
-  .yellow-hover:active {
+  :global(.yellow-hover:hover),
+  :global(.yellow-hover:active) {
     background: linear-gradient(to right, #DCBA13, #65466492);
   }
   </style>

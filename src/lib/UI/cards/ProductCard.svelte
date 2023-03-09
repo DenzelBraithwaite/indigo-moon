@@ -33,6 +33,7 @@
         box-shadow: 2px 0 10px #00000034;
         border-radius: 0.5rem;
         transition: scale 0.1s ease-in;
+        padding-bottom: 1rem;
     }
 
     .product-card:hover,
@@ -52,6 +53,17 @@
         
     }
 
+    .description {
+        font-size: 0.9rem;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        margin-bottom: 0;
+    }
+
     .content {
         height: 150px;
     }
@@ -61,13 +73,13 @@
         flex-direction: column;
         width: 80%;
         margin: 0 auto;
-        padding-bottom: 1rem;
         justify-content: space-between;
     }
 
     .title {
-        font-weight: 500;
-        font-size: 1.2rem;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
         padding-bottom: 1rem;
         border-bottom: 1px solid #65466483; /* var(--secondary-purple), transparent*/
     }

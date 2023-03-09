@@ -18,22 +18,19 @@
 
   // Readings Routes
   let readingsLinks = [
-    'src/routes/show.Svelte',
-    'src/routes/show.Svelte',
-    'src/routes/show.Svelte',
-    'src/routes/show.Svelte',
-    'src/routes/show.Svelte',
-    'src/routes/show.Svelte'
+    '/candles/yellow',
+    '/candles/yellow',
+    '/candles/yellow',
   ];
 
   // Candles
   let candlesLinks = [
-    'src/routes/show.Svelte',
-    'src/routes/show.Svelte',
-    'src/routes/show.Svelte',
-    'src/routes/show.Svelte',
-    'src/routes/show.Svelte',
-    '/show-yellow-candle'
+    '/candles/yellow',
+    '/candles/yellow',
+    '/candles/yellow',
+    '/candles/yellow',
+    '/candles/yellow',
+    '/candles/yellow'
 
   ];
 </script>
