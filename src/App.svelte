@@ -1,7 +1,7 @@
 <script>
   import { Router, Route, Link } from 'svelte-routing';
   import Home from './routes/home.svelte';
-  import ShowYellowCandle from './routes/showYellowCandle.svelte';
+  import YellowCandle from './routes/yellowCandle.svelte';
 
 </script>
 
@@ -14,7 +14,7 @@
 
   <!-- Yellow Candle -->
   <Route path='/candles/yellow'>
-    <ShowYellowCandle />
+    <YellowCandle />
   </Route>
 
 

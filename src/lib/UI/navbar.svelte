@@ -1,10 +1,11 @@
 <script>
+    import { Link } from 'svelte-routing';
 
 </script>
 
 <!-- Desktop -->
 <nav>
-    <h1 class="title"><span class="indigo">Indigo</span> Moon Tarot</h1>
+    <Link to='/' class="nav-brand"><span class="indigo">Indigo</span> Moon Tarot</Link>
     <div class="nav-options">
         <a href="#">Home</a>
         <a href="#">About</a>
@@ -21,7 +22,7 @@
 <style>
     nav {
         font-family: 'Shantell Sans', 'Mynerve', cursive;
-        background-color: #000000d0;
+        background-color: #000000e7;
         color: #fff;
         line-height: 1;
         width: 100vw;
@@ -36,11 +37,20 @@
         z-index: 1;
     }
     
-    .title {
+    :global(.nav-brand:link),
+    :global(.nav-brand:visited) {
+        text-decoration: none;
+        color: #fff;
         font-size: 1.75rem;
         margin: 0;
         font-weight: normal;
         cursor: default;
+    }
+
+    :global(.nav-brand:hover),
+    :global(.nav-brand:active) {
+        cursor: pointer;
+        opacity: 0.8;
     }
 
     .indigo {
