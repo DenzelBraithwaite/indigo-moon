@@ -41,7 +41,7 @@
   :global(.btn),
   :global(.btn:link),
   :global(.btn:visited) {
-    transition: background-color 0.35s ease-out;
+    transition: background-color 1.25s ease-in;
     text-align: center;
     font-size: 1.125rem;
     display: inline-block;
@@ -50,13 +50,13 @@
     color: #fff;
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
-    /* margin-bottom: 1.25rem; */
     box-shadow: 0 2px 8px #65466492; /* var(--secondary-purple), transparent*/
     box-shadow: 0 2px 8px #fff;
   }
   
   :global(.btn:hover),
   :global(.btn:active) {
+    transition: background-color 0.2s ease-out;
     cursor: pointer;
     box-shadow: 0 2px 10px #65466438; /* var(--secondary-purple), transparent*/
     scale: 101%;
