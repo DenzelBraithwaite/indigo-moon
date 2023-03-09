@@ -41,6 +41,7 @@
   :global(.btn),
   :global(.btn:link),
   :global(.btn:visited) {
+    transition: background-color 0.35s ease-out;
     text-align: center;
     font-size: 1.125rem;
     display: inline-block;
@@ -63,42 +64,48 @@
   
   :global(.btn-purple:link),
   :global(.btn-purple:visited) {
-    color: #fff;
-    background: linear-gradient(to right, #724f71, #65466492);
+    background: none;
+    background-color: #724f71;
   }
       
   :global(.purple-hover:hover),
-  :global(.purple-hover:active) {
-    background: linear-gradient(to right, #95719b, #65466492);
+  :global(.purple-hover:active) {    
+    background: none;
+    background-color: #95719b;
   }
      
   :global(.light-purple-hover:hover),
   :global(.light-purple-hover:active) {
-    background: linear-gradient(to right, #E4B8EB, #65466492);
+    background: none;
+    background-color: #b689bd;
   }
-
   :global(.blue-hover:hover),
   :global(.blue-hover:active) {
-    background: linear-gradient(to right, #47a8f7e5, #65466492);
+    background: none;
+    background-color: rgba(81, 163, 230, 0.898);
   }
   
   :global(.orange-hover:hover),
   :global(.orange-hover:active) {
-    background: linear-gradient(to right, #D8690D, #65466492);
+    background: none;
+    background-color: #D8690D;
   }
     
   :global(.red-hover:hover),
   :global(.red-hover:active) {
-    background: linear-gradient(to right, #B92509, #65466492);
+    background: none;
+    background-color: #c0381c;
   }
     
   :global(.green-hover:hover),
   :global(.green-hover:active) {
-    background: linear-gradient(to right, #C3E850, #65466492);
+    background: none;
+    background-color: #C3E850;
   }
 
   :global(.yellow-hover:hover),
   :global(.yellow-hover:active) {
-    background: linear-gradient(to right, #DCBA13, #65466492);
+    background: none;
+    background-color: #DCBA13;
   }
   </style>

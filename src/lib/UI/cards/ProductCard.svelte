@@ -30,7 +30,7 @@
         text-decoration: none;
         position: relative;
         background-color: #ffffff;
-        box-shadow: 2px 0 10px #00000034;
+        box-shadow: 2px 0 8px #0000001f;
         border-radius: 0.5rem;
         transition: scale 0.1s ease-in;
         padding-bottom: 1rem;
@@ -41,7 +41,7 @@
         color: var(--primary-grey);
         cursor: pointer;
         scale: 1.1;
-        box-shadow: 0 2px 20px #47a8f721;
+        box-shadow: 2px 0 20px #00000011;
         transition: scale 0.25s ease-out;
     }
 
