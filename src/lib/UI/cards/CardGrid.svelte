@@ -62,10 +62,12 @@
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(3, 275px);
+    grid-template-columns: repeat(3, 0.30fr);
+    grid-template-rows: 400px;
     gap: 4rem;
     row-gap: 5rem;
     justify-content: center;
+    justify-items: center;
   }
   
   .services-title {
@@ -91,6 +93,33 @@
   }
 
   @media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, 0.45fr);
+    grid-template-rows: 375px 375px 375px;
+    column-gap: 2rem;
+  }
+  
+  .services-title {
+    font-size: 2rem;
+  }
+  
+  .more:link,
+  .more:visited {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: var(--secondary-purple);
+    font-size: 1.8rem;
+    margin-top: 2rem;
+  }
+  
+  .more:hover,
+  .more:active {
+    text-decoration: underline;
+  }
+  }
+
+  @media (max-width: 450px) {
     .more:link,
     .more:visited {
       display: none;

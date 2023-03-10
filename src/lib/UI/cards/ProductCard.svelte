@@ -26,14 +26,14 @@
 <style>
     .product-card:link,
     .product-card:visited {
-        color: var(--primary-grey);
-        text-decoration: none;
         position: relative;
+        text-decoration: none;
+        max-width: 300px;
+        color: var(--primary-grey);
         background-color: #ffffff;
         box-shadow: 2px 0 8px #0000001f;
         border-radius: 0.5rem;
-        transition: scale 0.1s ease-in;
-        padding-bottom: 1rem;
+        transition: scale 0.1s ease-inww;
     }
 
     .product-card:hover,
@@ -46,14 +46,15 @@
     }
 
     .product-card img {
-        width: 275px;
-        height: 250px;
+        width: 100%;
+        height: 45%;
         object-fit: cover;
         border-radius: 0.5rem 0.5rem 0 0;
         
     }
 
     .description {
+        margin-bottom: 0;
         font-size: 0.9rem;
         white-space: normal;
         overflow: hidden;
@@ -61,26 +62,21 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
-        margin-bottom: 0;
-    }
-
-    .content {
-        height: 150px;
     }
 
     .text-section {
+        height: 50%;
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
         justify-content: space-between;
     }
 
     .title {
         text-align: center;
-        font-size: 1rem;
-        font-weight: 700;
-        padding-bottom: 1rem;
+        font-size: 0.9rem;
+        padding-bottom: 0.3rem;
         border-bottom: 1px solid #65466483; /* var(--secondary-purple), transparent*/
     }
 
@@ -103,20 +99,23 @@
     }
 
     @media (max-width: 1000px) {
+        .product-card:link,
+        .product-card:visited {
+            position: relative;
+            text-decoration: none;
+            max-width: 200px;
+            color: var(--primary-grey);
+            background-color: #ffffff;
+            box-shadow: 2px 0 8px #0000001f;
+            border-radius: 0.5rem;
+            transition: scale 0.1s ease-inww;
+        }
+    }
+
+    @media (max-width: 450px) {
         .product-card:hover,
         .product-card:active {
             scale: 1;
-        }
-
-        .product-card img {
-            width: 250px;
-        }
-
-        .text-section {
-            display: flex;
-            flex-direction: column;
-            width: 90%;
-            padding-bottom: 0;
         }
     }
 </style>
