@@ -78,7 +78,7 @@ let author3 = 'JennaHS';
         font-weight: lighter;
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 450px) {
         .flex-box {
             flex-direction: column;
             align-items: center;

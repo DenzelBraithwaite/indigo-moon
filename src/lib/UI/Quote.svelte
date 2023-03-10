@@ -116,7 +116,7 @@
     fill: #fffafef3;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 450px) {
     .container {
         width: 100%;
     }

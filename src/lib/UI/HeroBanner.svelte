@@ -1,6 +1,4 @@
 <script>
-    import BtnBanner from './buttons/BannerButton.svelte';
-
     $: visibility = 'hidden';
     
     function mobileMenuBtnHandler() {
@@ -19,7 +17,6 @@
             <h1 class="title">Experience Indigo Moon's Magical Shop and Tarot</h1>
             <p class="subtitle">A Spiritual Feeling</p>
         </div>
-        <!-- <BtnBanner color='purple' text='Get Started'/> -->
     </div>
 </div>
 
@@ -98,7 +95,7 @@
     }
 
     /* Mobile */
-    @media (max-width: 1000px) {
+    @media (max-width: 450px) {
         .desktop {
             display: none;
         }

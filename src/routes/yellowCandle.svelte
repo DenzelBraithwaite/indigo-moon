@@ -109,7 +109,7 @@
     box-shadow: 0 2px 10px #00000013; /* var(--secondary-purple), transparent*/
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 450px) {
     .mobile-nav {
       display: block;
     }

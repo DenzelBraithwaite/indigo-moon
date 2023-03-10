@@ -91,7 +91,7 @@
         scale: 1.5;
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 450px) {
         nav {
             display: none;
         }

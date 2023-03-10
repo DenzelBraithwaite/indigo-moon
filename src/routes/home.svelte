@@ -13,7 +13,7 @@
   
     // Readings Grid
     let readingsCards = [
-        {
+      {
           'src': "/reading1.webp",
           'alt': "complete me....",
           'title': "Give it to me straight",
@@ -170,7 +170,7 @@
   
     main {
       background-color: #fffafef3;
-      width: 1100px;
+      width: 90%;
       margin: 0 auto;
       transform: translate(0, -100px);
       border-radius: 1rem;
@@ -189,8 +189,8 @@
     section:last-of-type {
       margin-bottom: 5rem;
     }
-  
-    @media (max-width: 1000px) {
+
+    @media (max-width: 450px) {
       .desktop {
         display: none;
       }

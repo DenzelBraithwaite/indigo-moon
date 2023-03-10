@@ -35,7 +35,7 @@
     display: inline-block;
   }
   
-  @media (max-width: 1000px) {
+  @media (max-width: 450px) {
     .map-placeholder {
       font-size: 2rem;
       color: var(--primary-grey);
