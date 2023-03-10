@@ -61,8 +61,7 @@
     position: relative;
     margin: 0 auto;
     display: grid;
-    max-width: 2000px;
-    grid-template-columns: repeat(3, 0.30fr);
+    grid-template-columns: repeat(3, 250px);
     grid-template-rows: 400px;
     gap: 4rem;
     row-gap: 5rem;

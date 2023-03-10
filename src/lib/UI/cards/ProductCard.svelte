@@ -28,7 +28,7 @@
     .product-card:visited {
         position: relative;
         text-decoration: none;
-        max-width: 300px;
+        max-width: 250px;
         color: var(--primary-grey);
         background-color: #ffffff;
         box-shadow: 2px 0 8px #0000001f;
