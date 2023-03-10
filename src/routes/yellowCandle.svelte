@@ -66,7 +66,6 @@
 
   .product-wrapper-right {
     box-shadow: 0 2px 20px #00000030;
-    background-color: #654664dc;
     background-color: #ffffffa1;
     width: 400px;
     height: 500px;
@@ -117,5 +116,36 @@
     .desktop-nav {
       display: none;
     }
+
+  .product-wrapper {
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    width: 350px;
+
+    flex-direction: column;
+  }
+
+  .product-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 2px 20px #00000030;
+  }
+
+  .product-wrapper-right {
+    box-shadow: 0 2px 20px #00000030;
+    background-color: #ffffffa1;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 1rem 1rem;
+    transform: translate(0, -1rem);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   }
 </style>
