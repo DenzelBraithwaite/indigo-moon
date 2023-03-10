@@ -91,6 +91,13 @@
         scale: 1.5;
     }
 
+    @media (max-width: 1000px) {
+        .nav-options {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
     @media (max-width: 450px) {
         nav {
             display: none;
