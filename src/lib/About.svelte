@@ -80,4 +80,18 @@
       transform: translate(0, -2rem);
     }
   }
+
+  @media (max-width: 450px) {
+    /* .wrapper {
+      flex-direction: column;
+    }
+
+    img {
+      width: 320px;
+    }
+
+    .content {
+      transform: translate(0, -2rem);
+    } */
+  }
 </style>
