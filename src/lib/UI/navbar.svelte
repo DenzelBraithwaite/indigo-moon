@@ -98,6 +98,20 @@
         }
     }
 
+    @media (max-width: 750px) {
+        .nav-options,
+        .nav-options a:link,
+        .nav-options a:visited {
+            font-size: 0.9rem;
+            gap: 0.65rem;
+        }
+
+        :global(.nav-brand:link),
+        :global(.nav-brand:visited) {
+            font-size: 1rem;
+        }
+    }
+
     @media (max-width: 450px) {
         nav {
             display: none;
