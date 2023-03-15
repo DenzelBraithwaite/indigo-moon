@@ -78,6 +78,7 @@
   }
 
   .grid {
+    grid-template-columns: repeat(3, 250px);
     position: relative;
     margin: 0 auto;
     display: grid;
@@ -85,14 +86,6 @@
     row-gap: 5rem;
     justify-content: center;
     justify-items: center;
-  }
-
-  .grid__readings {
-    grid-template-columns: repeat(3, 250px);
-  }
-
-  .grid__candles {
-    grid-template-columns: repeat(3, 250px);
   }
   
   .services-title {
@@ -121,16 +114,6 @@
   .grid {
     grid-template-columns: auto;
     gap: 4rem;
-  }
-
-  .grid__readings {
-    /* grid-template-columns: auto; */
-    grid-template-rows: repeat(3, 450px);
-  }
-
-  .grid__candles {
-    grid-template-columns: repeat(3, 250px);
-    grid-template-rows: repeat(2, 450px);
   }
   
   .services-title {

@@ -57,6 +57,7 @@ let author3 = 'JennaHS';
         padding: 10px;
         text-align: center;
         width: 300px;
+        margin: 0 auto;
     }
 
     .flex-box {
