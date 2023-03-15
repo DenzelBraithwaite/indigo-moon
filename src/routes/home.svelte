@@ -33,10 +33,10 @@
           'title': "Psychic Reading",
           'description': "30 min",
           'cost': "$40"
-        },
+        }
       ];
       
-        // Candles Grid
+    // Candles Grid
     let candleCards = [
         {
           'src': "/candle-blue.webp", // Try after with symbol, no string?

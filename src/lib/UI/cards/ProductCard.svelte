@@ -28,7 +28,8 @@
     .product-card:visited {
         position: relative;
         text-decoration: none;
-        max-width: 250px;
+        width: 250px;
+        height: 450px;
         color: var(--primary-grey);
         background-color: #ffffff;
         box-shadow: 2px 0 8px #0000001f;
@@ -101,14 +102,6 @@
     @media (max-width: 1000px) {
         .product-card:link,
         .product-card:visited {
-            position: relative;
-            text-decoration: none;
-            max-width: 200px;
-            color: var(--primary-grey);
-            background-color: #ffffff;
-            box-shadow: 2px 0 8px #0000001f;
-            border-radius: 0.5rem;
-            transition: scale 0.1s ease-inww;
         }
     }
 

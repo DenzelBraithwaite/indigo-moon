@@ -35,23 +35,43 @@
   ];
 </script>
   
+{#if gridType === 'candles'}
   <h1 class="services-title">{title}</h1>
-  <div class="grid">
-    {#each cards as card, index}
-    <ProductCard
-    src={card.src}
-    alt={card.alt}
-    title={card.title}
-    description={card.description}
-    cost={card.cost}
-    {btnText}
-    hover={gridType === 'candles' ? readingsHovers[index] : 'purple'}
-    path={gridType === 'readings' ? readingsLinks[index] : candlesLinks[index]}/>
-    {/each}
+  <div class="grid grid__candles">
+      {#each cards as card, index}
+        <ProductCard
+        src={card.src}
+        alt={card.alt}
+        title={card.title}
+        description={card.description}
+        cost={card.cost}
+        {btnText}
+        hover={readingsHovers[index]}
+        path={candlesLinks[index]}/>
+      {/each}
     <a href=# class="m__more">See more</a>
   </div>
   <a href=# class="more">See more</a>
-    
+
+{:else if gridType === 'readings'}
+<h1 class="services-title">{title}</h1>
+<div class="grid grid__readings">
+    {#each cards as card, index}
+      <ProductCard
+      src={card.src}
+      alt={card.alt}
+      title={card.title}
+      description={card.description}
+      cost={card.cost}
+      {btnText}
+      hover={'purple'}
+      path={readingsLinks[index]}/>
+    {/each}
+  <a href=# class="m__more">See more</a>
+</div>
+<a href=# class="more">See more</a>
+  {/if}
+
 <style>
   .m__more {
     display: none;
@@ -61,12 +81,18 @@
     position: relative;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 250px);
-    grid-template-rows: 400px;
     gap: 4rem;
     row-gap: 5rem;
     justify-content: center;
     justify-items: center;
+  }
+
+  .grid__readings {
+    grid-template-columns: repeat(3, 250px);
+  }
+
+  .grid__candles {
+    grid-template-columns: repeat(3, 250px);
   }
   
   .services-title {
@@ -93,9 +119,18 @@
 
   @media (max-width: 1000px) {
   .grid {
-    grid-template-columns: repeat(2, 0.45fr);
-    grid-template-rows: 375px 375px 375px;
-    column-gap: 2rem;
+    grid-template-columns: auto;
+    gap: 4rem;
+  }
+
+  .grid__readings {
+    /* grid-template-columns: auto; */
+    grid-template-rows: repeat(3, 450px);
+  }
+
+  .grid__candles {
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(2, 450px);
   }
   
   .services-title {
