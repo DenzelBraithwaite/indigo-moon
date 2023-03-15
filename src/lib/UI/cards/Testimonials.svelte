@@ -63,6 +63,7 @@ let author3 = 'JennaHS';
         
         display: flex;
         justify-content: center;
+        margin: 0 auto;
     }
 
     .quote-icon {
@@ -76,6 +77,13 @@ let author3 = 'JennaHS';
 
     .text{
         font-weight: lighter;
+    }
+
+    @media(max-width: 1000px) {
+        .flex-box {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     @media (max-width: 450px) {
