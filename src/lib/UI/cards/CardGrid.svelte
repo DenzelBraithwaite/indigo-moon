@@ -49,9 +49,9 @@
         hover={readingsHovers[index]}
         path={candlesLinks[index]}/>
       {/each}
-    <a href=# class="m__more">See more</a>
+    <!-- <a href=# class="m__more">See more</a> -->
   </div>
-  <a href=# class="more">See more</a>
+  <!-- <a href=# class="more">See more</a> -->
 
 {:else if gridType === 'readings'}
 <h1 class="services-title">{title}</h1>
@@ -67,9 +67,9 @@
       hover={'purple'}
       path={readingsLinks[index]}/>
     {/each}
-  <a href=# class="m__more">See more</a>
+  <!-- <a href=# class="m__more">See more</a> -->
 </div>
-<a href=# class="more">See more</a>
+<!-- <a href=# class="more">See more</a> -->
   {/if}
 
 <style>
