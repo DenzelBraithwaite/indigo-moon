@@ -82,7 +82,7 @@
   :global(.blue-hover:hover),
   :global(.blue-hover:active) {
     background: none;
-    background-color: rgba(81, 163, 230, 0.898);
+    background-color: #51a3e6e5;
   }
   
   :global(.orange-hover:hover),
