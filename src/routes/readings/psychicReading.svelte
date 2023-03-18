@@ -1,8 +1,8 @@
 <script>
   import { Link } from 'svelte-routing';
-  import Navbar from "../lib/UI/navbar.svelte";
-  import HeroBanner from "../lib/UI/HeroBanner.svelte";
-  import Footer from "../lib/UI/Footer.svelte";
+  import Navbar from "../../lib/UI/navbar.svelte";
+  import HeroBanner from "../../lib/UI/HeroBanner.svelte";
+  import Footer from "../../lib/UI/Footer.svelte";
 
   $: visibility = 'hidden';
   
@@ -27,12 +27,12 @@
 </nav>
 
 <div class="product-wrapper">
-  <img class="product-img" src="/candle-yellow.webp" alt="">
+  <img class="product-img" src="/candle-green.webp" alt="">
   <div class="product-wrapper-right">
-    <h1>Chamomile</h1>
+    <h1>Peppermint & Eucalyptus</h1>
     <h2 class="cost">8$</h2>
-    <p class="description">Create a relaxing space and indulge your senses in sweet chamomile.</p>
-    <a class="btn__buy btn-purple yellow-hover"  href="mailto:tiffany@indigomoontarot.com">Buy Now</a>
+    <p class="description">Wake up your senses with this fragrant aroma. Perfect for  a bath or morning alertness.</p>
+    <a class="btn__buy btn-purple blue-hover"  href="mailto:tiffany@indigomoontarot.com">Buy Now</a>
   </div>
 </div>
 <div class="center">
@@ -58,7 +58,7 @@
     color: #444;
     margin: 8rem auto 5rem;
     height: 600px;
-    width: 1000px;
+    width: 950px;
     text-align: center;
     box-shadow: 0px 2px 8px #0000001a;
     border-radius: 1rem;
@@ -104,13 +104,13 @@
 
   .btn__buy:link,
   .btn__buy:visited {
+    transition: background-color 0.15s ease-in;
     display: inline-block;
-    transition: background-color 0.1s ease-in;
     text-decoration: none;
     border: none;
     color: #fff;
     width: 70%;
-    background-color: #724f71;
+    background-color: #C3E850;
     text-align: center;
     font-size: 1.125rem;
     padding: 0.75rem 1rem;
@@ -121,7 +121,7 @@
   
   .btn__buy:active,
   .btn__buy:hover {
-    background-color: #95719b;
+    background-color: #deff7b;
     box-shadow: 0 2px 10px #00000013; /* var(--secondary-purple), transparent*/
   }
 
@@ -149,6 +149,40 @@
     background-color: #95719b;
   }
 
+  @media(max-width: 1000px) {
+    .product-wrapper {
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 50%;
+
+    flex-direction: column;
+    }
+
+    .product-img {
+      height: 100%;
+      width: 100%;
+      border-radius: 1rem 1rem 0 0;
+      box-shadow: 0 2px 20px #00000030;
+    }
+
+    .product-wrapper-right {
+      box-shadow: 0 2px 20px #00000030;
+      width: 100%;
+      border-radius: 0 0 1rem 1rem;
+      background-color: #fff;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .btn__buy:link {
+      margin: 1.5rem auto;
+    }
+  }
+
   @media (max-width: 450px) {
     .mobile-nav {
       display: block;
@@ -157,36 +191,5 @@
     .desktop-nav {
       display: none;
     }
-
-  .product-wrapper {
-    margin: 0 auto;
-    margin-top: 10rem;
-    margin-bottom: 3rem;
-    width: 350px;
-
-    flex-direction: column;
-  }
-
-  .product-img {
-    height: 100%;
-    width: 100%;
-    border-radius: 1rem 1rem 0 0;
-    box-shadow: 0 2px 20px #00000030;
-  }
-
-  .product-wrapper-right {
-    box-shadow: 0 2px 20px #00000030;
-    background-color: #ffffffa1;
-    width: 100%;
-    height: 100%;
-    border-radius: 0 0 1rem 1rem;
-    transform: translate(0, -1rem);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   }
 </style>
