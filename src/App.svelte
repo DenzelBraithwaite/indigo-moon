@@ -1,12 +1,12 @@
 <script>
   import { Router, Route, Link } from 'svelte-routing';
   import Home from './routes/home.svelte';
-  import BlueCandle from './routes/blueCandle.svelte';
-  import OrangeCandle from './routes/orangeCandle.svelte';
-  import RedCandle from './routes/redCandle.svelte';
-  import GreenCandle from './routes/greenCandle.svelte';
-  import PurpleCandle from './routes/purpleCandle.svelte';
-  import YellowCandle from './routes/yellowCandle.svelte';
+  import BlueCandle from './routes/candles/blueCandle.svelte';
+  import OrangeCandle from './routes/candles/orangeCandle.svelte';
+  import RedCandle from './routes/candles/redCandle.svelte';
+  import GreenCandle from './routes/candles/greenCandle.svelte';
+  import PurpleCandle from './routes/candles/purpleCandle.svelte';
+  import YellowCandle from './routes/candles/yellowCandle.svelte';
 
 </script>
 

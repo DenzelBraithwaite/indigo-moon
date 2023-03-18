@@ -1,8 +1,8 @@
 <script>
   import { Link } from 'svelte-routing';
-  import Navbar from "../lib/UI/navbar.svelte";
-  import HeroBanner from "../lib/UI/HeroBanner.svelte";
-  import Footer from "../lib/UI/Footer.svelte";
+  import Navbar from "../../lib/UI/navbar.svelte";
+  import HeroBanner from "../../lib/UI/HeroBanner.svelte";
+  import Footer from "../../lib/UI/Footer.svelte";
 
   $: visibility = 'hidden';
   
