@@ -29,8 +29,9 @@
   <img class="product-img" src="/candle-yellow.webp" alt="">
   <div class="product-wrapper-right">
     <h1>Chamomile</h1>
+    <h2 class="cost">8$</h2>
     <p class="description">Create a relaxing space and indulge your senses in sweet chamomile.</p>
-    <a class="btn btn-purple yellow-hover"  href="mailto:tiffany@indigomoontarot.com">Request</a>
+    <a class="btn btn-purple yellow-hover"  href="mailto:tiffany@indigomoontarot.com">Buy Now</a>
   </div>
 </div>
 <footer>
@@ -44,33 +45,34 @@
 
   .product-wrapper {
     position: relative;
+    background-color: #ffffff;
     color: #444;
     margin: 8rem auto;
     height: 600px;
     width: 1000px;
     text-align: center;
+    box-shadow: 0px 2px 8px #0000001a;
+    border-radius: 1rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0;
+    padding: 0;
   }
 
   .product-img {
     position: relative;
-    width: 500px;
-    height: 500px;
+    height: 100%;
+    width: 55%;
     border-radius: 1rem 0 0 1rem;
-    box-shadow: 0 2px 20px #00000030;
   }
 
   .product-wrapper-right {
-    box-shadow: 0 2px 20px #00000030;
-    background-color: #ffffffa1;
-    width: 400px;
-    height: 500px;
+    width: 45%;
+    height: 100%;
     border-radius: 0 1rem 1rem 0;
-    transform: translate(-2rem, 0);
+    /* transform: translate(-2rem, 0); */
 
     display: flex;
     flex-direction: column;
@@ -80,6 +82,11 @@
 
   .description {
     width: 70%;
+  }
+
+  .cost {
+    font-size: 3rem;
+    color: #DCBA13;
   }
 
   p {
@@ -106,6 +113,7 @@
   .btn:active,
   .btn:hover {
     box-shadow: 0 2px 10px #00000013; /* var(--secondary-purple), transparent*/
+    background-color: #ecce38;
   }
 
   @media (max-width: 450px) {

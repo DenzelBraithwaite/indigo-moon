@@ -25,11 +25,11 @@
 
   // Candles
   let candlesLinks = [
-    '/candles/yellow',
-    '/candles/yellow',
-    '/candles/yellow',
-    '/candles/yellow',
-    '/candles/yellow',
+    '/candles/blue',
+    '/candles/orange',
+    '/candles/red',
+    '/candles/green',
+    '/candles/purple',
     '/candles/yellow'
 
   ];
