@@ -7,7 +7,7 @@
 <nav>
     <Link to='/' class="nav-brand"><span class="indigo">Indigo</span> Moon Tarot</Link>
     <div class="nav-options">
-        <a href="#">Home</a>
+        <a href="/">Home</a>
         <a href="#">About</a>
         <a href="#">Book Online</a>
         <a class="insta-icon" href="https://www.instagram.com/indigomoontarotwithtiffany/" target="_blank" rel="noreferrer">
