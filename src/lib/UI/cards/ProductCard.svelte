@@ -19,7 +19,7 @@
             <p class="description">{description}</p>
             <p class="cost">{cost}</p>    
         </div>
-        <Button {hover} {path} color='purple' text={btnText}/>
+        <Button {hover} {path} color='purple'>{btnText}</Button>
     </div>
 </a>
 

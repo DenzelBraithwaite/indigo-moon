@@ -1,7 +1,6 @@
 <script>
   import { Link } from "svelte-routing";
 
-    export let text;
     export let color;
     export let path;
     export let hover;
@@ -9,31 +8,31 @@
 
 {#if color === 'purple'}
   {#if hover === 'blue'}
-    <Link class="link btn btn-purple blue-hover" to={path}>{text}</Link>
+    <Link class="btn btn-purple blue-hover" to={path}><slot /></Link>
   {/if}
 
   {#if hover === 'orange'}
-    <Link class="link btn btn-purple orange-hover" to={path}>{text}</Link>
+    <Link class="btn btn-purple orange-hover" to={path}><slot /></Link>
   {/if}
 
   {#if hover === 'red'}
-    <Link class="link btn btn-purple red-hover" to={path}>{text}</Link>
+    <Link class="btn btn-purple red-hover" to={path}><slot /></Link>
   {/if}
 
   {#if hover === 'green'}
-    <Link class="link btn btn-purple green-hover" to={path}>{text}</Link>
+    <Link class="btn btn-purple green-hover" to={path}><slot /></Link>
   {/if}
 
   {#if hover === 'purple'}
-    <Link class="link btn btn-purple purple-hover" to={path}>{text}</Link>
+    <Link class="btn btn-purple purple-hover" to={path}><slot /></Link>
   {/if}
 
   {#if hover === 'light-purple'}
-    <Link class="link btn btn-purple light-purple-hover" to={path}>{text}</Link>
+    <Link class="btn btn-purple light-purple-hover" to={path}><slot /></Link>
   {/if}
 
   {#if hover === 'yellow'}
-    <Link class="link btn btn-purple yellow-hover" to={path}>{text}</Link>
+    <Link class="btn btn-purple yellow-hover" to={path}><slot /></Link>
   {/if}
 {/if }
 
@@ -48,6 +47,7 @@
     text-decoration: none;
     border: none;
     color: #fff;
+    min-width: 7rem;
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 2px 8px #65466492; /* var(--secondary-purple), transparent*/

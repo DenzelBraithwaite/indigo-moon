@@ -1,4 +1,5 @@
 <script>
+  import { Link } from 'svelte-routing';
   import Navbar from "../lib/UI/navbar.svelte";
   import HeroBanner from "../lib/UI/HeroBanner.svelte";
   import Footer from "../lib/UI/Footer.svelte";
@@ -31,8 +32,11 @@
     <h1>Chamomile</h1>
     <h2 class="cost">8$</h2>
     <p class="description">Create a relaxing space and indulge your senses in sweet chamomile.</p>
-    <a class="btn btn-purple yellow-hover"  href="mailto:tiffany@indigomoontarot.com">Buy Now</a>
+    <a class="btn__buy btn-purple yellow-hover"  href="mailto:tiffany@indigomoontarot.com">Buy Now</a>
   </div>
+</div>
+<div class="center">
+  <Link class="btn__back" to={'/'}>Back</Link>
 </div>
 <footer>
   <Footer />
@@ -43,11 +47,16 @@
     display: none;
   }
 
+  .center {
+    margin: 0 auto 2rem;
+    text-align: center;
+  }
+
   .product-wrapper {
     position: relative;
     background-color: #ffffff;
     color: #444;
-    margin: 8rem auto;
+    margin: 8rem auto 5rem;
     height: 600px;
     width: 1000px;
     text-align: center;
@@ -94,9 +103,10 @@
       margin: 0;
   }
 
-  .btn:link,
-  .btn:visited {
+  .btn__buy:link,
+  .btn__buy:visited {
     display: inline-block;
+    transition: background-color 0.1s ease-in;
     text-decoration: none;
     border: none;
     color: #fff;
@@ -110,10 +120,34 @@
     box-shadow: 0 2px 8px #0000001c; /* var(--secondary-purple), transparent*/
   }
   
-  .btn:active,
-  .btn:hover {
+  .btn__buy:active,
+  .btn__buy:hover {
     box-shadow: 0 2px 10px #00000013; /* var(--secondary-purple), transparent*/
     background-color: #ecce38;
+  }
+
+  :global(.btn__back:link),
+  :global(.btn__back:visited) {
+    transition: background-color 0.1s ease-in;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #724f71;
+    text-align: center;
+    font-size: 1.125rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 2px 8px #0000001c; /* var(--secondary-purple), transparent*/
+  }
+
+  :global(.btn__back:hover),
+  :global(.btn__back:active) {
+    background-color: #95719b;
   }
 
   @media (max-width: 450px) {
