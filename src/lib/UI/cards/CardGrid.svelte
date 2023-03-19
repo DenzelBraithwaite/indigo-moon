@@ -86,6 +86,7 @@
     row-gap: 5rem;
     justify-content: center;
     justify-items: center;
+    max-width: 1000px;
   }
   
   .services-title {

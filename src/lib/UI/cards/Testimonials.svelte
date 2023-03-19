@@ -65,6 +65,7 @@ let author3 = 'JennaHS';
         display: flex;
         justify-content: center;
         margin: 0 auto;
+        max-width: 1000px;
     }
 
     .quote-icon {

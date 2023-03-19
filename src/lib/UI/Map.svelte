@@ -18,6 +18,7 @@
       color: var(--primary-grey);
       height: 400px;
       width: 80%;
+      max-width: 1000px;
       margin: 0 auto;
       border-radius: 1rem;
       box-shadow: 0 2px 10px #00000028;
