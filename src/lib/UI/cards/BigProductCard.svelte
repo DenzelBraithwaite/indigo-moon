@@ -152,9 +152,27 @@ onMount(() => {
     background-color: #f7db54;
   }
 
+  .indigo {
+    background-color: #5950A1;
+  }
+
+  .indigo:hover,
+  .indigo:active {
+    background-color: #7165c7;
+  }
+
+  .default {
+    background-color: var(--secondary-purple);
+  }
+
+  .default:hover,
+  .default:active {
+    background-color: #95719b;
+  }
+
   @media(max-width: 1000px) {
     .product-wrapper {
-    margin: 20rem auto 15rem;
+    margin: 15rem auto 15rem;
     width: 50%;
     min-width: 360px;
 
@@ -182,6 +200,12 @@ onMount(() => {
 
     .btn__buy:link {
       margin: 1.5rem auto;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .product-wrapper {
+      margin-top: 10rem;
     }
   }
   </style>

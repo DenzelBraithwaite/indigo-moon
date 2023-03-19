@@ -15,24 +15,24 @@
     let readingsCards = [
       {
           'src': "/reading1.webp",
-          'alt': "complete me....",
+          'alt': "2 tarot cards spread out.",
           'title': "Give it to me straight",
           'description': "10 min",
-          'cost': "$20"
+          'cost': "$10"
         },
         {
           'src': "/reading2.webp",
-          'alt': "complete me....",
+          'alt': "A box of exposed tarot cards.",
           'title': "Clarity Reading",
           'description': "20 min",
-          'cost': "$30"
+          'cost': "$20"
         },
         {
           'src': "/reading3.webp",
-          'alt': "complete me....",
+          'alt': "3 tarot cards spread out.",
           'title': "Psychic Reading",
           'description': "30 min",
-          'cost': "$40"
+          'cost': "$30"
         }
       ];
       

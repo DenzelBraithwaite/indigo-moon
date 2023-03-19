@@ -31,6 +31,10 @@
     <Link class="btn btn-purple light-purple-hover" to={path}><slot /></Link>
   {/if}
 
+  {#if hover === 'indigo'}
+    <Link class="btn btn-purple indigo-hover" to={path}><slot /></Link>
+  {/if}
+
   {#if hover === 'yellow'}
     <Link class="btn btn-purple yellow-hover" to={path}><slot /></Link>
   {/if}
@@ -72,6 +76,18 @@
   :global(.purple-hover:active) {    
     background: none;
     background-color: #95719b;
+  }
+
+  :global(.btn-indigo:link),
+  :global(.btn-indigo:visited) {
+    background: none;
+    background-color: #5950A1;
+  }
+      
+  :global(.indigo-hover:hover),
+  :global(.indigo-hover:active) {    
+    background: none;
+    background-color: #7165c7;
   }
      
   :global(.light-purple-hover:hover),

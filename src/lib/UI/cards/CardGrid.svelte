@@ -7,7 +7,7 @@
   export let btnText = '';
 
   
-  let readingsHovers = [
+  let candlesHovers = [
     'blue',
     'orange',
     'red',
@@ -16,11 +16,17 @@
     'yellow',
   ]
 
+  let readingsHovers = [
+    'purple',
+    'purple',
+    'indigo'
+  ];
+
   // Readings Routes
   let readingsLinks = [
-    'candles/yellow',
-    'candles/yellow',
-    'candles/yellow',
+    'readings/straight',
+    'readings/clarity',
+    'readings/psychic',
   ];
 
   // Candles
@@ -46,7 +52,7 @@
         description={card.description}
         cost={card.cost}
         {btnText}
-        hover={readingsHovers[index]}
+        hover={candlesHovers[index]}
         path={candlesLinks[index]}/>
       {/each}
     <!-- <a href=# class="m__more">See more</a> -->
@@ -64,7 +70,7 @@
       description={card.description}
       cost={card.cost}
       {btnText}
-      hover={'purple'}
+      hover={readingsHovers[index]}
       path={readingsLinks[index]}/>
     {/each}
   <!-- <a href=# class="m__more">See more</a> -->
