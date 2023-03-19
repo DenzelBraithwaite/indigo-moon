@@ -3,6 +3,7 @@
   import Navbar from "../../lib/UI/navbar.svelte";
   import HeroBanner from "../../lib/UI/HeroBanner.svelte";
   import Footer from "../../lib/UI/Footer.svelte";
+  import BigProductCard from '../../lib/UI/cards/BigProductCard.svelte';
 
   $: visibility = 'hidden';
   
@@ -25,16 +26,13 @@
 <nav class="mobile-nav">
   <HeroBanner />
 </nav>
-
-<div class="product-wrapper">
-  <img class="product-img" src="/candle-orange.webp" alt="">
-  <div class="product-wrapper-right">
-    <h1>Harvest Spice</h1>
-    <h2 class="cost">8$</h2>
-    <p class="description">Fall time lovers, allow this scent to fill your room, with the sweet fragrances of warm spices and cinnamon.</p>
-    <a class="btn__buy btn-purple blue-hover"  href="mailto:tiffany@indigomoontarot.com">Buy Now</a>
-  </div>
-</div>
+<BigProductCard
+  src="/candle-orange.webp"
+  alt="orange candle"
+  title="Harvest Spice"
+  cost="8$"
+  description="Fall time lovers, allow this scent to fill your room, with the sweet fragrances of warm spices and cinnamon."
+  bgColor="orange"/>
 <div class="center">
   <Link on:click={() => {window.history.back()}} class="btn__back" to='/'>Back</Link>
 </div>
@@ -50,79 +48,6 @@
   .center {
     margin: 0 auto 2rem;
     text-align: center;
-  }
-
-  .product-wrapper {
-    position: relative;
-    background-color: #ffffff;
-    color: #444;
-    margin: 8rem auto 5rem;
-    height: 600px;
-    width: 950px;
-    text-align: center;
-    box-shadow: 0px 2px 8px #0000001a;
-    border-radius: 1rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    padding: 0;
-  }
-
-  .product-img {
-    position: relative;
-    height: 100%;
-    width: 55%;
-    border-radius: 1rem 0 0 1rem;
-  }
-
-  .product-wrapper-right {
-    width: 45%;
-    height: 100%;
-    border-radius: 0 1rem 1rem 0;
-    /* transform: translate(-2rem, 0); */
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .description {
-    width: 70%;
-  }
-
-  .cost {
-    font-size: 3rem;
-  }
-
-  p {
-      padding: 0;
-      margin: 0;
-  }
-
-  .btn__buy:link,
-  .btn__buy:visited {
-    transition: background-color 0.15s ease-in;
-    display: inline-block;
-    text-decoration: none;
-    border: none;
-    color: #fff;
-    width: 70%;
-    background-color: #D8690D;
-    text-align: center;
-    font-size: 1.125rem;
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
-    margin-bottom: 1.25rem;
-    box-shadow: 0 2px 8px #0000001c; /* var(--secondary-purple), transparent*/
-  }
-  
-  .btn__buy:active,
-  .btn__buy:hover {
-    background-color: #fa892c;
-    box-shadow: 0 2px 10px #00000013; /* var(--secondary-purple), transparent*/
   }
 
   :global(.btn__back:link),
