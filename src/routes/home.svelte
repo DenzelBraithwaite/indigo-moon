@@ -113,28 +113,23 @@
         <header>
           <HeroBanner />
         </header>
-        <main>        
-          <section class="main-container">
+        <main id="page-top">        
+          <section id="reading-section" class="main-container">
             <ProductGrid gridType='readings' btnText="Book Now" title="Readings" cards={readingsCards} />
           </section>
-          <section class="main-container">  
+          <section id="testimonial-section" class="main-container">  
             <Testimonials />
           </section>
-          <section class="main-container">
+          <section id="candle-section" class="main-container">
             <ProductGrid gridType='candles' btnText="Buy Now" title="Candles" cards= {candleCards}/>
           </section>
           <Quote />
-          <section class="main-container">
+          <section id="about-section" class="main-container">
             <About />
           </section>
-          <section class="main-container">
+          <section id="map-section" class="main-container">
             <Map />
           </section>
-          <!-- <Video
-          title="Who am I ?"
-          poster={videoPoster}
-          src="/vids/intro.mp4">
-        </Video> -->
         <footer>
           <Footer />
         </footer>
@@ -146,21 +141,21 @@
       <header>
         <HeroBanner />
       </header>
-        <main>
-          <section class="m__main-container">
+        <main id="page-top">
+          <section id="reading-section" class="m__main-container">
             <ProductGrid gridType="readings" btnText="Book Now" title="Readings" cards={readingsCards} />
           </section>
-          <section class="m__main-container">  
+          <section id="testimonial-section" class="m__main-container">  
             <Testimonials />
           </section>
-          <section class="m__main-container">
+          <section id="candle-section" class="m__main-container">
             <ProductGrid gridType="candles" btnText="Buy Now" title="Candles" cards= {candleCards}/>
           </section>
           <Quote />
-          <section class="m__main-container">
+          <section id="about-section" class="m__main-container">
             <About />
           </section>
-          <section class="map-section m__main-container">
+          <section id="map-section" class="m__main-container">
             <Map />
           </section>
         <footer>

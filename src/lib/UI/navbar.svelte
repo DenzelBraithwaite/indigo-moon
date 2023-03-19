@@ -5,11 +5,11 @@
 
 <!-- Desktop -->
 <nav>
-    <Link to='/' class="nav-brand"><span class="indigo">Indigo</span> Moon Tarot</Link>
+    <a href="/#" class="nav-brand"><span class="indigo">Indigo</span> Moon Tarot</a>
     <div class="nav-options">
-        <a href="/">Home</a>
-        <a href="#">About</a>
-        <a href="#">Book Online</a>
+        <a href="/#">Home</a>
+        <a href="/#about-section">About</a>
+        <a href="/#page-top">Book Online</a>
         <a class="insta-icon" href="https://www.instagram.com/indigomoontarotwithtiffany/" target="_blank" rel="noreferrer">
             <i class="fa-brands fa-instagram"></i>
         </a>
@@ -37,8 +37,8 @@
         z-index: 1;
     }
     
-    :global(.nav-brand:link),
-    :global(.nav-brand:visited) {
+    .nav-brand:link,
+    .nav-brand:visited {
         text-decoration: none;
         color: #fff;
         font-size: 1.75rem;
@@ -47,8 +47,8 @@
         cursor: default;
     }
 
-    :global(.nav-brand:hover),
-    :global(.nav-brand:active) {
+    .nav-brand:hover,
+    .nav-brand:active {
         cursor: pointer;
         opacity: 0.8;
     }
