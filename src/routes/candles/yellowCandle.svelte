@@ -36,7 +36,7 @@
   </div>
 </div>
 <div class="center">
-  <Link on:click={() => {window.history.back()}} class="btn__back" to='/'>Back</Link>
+  <Link on:click={() => {window.history.back()}} class="btn__back" to={'/'}>Back</Link>
 </div>
 <footer>
   <Footer />

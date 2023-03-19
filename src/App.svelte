@@ -44,7 +44,7 @@
 
   <!-- Yellow Candle -->
   <Route path='candles/yellow'>
-    <YellowCandle />
+    <YellowCandle/>
   </Route>
 </Router>
 

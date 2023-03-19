@@ -83,27 +83,27 @@
       ];
   
 
-    let scrollValue = 0;
+    // let scrollValue = 0;
     
-    function scrollHandler() {
-      // Update current scroll value
-      scrollValue = window.pageYOffset;
+    // function scrollHandler() {
+    //   // Update current scroll value
+    //   // scrollValue = window.pageYOffset;
       
-      // store the current scroll position in the browser history
-      history.pushState({scrollY: scrollValue}, "");
-      }
+    //   // // store the current scroll position in the browser history
+    //   // history.pushState({scrollY: scrollValue}, "");
+    //   }
 
-    onMount(() => {
-        window.scrollTo({
-        top: scrollValue, // set the Y position to 500 pixels
-        left: 0, // set the X position to 0 pixels
-        behavior: 'smooth' // add smooth scrolling behavior
-      });
-    })
+    // onMount(() => {
+    //     window.scrollTo({
+    //     top: scrollValue, // set the Y position to 500 pixels
+    //     left: 0, // set the X position to 0 pixels
+    //     behavior: 'smooth' // add smooth scrolling behavior
+    //   });
+    // })
 
   </script>
 
-  <svelte:window on:scroll={scrollHandler} />
+  <!-- <svelte:window on:scroll={scrollHandler} /> -->
   <body>
     <!-- DESKTOP -->
     <div class="desktop">

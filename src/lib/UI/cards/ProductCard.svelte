@@ -11,7 +11,7 @@
     export let hover;
 </script>
 
-<a class="product-card" href={path}>
+<div class="product-card">
     <img {src} {alt}>
     <div class="text-section">
         <div class="content">
@@ -21,11 +21,10 @@
         </div>
         <Button {hover} {path} color='purple'>{btnText}</Button>
     </div>
-</a>
+</div>
 
 <style>
-    .product-card:link,
-    .product-card:visited {
+    .product-card {
         position: relative;
         text-decoration: none;
         width: 250px;
@@ -37,8 +36,7 @@
         transition: scale 0.1s ease-inww;
     }
 
-    .product-card:hover,
-    .product-card:active {
+    .product-card:hover {
         color: var(--primary-grey);
         cursor: pointer;
         scale: 1.1;
@@ -99,15 +97,13 @@
         left: -2rem;
     }
 
-    @media (max-width: 1000px) {
-        .product-card:link,
-        .product-card:visited {
+    /* @media (max-width: 1000px) {
+        .product-card {
         }
-    }
+    } */
 
     @media (max-width: 450px) {
-        .product-card:hover,
-        .product-card:active {
+        .product-card {
             scale: 1;
         }
     }
