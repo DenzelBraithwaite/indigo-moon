@@ -69,21 +69,22 @@
     }
 
     .content {
-        font-family: cursive;
+        font-family: 'Comfortaa', cursive;
         color: #fff;
         width: 400px;
         height: 400px;
         margin: 0 auto;
         text-align: center;
+        padding-top: 1rem;
         background-color: #fffafe86;
         box-shadow: 0 2px 20px #47a8f76c;
         border-radius: 50%;
     }
 
     .title {
-        font-size: 3rem;
+        font-size: 2.75rem;
         line-height: 1.25;
-        font-weight: 400;
+        font-weight: 600;
         text-shadow: 0 2px 10px #000000c4;
     }
 
