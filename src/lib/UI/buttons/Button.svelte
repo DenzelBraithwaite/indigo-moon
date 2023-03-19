@@ -77,12 +77,12 @@
   :global(.light-purple-hover:hover),
   :global(.light-purple-hover:active) {
     background: none;
-    background-color: #b689bd;
+    background-color: #aa7bb1;
   }
   :global(.blue-hover:hover),
   :global(.blue-hover:active) {
     background: none;
-    background-color: #51a3e6e5;
+    background-color: #51a3e6;
   }
   
   :global(.orange-hover:hover),
@@ -100,7 +100,7 @@
   :global(.green-hover:hover),
   :global(.green-hover:active) {
     background: none;
-    background-color: #C3E850;
+    background-color: #A3D53E;
   }
 
   :global(.yellow-hover:hover),

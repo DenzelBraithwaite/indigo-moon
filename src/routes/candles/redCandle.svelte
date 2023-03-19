@@ -121,7 +121,7 @@
   
   .btn__buy:active,
   .btn__buy:hover {
-    background-color: #dd5d43;
+    background-color: #e05034;
     box-shadow: 0 2px 10px #00000013; /* var(--secondary-purple), transparent*/
   }
 

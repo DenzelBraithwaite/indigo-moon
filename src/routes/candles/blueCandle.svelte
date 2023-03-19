@@ -111,7 +111,7 @@
     border: none;
     color: #fff;
     width: 70%;
-    background-color: #3e88c5e5;
+    background-color: #51a3e6;
     text-align: center;
     font-size: 1.125rem;
     padding: 0.75rem 1rem;
@@ -122,7 +122,7 @@
   
   .btn__buy:active,
   .btn__buy:hover {
-    background-color: #5baceee5;
+    background-color: #60b2f5;
     box-shadow: 0 2px 10px #00000013; /* var(--secondary-purple), transparent*/
   }
 

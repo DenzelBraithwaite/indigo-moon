@@ -103,7 +103,7 @@
         .nav-options,
         .nav-options a:link,
         .nav-options a:visited {
-            font-size: 0.9rem;
+            font-size: 1rem;
             gap: 0.65rem;
         }
 
