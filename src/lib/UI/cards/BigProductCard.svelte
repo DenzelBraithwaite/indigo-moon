@@ -205,7 +205,7 @@ onMount(() => {
 
   @media (max-width: 450px) {
     .product-wrapper {
-      margin-top: 10rem;
+      margin: 5rem auto;
     }
   }
   </style>
