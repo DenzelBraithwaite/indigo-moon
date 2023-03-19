@@ -36,7 +36,7 @@
   </div>
 </div>
 <div class="center">
-  <Link on:click={() => {window.history.back()}} class="btn__back" to={'/'}>Back</Link>
+  <Link on:click={() => {window.history.back()}} class="btn__back" to='/'>Back</Link>
 </div>
 <footer>
   <Footer />
@@ -102,6 +102,7 @@
       margin: 0;
   }
 
+  /* FIX COLOR */
   .btn__buy:link,
   .btn__buy:visited {
     transition: background-color 0.15s ease-in;

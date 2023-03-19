@@ -36,7 +36,7 @@
   </div>
 </div>
 <div class="center">
-  <Link on:click={() => {window.history.back()}} class="btn__back" to={'/'}>Back</Link>
+  <Link on:click={() => {window.history.back()}} class="btn__back" to='/'>Back</Link>
 </div>
 <footer>
   <Footer />
@@ -46,12 +46,12 @@
   .mobile-nav {
     display: none;
   }
-
+  
   .center {
     margin: 0 auto 2rem;
     text-align: center;
   }
-
+  
   .product-wrapper {
     position: relative;
     background-color: #ffffff;
@@ -62,7 +62,7 @@
     text-align: center;
     box-shadow: 0px 2px 8px #0000001a;
     border-radius: 1rem;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,32 +76,32 @@
     width: 55%;
     border-radius: 1rem 0 0 1rem;
   }
-
+  
   .product-wrapper-right {
     width: 45%;
     height: 100%;
     border-radius: 0 1rem 1rem 0;
     /* transform: translate(-2rem, 0); */
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
-
+  
   .description {
     width: 70%;
   }
-
+  
   .cost {
     font-size: 3rem;
   }
-
+  
   p {
-      padding: 0;
-      margin: 0;
+    padding: 0;
+    margin: 0;
   }
-
+  
   .btn__buy:link,
   .btn__buy:visited {
     transition: background-color 0.15s ease-in;

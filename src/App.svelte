@@ -18,32 +18,32 @@
   </Route>
 
   <!-- Blue Candle -->
-  <Route path="/candles/blue">
+  <Route path="candles/blue">
     <BlueCandle />
   </Route>
 
   <!-- Orange Candle -->
-  <Route path="/candles/orange">
+  <Route path="candles/orange">
     <OrangeCandle />
   </Route>
 
   <!-- Red Candle -->
-  <Route path="/candles/red">
+  <Route path="candles/red">
     <RedCandle />
   </Route>
   
   <!-- Green Candle -->
-  <Route path="/candles/green">
+  <Route path="candles/green">
     <GreenCandle />
   </Route>
   
   <!-- Purple Candle -->
-  <Route path="/candles/purple">
+  <Route path="candles/purple">
     <PurpleCandle />
   </Route>
 
   <!-- Yellow Candle -->
-  <Route path='/candles/yellow'>
+  <Route path='candles/yellow'>
     <YellowCandle />
   </Route>
 </Router>

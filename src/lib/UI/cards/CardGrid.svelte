@@ -18,19 +18,19 @@
 
   // Readings Routes
   let readingsLinks = [
-    '/candles/yellow',
-    '/candles/yellow',
-    '/candles/yellow',
+    'candles/yellow',
+    'candles/yellow',
+    'candles/yellow',
   ];
 
   // Candles
   let candlesLinks = [
-    '/candles/blue',
-    '/candles/orange',
-    '/candles/red',
-    '/candles/green',
-    '/candles/purple',
-    '/candles/yellow'
+    'candles/blue',
+    'candles/orange',
+    'candles/red',
+    'candles/green',
+    'candles/purple',
+    'candles/yellow'
 
   ];
 </script>
