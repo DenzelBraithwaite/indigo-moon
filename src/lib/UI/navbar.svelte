@@ -9,7 +9,8 @@
     <div class="nav-options">
         <a href="/#">Home</a>
         <a href="/#about-section">About</a>
-        <a href="/#page-top">Book Online</a>
+        <a href="/#page-top">Readings</a>
+        <a href="/#candle-section">Candles</a>
         <a class="insta-icon" href="https://www.instagram.com/indigomoontarotwithtiffany/" target="_blank" rel="noreferrer">
             <i class="fa-brands fa-instagram"></i>
         </a>
