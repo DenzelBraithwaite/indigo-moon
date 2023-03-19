@@ -32,29 +32,26 @@ onMount(() => {
       background-color: #ffffff;
       color: #444;
       margin: 8rem auto 5rem;
-      height: 600px;
-      width: 950px;
+      max-width: 900px;
       text-align: center;
       box-shadow: 0px 2px 8px #0000001a;
       border-radius: 1rem;
-
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: stretch;
       gap: 0;
       padding: 0;
     }
 
     .product-img {
     position: relative;
-    height: 100%;
-    width: 55%;
+    width: 450px;
+    height: 450px;
     border-radius: 1rem 0 0 1rem;
   }
 
   .product-wrapper-right {
-    width: 45%;
-    height: 100%;
+    width: 550px;
     border-radius: 0 1rem 1rem 0;
 
     display: flex;
@@ -172,25 +169,24 @@ onMount(() => {
 
   @media(max-width: 1000px) {
     .product-wrapper {
-    margin: 15rem auto 15rem;
-    width: 50%;
-    min-width: 360px;
+      margin: 10rem auto 5rem;
+      min-width: 360px;
+      max-width: 600px;
+      width: 70%;
 
-    flex-direction: column;
+      flex-direction: column;
+      justify-content: end;
     }
 
     .product-img {
-      height: 100%;
-      width: 100%;
       border-radius: 1rem 1rem 0 0;
-      box-shadow: 0 2px 20px #00000030;
+      width: 100%;
     }
 
     .product-wrapper-right {
-      box-shadow: 0 2px 20px #00000030;
-      width: 100%;
       border-radius: 0 0 1rem 1rem;
       background-color: #fff;
+      width: 100%;
 
       display: flex;
       flex-direction: column;
@@ -205,7 +201,11 @@ onMount(() => {
 
   @media (max-width: 450px) {
     .product-wrapper {
-      margin: 5rem auto;
+      margin: 3rem auto 5rem;
+    }
+
+    .cost {
+      font-size: 2.5rem;
     }
   }
   </style>
