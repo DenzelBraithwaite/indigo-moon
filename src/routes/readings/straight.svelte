@@ -30,6 +30,7 @@
   src="/reading1.webp"
   alt="2 tarot cards spread out."
   title="Straight Reading"
+  btnText="Book Now"
   cost="$10"
   description="10 min, give it to me straight."
   bgColor="default"/>

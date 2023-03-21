@@ -30,6 +30,7 @@
   src="/candle-green.webp"
   alt="green candle"
   title="Peppermint & Eucalyptus"
+  btnText="Buy Now"
   cost="8$"
   description="Wake up your senses with this fragrant aroma. Perfect for  a bath or morning alertness."
   bgColor="green"/>

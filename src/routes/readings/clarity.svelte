@@ -30,6 +30,7 @@
   src="/reading2.webp"
   alt="A box of exposed tarot cards."
   title="Clarity Reading"
+  btnText="Book Now"
   cost="$20"
   description="20 min, clarity reading."
   bgColor="default"/>

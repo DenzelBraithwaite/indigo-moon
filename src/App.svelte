@@ -13,6 +13,11 @@
 
 </script>
 
+<!-- ADD ID TO ALL PRODUCTS -->
+<!-- ADD ID TO ALL PRODUCTS -->
+<!-- ADD ID TO ALL PRODUCTS -->
+<!-- ADD ID TO ALL PRODUCTS -->
+
 <Router>
 
   <!-- Home -->

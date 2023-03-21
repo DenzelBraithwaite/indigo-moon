@@ -30,6 +30,7 @@
   src="/candle-blue.webp"
   alt="blue candle"
   title="Celestial Blue"
+  btnText="Buy Now"
   cost="8$"
   description="Bergamot - For moon magic or financial manifestation."
   bgColor="blue"/>

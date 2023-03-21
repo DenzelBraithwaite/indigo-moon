@@ -30,6 +30,7 @@
   src="/candle-red.webp"
   alt="red candle"
   title="Red Rose"
+  btnText="Buy Now"
   cost="8$"
   description="Bring love and abundance into your life, set an intention and allow your mind to manifest what you desire."
   bgColor="red"/>

@@ -30,6 +30,7 @@
   src="/candle-yellow.webp"
   alt="yellow candle"
   title="Camomile"
+  btnText="Buy Now"
   cost="8$"
   description="Create a relaxing space and indulge your senses in sweet chamomile."
   bgColor="yellow"/>

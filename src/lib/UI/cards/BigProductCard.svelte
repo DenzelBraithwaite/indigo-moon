@@ -7,6 +7,8 @@ export let title;
 export let cost;
 export let description;
 export let bgColor;
+export let btnText;
+export let stripeLink;
 
 onMount(() => {
     window.scrollTo({
@@ -22,7 +24,7 @@ onMount(() => {
       <h1>{title}</h1>
       <h2 class="cost">{cost}</h2>
       <p class="description">{description}</p>
-      <a class="btn__buy {bgColor}"  href="mailto:tiffany@indigomoontarot.com">Buy Now</a>
+      <a class="btn__buy {bgColor}"  href={"#" || stripeLink}>{btnText}</a>
     </div>
   </div>
 

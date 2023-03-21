@@ -30,6 +30,7 @@
   src="/candle-orange.webp"
   alt="orange candle"
   title="Harvest Spice"
+  btnText="Buy Now"
   cost="8$"
   description="Fall time lovers, allow this scent to fill your room, with the sweet fragrances of warm spices and cinnamon."
   bgColor="orange"/>

@@ -31,6 +31,7 @@
   src="/candle-purple.webp"
   alt="puyrple candle"
   title="Lavender"
+  btnText="Buy Now"
   cost="8$"
   description="Indulge in a little “ you time “. Have the perfect relaxing evening, preparing for a goodnight rest and sweet dreams."
   bgColor="purple"/>

@@ -22,7 +22,6 @@
         <Button {hover} {path} color='purple'>{btnText}</Button>
     </div>
 </div>
-
 <style>
     .product-card {
         position: relative;

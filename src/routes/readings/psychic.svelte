@@ -30,6 +30,7 @@
   src="/reading3.webp"
   alt="A box of exposed tarot cards."
   title="Psychic Reading"
+  btnText="Book Now"
   cost="$30"
   description="30 min, psychic reading."
   bgColor="indigo"/>

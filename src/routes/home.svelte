@@ -113,7 +113,7 @@
         <header>
           <HeroBanner />
         </header>
-        <main id="page-top">        
+        <main id="page-top">  
           <section id="reading-section" class="main-container">
             <ProductGrid gridType='readings' btnText="Book Now" title="Readings" cards={readingsCards} />
           </section>
