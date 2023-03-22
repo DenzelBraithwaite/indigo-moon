@@ -1,5 +1,7 @@
 <script>
   import { Link } from 'svelte-routing';
+  import { onMount, onDestroy } from 'svelte';
+
   import Navbar from "../../lib/UI/navbar.svelte";
   import HeroBanner from "../../lib/UI/HeroBanner.svelte";
   import Footer from "../../lib/UI/Footer.svelte";
@@ -15,6 +17,12 @@
   function mobileModalHandler() {
       visibility = 'hidden';
   }
+
+  onMount(() => {
+    window.addEventListener('beforeunload', () => {
+      location.reload();
+    })
+  })
 </script>
   
 <!-- Destkop -->

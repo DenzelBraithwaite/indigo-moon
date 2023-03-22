@@ -39,7 +39,7 @@
 </div>
 <footer>
   <Footer />
-</footer>2
+</footer>
            
 <style>
   .mobile-nav {
