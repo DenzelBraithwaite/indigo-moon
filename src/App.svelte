@@ -19,56 +19,35 @@
 <!-- ADD ID TO ALL PRODUCTS -->
 
 <Router>
-
   <!-- Home -->
-  <Route path='/'>
-    <Home />
-  </Route>
+  <Route path='/' component={Home} />
 
   <!-- Give it to me straight reading -->
-  <Route path='readings/straight'>
-    <StraightReading />
-  </Route>
+  <Route path='readings/straight' component={StraightReading} />
 
   <!-- Clarity reading -->
-  <Route path='readings/clarity'>
-    <ClarityReading />
-  </Route>
+  <Route path='readings/clarity' component={ClarityReading} />
 
   <!-- Psychic reading -->
-  <Route path='readings/psychic'>
-    <PsychicReading />
-  </Route>
+  <Route path='readings/psychic' component={PsychicReading} />
 
   <!-- Blue Candle -->
-  <Route path="candles/blue">
-    <BlueCandle />
-  </Route>
+  <Route path="candles/blue" component={BlueCandle} />
 
   <!-- Orange Candle -->
-  <Route path="candles/orange">
-    <OrangeCandle />
-  </Route>
+  <Route path="candles/orange" component={OrangeCandle} />
 
   <!-- Red Candle -->
-  <Route path="candles/red">
-    <RedCandle />
-  </Route>
+  <Route path="candles/red" component={RedCandle} />
   
   <!-- Green Candle -->
-  <Route path="candles/green">
-    <GreenCandle />
-  </Route>
+  <Route path="candles/green" component={GreenCandle} />
   
   <!-- Purple Candle -->
-  <Route path="candles/purple">
-    <PurpleCandle />
-  </Route>
+  <Route path="candles/purple" component={PurpleCandle} />
 
   <!-- Yellow Candle -->
-  <Route path='candles/yellow'>
-    <YellowCandle/>
-  </Route>
+  <Route path='candles/yellow' component={YellowCandle} />
 </Router>
 
 <style>
