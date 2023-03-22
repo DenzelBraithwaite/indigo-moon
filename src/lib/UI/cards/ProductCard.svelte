@@ -1,6 +1,7 @@
 <script>
     import Button from '../buttons/Button.svelte'
 
+    export let id;
     export let src;
     export let alt;
     export let title = '';

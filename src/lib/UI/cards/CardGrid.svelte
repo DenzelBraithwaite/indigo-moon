@@ -19,7 +19,7 @@
   let readingsHovers = [
     'purple',
     'purple',
-    'indigo'
+    'purple'
   ];
 
   // Readings Routes
@@ -41,29 +41,12 @@
   ];
 </script>
   
-{#if gridType === 'candles'}
+{#if gridType === 'readings'}
   <h1 class="services-title">{title}</h1>
-  <div class="grid grid__candles">
-      {#each cards as card, index}
-        <ProductCard
-        src={card.src}
-        alt={card.alt}
-        title={card.title}
-        description={card.description}
-        cost={card.cost}
-        {btnText}
-        hover={candlesHovers[index]}
-        path={candlesLinks[index]}/>
-      {/each}
-    <!-- <a href=# class="m__more">See more</a> -->
-  </div>
-  <!-- <a href=# class="more">See more</a> -->
-
-{:else if gridType === 'readings'}
-<h1 class="services-title">{title}</h1>
-<div class="grid grid__readings">
+  <div class="grid grid__readings">
     {#each cards as card, index}
       <ProductCard
+      id="r{index}"
       src={card.src}
       alt={card.alt}
       title={card.title}
@@ -73,16 +56,27 @@
       hover={readingsHovers[index]}
       path={readingsLinks[index]}/>
     {/each}
-  <!-- <a href=# class="m__more">See more</a> -->
-</div>
-<!-- <a href=# class="more">See more</a> -->
-  {/if}
+  </div>
+
+{:else if gridType === 'candles'}
+  <h1 class="services-title">{title}</h1>
+  <div class="grid grid__candles">
+      {#each cards as card, index}
+        <ProductCard
+        id='c{index}'
+        src={card.src}
+        alt={card.alt}
+        title={card.title}
+        description={card.description}
+        cost={card.cost}
+        {btnText}
+        hover={candlesHovers[index]}
+        path={candlesLinks[index]}/>
+      {/each}
+  </div>
+{/if}
 
 <style>
-  .m__more {
-    display: none;
-  }
-
   .grid {
     grid-template-columns: repeat(3, 250px);
     position: relative;
@@ -102,53 +96,18 @@
     font-size: 2rem;
   }
   
-  .more:link,
-  .more:visited {
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    color: var(--secondary-purple);
-    font-size: 1.8rem;
-    margin-top: 2rem;
-  }
-  
-  .more:hover,
-  .more:active {
-    text-decoration: underline;
-  }
-
   @media (max-width: 1000px) {
-  .grid {
-    grid-template-columns: auto;
-    gap: 4rem;
-  }
-  
-  .services-title {
-    font-size: 2rem;
-  }
-  
-  .more:link,
-  .more:visited {
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    color: var(--secondary-purple);
-    font-size: 1.8rem;
-    margin-top: 2rem;
-  }
-  
-  .more:hover,
-  .more:active {
-    text-decoration: underline;
-  }
+    .grid {
+      grid-template-columns: auto;
+      gap: 4rem;
+    }
+    
+    .services-title {
+      font-size: 2rem;
+    }
   }
 
   @media (max-width: 450px) {
-    .more:link,
-    .more:visited {
-      display: none;
-    }
-
     .grid {
       grid-template-columns: 250px;
       row-gap: 5rem;
@@ -157,24 +116,6 @@
 
     .services-title {
       padding-top: 10rem;
-    }
-
-    .m__more:link,
-    .m__more:visited {
-      display: inline-block;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      margin: 0 auto;
-      border: 2px solid #724f71a1;
-      border-radius: 1rem;
-      color: #724f71;
-      font-size: 1.125rem;
-      transform: translate(0, -100%);
-    }
-
-    .m__more:active {
-      background-color: #724f71;
-      color: #fff;
     }
   }
 </style>

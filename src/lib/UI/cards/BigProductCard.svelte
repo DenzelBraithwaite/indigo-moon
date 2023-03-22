@@ -8,7 +8,7 @@ export let cost;
 export let description;
 export let bgColor;
 export let btnText;
-export let stripeLink;
+let stripeLink = '/';
 
 onMount(() => {
     window.scrollTo({
