@@ -115,7 +115,7 @@
     }
 
     .services-title {
-      padding-top: 10rem;
+      padding-top: 5rem;
     }
   }
 </style>

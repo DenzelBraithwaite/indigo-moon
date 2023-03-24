@@ -164,7 +164,7 @@
       transform: translate(0, -100px);
       border-radius: 1rem;
       box-shadow: 0 2px 10px #00000025;
-      padding-top: 10rem;
+      padding-top: 5rem;
     }
   
     header {
