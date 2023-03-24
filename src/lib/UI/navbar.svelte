@@ -7,16 +7,13 @@
         visibility === 'hidden' ? visibility = 'visible' : visibility = 'hidden';
     };
 
-    function mobileModalHandler() {
-        visibility = 'hidden';
-    }
 </script>
 
 <!-- Desktop -->
-<nav>
+<nav class="desktop">
     <a href="/#" class="nav-brand"><span class="indigo">Indigo</span> Moon Tarot</a>
     <div class="nav-options">
-        <a href="/#">Home</a>
+        <a href="/">Home</a>
         <a href="/#about-section">About</a>
         <a href="/#page-top">Readings</a>
         <a href="/#candle-section">Candles</a>
@@ -30,8 +27,8 @@
 </nav>
 
 <!-- Mobile -->
-<div class="mobile">
-    <div class="m__header">
+<nav class="mobile">
+    <div class="m__navbar">
         <div class="m__wrapper-left">
             <img class="m__moon" src="/bg.webp" alt="display of tarot cards, candles and sage. Displayed as a circle, resembling a moon.">
             <h1 class="m__title"><span class="m__indigo">Indigo</span> Moon Tarot</h1>
@@ -43,20 +40,21 @@
             </svg>
         </button>
     </div>
-    <div on:click={mobileModalHandler} class="m__modal-overlay {visibility}"></div>
-    <div class="{visibility}">
-        <div class="m__menu-modal">
-            <i class="home-icon fa-solid fa-house"></i>
-            <i class="cart-icon fa-solid fa-cart-shopping"></i>
-            <a class="insta-icon" href="https://www.instagram.com/indigomoontarotwithtiffany/" target="_blank" rel="noreferrer">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a class="yt-icon" href="https://www.youtube.com/@indigomoontarotwithtiffany5535" target="_blank" rel="noreferrer">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-        </div>
+    <div class="m__menu-dropdown {visibility}">
+        <a class="home-icon" href="/">
+            <i class="fa-solid fa-house fa-2x"></i>
+            <p class="m__icon-title">Home</p>
+        </a>
+        <a class="insta-icon" href="https://www.instagram.com/indigomoontarotwithtiffany/" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <p class="m__icon-title">Instagram</p>
+        </a>
+        <a class="yt-icon" href="https://www.youtube.com/@indigomoontarotwithtiffany5535" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-youtube fa-2x"></i>
+            <p class="m__icon-title">Youtube</p>
+        </a>
     </div>
-</div>
+</nav>
 
 <style>
     .mobile {
@@ -69,6 +67,7 @@
         color: #fff;
         line-height: 1;
         width: 100vw;
+        max-width: 100vw;
         padding: 1.25rem 2rem;
 
         display: flex;
@@ -77,7 +76,7 @@
 
         position: fixed;
         top: 0;
-        z-index: 1;
+        z-index: 10;
     }
     
     .nav-brand:link,
@@ -166,24 +165,15 @@
         }
 
         nav {
-            display: none;
+            background: none;
         }
 
-        nav {
-            z-index: 1;
-            background-color: #000000ec;
-            color: #fff;
-            padding: 20px 0;
-
-            position: sticky;
-            bottom: 0; 
-        }
-
-        .m__header {
+        .m__navbar {
             position: fixed;
             top: 0;
+            left: 0;
             width: 100vw;
-            z-index: 2;
+            z-index: 10;
             padding: 1.5rem;
             color: #fff;
             background-color: #000000f5;
@@ -205,13 +195,13 @@
         
         .m__moon {
             z-index: 4;
-            width: 4rem;
-            height: 4rem;
+            width: 5rem;
+            height: 5rem;
             border-radius: 50%;
             opacity: 50%;
             position: absolute;
-            right: 40%;
-            top: -10px;
+            right: 35%;
+            top: -22px;
         }
         
         .m__title {
@@ -238,32 +228,14 @@
             margin: 0;
         }
 
-        .m__modal-overlay {
-            z-index: 1;
-            background: linear-gradient(to bottom, #2b1b2a, #121212e7);
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100vh;
+        .m__menu-dropdown {
+            z-index: 20;
             width: 100vw;
-        }
+            background-color: #000000f5;
+            top: 89px;
+            left: 0;
 
-        .m__menu-modal {
-            z-index: 3;
-            position: relative;
-            background-color: #000000ad;
-            width: 350px;
-            height: 350px;
-            margin: 5rem auto 0;
-            box-shadow: 0 2px 10px #00000056;
-            border-radius: 2rem;
-
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            justify-content: center;
-            align-items: center;
-            justify-items: center;
+            position: fixed;
         }
 
         .m__menu-icon {
@@ -276,58 +248,59 @@
             padding-left: 0.2rem;
         }
 
+        .m__icon-title {
+            margin: 0;
+        }
+
         .home-icon {
-            height: 2.25rem;
-            width: 2.25rem;
-            color: #000000b0;
-            scale: 4;
-            background-color: #654664b9;
-            border-radius: 5px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .cart-icon {
-            height: 2.25rem;
-            width: 2.25rem;
-            color: #000000b0;
-            scale: 4;
-            background-color: #654664b9;
-            border-radius: 5px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .insta-icon {
+            display: inline-block;
+            color: #654664b9;
+            padding: 0.4rem 0;
             text-decoration: none;
-            height: 2.25rem;
-            width: 2.25rem;
-            color: #000000b0;
-            scale: 4;
-            background-color: #654664b9;
-            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #a782a53d;
+            border-top: 1px solid #a782a53d;
+        }
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        /* .cart-icon {
+            display: inline-block;
+            color: #654664b9;
+            padding: 0.4rem 0;
+            text-decoration: none;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #a782a53d;
+        } */
+
+        .insta-icon:link,
+        .insta-icon:visited {
+            display: inline-block;
+            color: #654664b9;
+            padding: 0.4rem 0;
+            text-decoration: none;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #a782a53d;
         }
         
-        .yt-icon {
+        .yt-icon:link,
+        .yt-icon:visited {
+            display: inline-block;
+            color: #654664b9;
+            padding: 0.4rem 0;
             text-decoration: none;
-            height: 2.25rem;
-            width: 2.25rem;
-            color: #000000b0;
-            scale: 4;
-            background-color: #654664b9;
-            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #a782a53d;
+        }
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .insta-icon:hover,
+        .insta-icon:active,
+        .yt-icon:hover,
+        .yt-icon:active {
+            transition: none;
+            scale: 1;
         }
 
         /* Dynamic classes */
