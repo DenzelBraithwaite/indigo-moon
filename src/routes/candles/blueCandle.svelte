@@ -1,7 +1,6 @@
 <script>
   import { Link } from 'svelte-routing';
   import Navbar from "../../lib/UI/navbar.svelte";
-  import HeroBanner from "../../lib/UI/HeroBanner.svelte";
   import Footer from "../../lib/UI/Footer.svelte";
   import BigProductCard from '../../lib/UI/cards/BigProductCard.svelte';
 
@@ -9,7 +8,6 @@
   
   function mobileMenuBtnHandler() {
       visibility === 'hidden' ? visibility = 'visible' : visibility = 'hidden';
-      console.log('testr')
   };
 
   function mobileModalHandler() {
@@ -24,7 +22,7 @@
 
 <!-- Mobile -->
 <nav class="mobile-nav">
-  <HeroBanner />
+  <Navbar />
 </nav>
 <BigProductCard
   src="/candle-blue.webp"
