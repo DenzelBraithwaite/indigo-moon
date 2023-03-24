@@ -107,7 +107,9 @@
         }
         
         .m__header {
-            position: relative;
+            position: fixed;
+            top: 0;
+            width: 100vw;
             z-index: 2;
             padding: 1.5rem;
             color: #fff;

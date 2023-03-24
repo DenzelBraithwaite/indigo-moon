@@ -22,8 +22,8 @@ onMount(() => {
     <img class="product-img" {src} alt={alt}>
     <div class="product-wrapper-right">
       <h1>{title}</h1>
-      <h2 class="cost">{cost}</h2>
       <p class="description">{description}</p>
+      <h2 class="cost">{cost}</h2>
       <a class="btn__buy {bgColor}"  href={"#" || stripeLink}>{btnText}</a>
     </div>
   </div>
@@ -53,13 +53,14 @@ onMount(() => {
   }
 
   .product-wrapper-right {
+    position: relative;
     width: 550px;
     border-radius: 0 1rem 1rem 0;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .description {
@@ -67,7 +68,10 @@ onMount(() => {
   }
 
   .cost {
+    line-height: 1;
     font-size: 3rem;
+    text-align: center;
+    margin-bottom: 100px;
   }
 
   p {
@@ -77,12 +81,14 @@ onMount(() => {
 
   .btn__buy:link,
   .btn__buy:visited {
+    position: absolute;
+    bottom: 0;
     display: inline-block;
     transition: background-color 0.1s ease-in;
     text-decoration: none;
     border: none;
     color: #fff;
-    width: 70%;
+    width: 80%;
     text-align: center;
     font-size: 1.125rem;
     padding: 0.75rem 1rem;
@@ -171,13 +177,12 @@ onMount(() => {
 
   @media(max-width: 1000px) {
     .product-wrapper {
-      margin: 10rem auto 5rem;
+      margin: 9rem auto 5rem;
       min-width: 360px;
       max-width: 600px;
-      width: 70%;
+      width: 60%;
 
       flex-direction: column;
-      justify-content: end;
     }
 
     .product-img {
@@ -202,10 +207,6 @@ onMount(() => {
   }
 
   @media (max-width: 450px) {
-    .product-wrapper {
-      margin: 3rem auto 5rem;
-    }
-
     .cost {
       font-size: 2.5rem;
     }

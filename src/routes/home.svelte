@@ -1,6 +1,4 @@
 <script>
-    import { onMount } from 'svelte';
-  
     import ProductGrid from '../lib/UI/cards/CardGrid.svelte';
     import Navbar from '../lib/UI/navbar.svelte';
     import HeroBanner from '../lib/UI/HeroBanner.svelte';
@@ -80,25 +78,6 @@
           'cost': "$8"
         }
       ];
-      
-      onMount(() => {
-        switch (document.referrer) {
-        case 'https://indigomoontarot.com/readings/straight':
-          console.log('Coming from readings/straight') 
-          break;
-        case 'https://indigomoontarot.com/readings/calrity':
-          console.log('Coming from readings/clarity');
-          break;
-        case 'https://indigomoontarot.com/readings/psychic':
-          console.log('COming from readings/psychic');
-          break;
-        default:
-          console.log('was not redirected');
-        }
-      });
-
-      
-
   </script>
 
   <!-- <svelte:window on:scroll={scrollHandler} /> -->
