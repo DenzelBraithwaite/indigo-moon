@@ -62,8 +62,7 @@
     }
     
     nav {
-        font-family: 'Shantell Sans', 'Mynerve', cursive;
-        background-color: #000000e7;
+        background-color: #0f0f0ffa;
         color: #fff;
         line-height: 1;
         width: 100vw;
@@ -81,6 +80,7 @@
     
     .nav-brand:link,
     .nav-brand:visited {
+        font-family: 'Shantell Sans';
         text-decoration: none;
         color: #fff;
         font-size: 1.75rem;
