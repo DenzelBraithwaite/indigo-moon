@@ -4,6 +4,8 @@
     export let color;
     export let path;
     export let hover;
+
+    // let theme = 'dark-theme';
 </script>
 
 {#if color === 'purple'}
@@ -54,15 +56,14 @@
     min-width: 7rem;
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
-    box-shadow: 0 2px 8px #65466492; /* var(--secondary-purple), transparent*/
-    box-shadow: 0 2px 8px #fff;
+    box-shadow: 0 2px 8px #0000002e;
   }
   
   :global(.btn:hover),
   :global(.btn:active) {
     transition: background-color 0.2s ease-out;
     cursor: pointer;
-    box-shadow: 0 2px 10px #65466438; /* var(--secondary-purple), transparent*/
+    box-shadow: 0 2px 10px #0000004d;
     scale: 101%;
   }
   

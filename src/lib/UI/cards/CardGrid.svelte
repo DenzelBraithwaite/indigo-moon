@@ -6,7 +6,8 @@
   export let title = '';
   export let btnText = '';
 
-  
+  let theme = 'light-theme';
+
   let candlesHovers = [
     'blue',
     'orange',
@@ -42,7 +43,7 @@
 </script>
   
 {#if gridType === 'readings'}
-  <h1 class="services-title">{title}</h1>
+  <h1 class="services-title {theme}">{title}</h1>
   <div class="grid grid__readings">
     {#each cards as card, index}
       <ProductCard
@@ -59,7 +60,7 @@
   </div>
 
 {:else if gridType === 'candles'}
-  <h1 class="services-title">{title}</h1>
+  <h1 class="services-title {theme}">{title}</h1>
   <div class="grid grid__candles">
       {#each cards as card, index}
         <ProductCard
@@ -95,7 +96,13 @@
     font-weight: 400;
     font-size: 2rem;
   }
-  
+
+  /* Dark theme */
+  .dark-theme {
+    color: #a87da7;
+
+  }
+
   @media (max-width: 1000px) {
     .grid {
       grid-template-columns: auto;

@@ -8,6 +8,8 @@
     import Footer from '../lib/UI/Footer.svelte';
     import About from '../lib/About.svelte';
   
+    let theme = 'light-theme';
+
     // Readings Grid
     let readingsCards = [
       {
@@ -90,7 +92,7 @@
         <header>
           <HeroBanner />
         </header>
-        <main id="page-top">  
+        <main id="page-top" class="{theme}">  
           <section id="reading-section" class="main-container">
             <ProductGrid gridType='readings' btnText="Book Now" title="Readings" cards={readingsCards} />
           </section>
@@ -177,6 +179,11 @@
   
     section:last-of-type {
       margin-bottom: 5rem;
+    }
+
+    /* Dark theme */
+    .dark-theme {
+      background-color: #202020;
     }
 
     @media (max-width: 450px) {

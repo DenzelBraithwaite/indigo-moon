@@ -1,13 +1,13 @@
 <script>
-
+    let theme = 'light-theme';
 </script>
 
 <!-- DESKTOP -->
 <div class="desktop">
     <div class="banner">
-        <div class="content">
+        <div class="content {theme}">
             <h1 class="title">Experience Indigo Moon's Magical Shop and Tarot</h1>
-            <p class="subtitle">A Spiritual Feeling</p>
+            <p class="subtitle">A <span class="spiritual">Spiritual</span> Feeling</p>
         </div>
     </div>
 </div>
@@ -53,6 +53,15 @@
         font-weight: lighter;
         text-shadow: 0 2px 10px #000000c4;
         margin-bottom: 1rem;
+    }
+
+    /* Dark theme */
+    .dark-theme {
+        background-color: #121212c1;
+    }
+
+    .dark-theme .spiritual {
+        color: #a87da7;
     }
 
     /* Mobile */

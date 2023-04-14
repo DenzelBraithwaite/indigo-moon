@@ -10,9 +10,11 @@
     export let btnText = '';
     export let path;
     export let hover;
+
+    let theme = 'light-theme';
 </script>
 
-<div class="product-card">
+<div class="product-card {theme}">
     <img {src} {alt}>
     <div class="text-section">
         <div class="content">
@@ -97,10 +99,12 @@
         left: -2rem;
     }
 
-    /* @media (max-width: 1000px) {
-        .product-card {
-        }
-    } */
+    /* Dark theme */
+    .dark-theme {
+        background-color: #242424;
+        color: #fff;
+        box-shadow: 0 2px 6px #ffffff43;
+    }
 
     @media (max-width: 450px) {
         .product-card {
